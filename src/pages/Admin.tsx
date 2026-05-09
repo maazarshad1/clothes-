@@ -3,12 +3,49 @@ import { useStore, Product, Order } from '../context/StoreContext';
 import { X } from 'lucide-react';
 
 const Admin = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [passcode, setPasscode] = useState('');
   const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus } = useStore();
   const [activeTab, setActiveTab] = useState<'products' | 'orders'>('products');
   
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passcode === '1234') {
+      setIsAuthenticated(true);
+    } else {
+      alert('Incorrect passcode');
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="flex h-screen w-full items-center justify-center bg-[#F5F2ED] font-sans">
+        <div className="bg-white p-8 border border-[rgba(0,0,0,0.05)] shadow-sm max-w-sm w-full">
+          <h2 className="text-2xl font-serif mb-6 text-center">Admin Access</h2>
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div>
+              <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Passcode</label>
+              <input 
+                type="password" 
+                value={passcode}
+                onChange={(e) => setPasscode(e.target.value)}
+                placeholder="Enter 1234"
+                className="w-full border border-zinc-200 p-3 text-sm focus:outline-none focus:border-[#111111]" 
+                required
+              />
+            </div>
+            <button type="submit" className="w-full bg-[#111111] text-white py-3 text-xs uppercase tracking-widest hover:bg-black transition-colors">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
 
   const handleProductSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

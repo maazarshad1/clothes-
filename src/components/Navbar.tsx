@@ -40,9 +40,6 @@ const Navbar = () => {
 
           {/* Icons */}
           <div className="flex items-center space-x-6">
-            <Link to="/admin" className="text-black hover:text-[#d4af37] transition hidden md:block" title="Admin Dashboard">
-              <User size={20} />
-            </Link>
             <Link to="/wishlist" className="text-black hover:text-[#d4af37] transition relative">
               <Heart size={20} />
               {wishlist.length > 0 && (
@@ -71,7 +68,6 @@ const Navbar = () => {
             <Link to="/shop?category=Men" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Men</Link>
             <Link to="/shop?category=Kids" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Kids</Link>
             <Link to="/shop?category=Accessories" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Accessories</Link>
-            <Link to="/admin" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 text-[#d4af37]">Admin Area</Link>
           </div>
         </div>
       )}
