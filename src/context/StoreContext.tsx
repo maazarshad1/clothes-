@@ -38,6 +38,8 @@ interface StoreContextType {
   deleteProduct: (id: string) => void;
   orders: Order[];
   updateOrderStatus: (id: string, status: Order['status']) => void;
+  addOrder: (order: Order) => void;
+  clearCart: () => void;
 }
 
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
@@ -108,6 +110,9 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   const updateOrderStatus = (id: string, status: Order['status']) => {
     setOrders(prev => prev.map(o => o.id === id ? { ...o, status } : o));
   };
+  
+  const addOrder = (order: Order) => setOrders(prev => [order, ...prev]);
+  const clearCart = () => setCart([]);
 
   return (
     <StoreContext.Provider
@@ -126,6 +131,8 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
         deleteProduct,
         orders,
         updateOrderStatus,
+        addOrder,
+        clearCart,
       }}
     >
       {children}

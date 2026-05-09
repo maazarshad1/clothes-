@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { products } from '../data/products';
 import { ShoppingBag, Heart } from 'lucide-react';
 import { useStore, Product } from '../context/StoreContext';
 
@@ -61,6 +60,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 };
 
 const Home = () => {
+  const { products } = useStore();
   const featuredProducts = products.slice(0, 4);
 
   return (

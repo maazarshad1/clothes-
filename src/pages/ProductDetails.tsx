@@ -1,14 +1,13 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { products } from '../data/products';
 import { useStore } from '../context/StoreContext';
 import { ShoppingBag, ArrowLeft } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
+  const { addToCart, products } = useStore();
   const product = products.find((p) => p.id === id);
-  const { addToCart } = useStore();
 
   if (!product) {
     return (

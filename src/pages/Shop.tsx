@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { products } from '../data/products';
 import { Product, useStore } from '../context/StoreContext';
 import { ShoppingBag, Heart, Search, SlidersHorizontal } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -63,6 +62,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 };
 
 const Shop = () => {
+  const { products } = useStore();
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
   

@@ -1,12 +1,35 @@
-import React from 'react';
-import { useStore } from '../context/StoreContext';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useStore, Order } from '../context/StoreContext';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
-  const { cart } = useStore();
+  const { cart, addOrder, clearCart } = useStore();
+  const navigate = useNavigate();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
   const shipping = subtotal > 200 ? 0 : 15;
   const total = subtotal + shipping;
+
+  const handlePlaceOrder = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (cart.length === 0) return;
+
+    const newOrder: Order = {
+      id: `ORD-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`,
+      customerName: `${firstName} ${lastName}`.trim() || 'Guest Customer',
+      total,
+      status: 'Pending',
+      date: new Date().toISOString().split('T')[0]
+    };
+
+    addOrder(newOrder);
+    clearCart();
+    
+    // Pass the created order ID to the track-order page
+    navigate('/track-order', { state: { newOrderId: newOrder.id } });
+  };
 
   if (cart.length === 0) {
     return (
@@ -23,35 +46,35 @@ const Checkout = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h1 className="font-serif text-4xl mb-12 text-center">Checkout</h1>
 
-      <div className="flex flex-col lg:flex-row gap-16">
+      <form onSubmit={handlePlaceOrder} className="flex flex-col lg:flex-row gap-16">
         <div className="flex-1 space-y-12">
           {/* Form */}
           <section>
             <h2 className="text-xl font-serif mb-6 border-b border-gray-200 pb-2">Shipping Information</h2>
             <div className="grid grid-cols-2 gap-4">
-              <input type="text" placeholder="First Name" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="Last Name" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="email" placeholder="Email Address" className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="Address" className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="City" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="Postal Code" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="email" placeholder="Email Address" required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="Address" required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="City" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="Postal Code" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
             </div>
           </section>
 
           <section>
             <h2 className="text-xl font-serif mb-6 border-b border-gray-200 pb-2">Payment</h2>
             <div className="grid grid-cols-1 gap-4">
-              <input type="text" placeholder="Card Number" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="Card Number" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
               <div className="grid grid-cols-2 gap-4">
-                <input type="text" placeholder="MM/YY" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-                <input type="text" placeholder="CVC" className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+                <input type="text" placeholder="MM/YY" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+                <input type="text" placeholder="CVC" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
               </div>
             </div>
           </section>
 
           <button 
+            type="submit"
             className="w-full bg-black text-white py-4 font-semibold uppercase tracking-widest hover:bg-[#d4af37] transition"
-            onClick={() => alert("Payment processed!")}
           >
             Place Order
           </button>
@@ -93,7 +116,7 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
