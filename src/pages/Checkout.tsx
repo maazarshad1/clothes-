@@ -39,14 +39,6 @@ const Checkout = () => {
 
     addOrder(newOrder);
     clearCart();
-
-    // Format WhatsApp message
-    const itemList = cart.map(item => `- ${item.quantity}x ${item.name} ${item.size ? `(Size: ${item.size}) ` : ''}- $${(item.price * item.quantity).toFixed(2)}`).join('\n');
-    const message = `New Order Placed! 🎉\n\nOrder ID: *${newOrder.id}*\nCustomer: ${newOrder.customerName}\nPhone: ${newOrder.phoneNumber}\nAddress: ${newOrder.address}, ${newOrder.city}, ${newOrder.postalCode}\nPayment: ${newOrder.paymentMethod}\n\nItems:\n${itemList}\n\nTotal: *$${newOrder.total.toFixed(2)}*`;
-    
-    // Open WhatsApp
-    const whatsappUrl = `https://wa.me/923419509075?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
     
     // Pass the created order ID to the track-order page
     navigate('/track-order', { state: { newOrderId: newOrder.id } });
