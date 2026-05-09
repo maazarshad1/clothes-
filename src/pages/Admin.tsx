@@ -11,6 +11,7 @@ const Admin = () => {
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
+  const [viewingOrder, setViewingOrder] = useState<Order | null>(null);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -195,7 +196,10 @@ const Admin = () => {
                           </span>
                         </td>
                         <td className="px-6 py-4 text-center">
-                          <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-xs uppercase tracking-widest font-semibold">Update Status</button>
+                          <div className="flex justify-center gap-4">
+                            <button onClick={() => setViewingOrder(order)} className="text-blue-600 hover:underline text-xs uppercase tracking-widest font-semibold">View Details</button>
+                            <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-xs uppercase tracking-widest font-semibold">Update Status</button>
+                          </div>
                         </td>
                       </tr>
                     ))}
@@ -284,6 +288,72 @@ const Admin = () => {
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        )}
+
+        {/* View Order Modal */}
+        {viewingOrder && (
+          <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4 z-50">
+            <div className="bg-white w-full max-w-2xl p-8 relative shadow-2xl border border-zinc-100 max-h-[90vh] overflow-y-auto">
+              <button 
+                onClick={() => setViewingOrder(null)}
+                className="absolute top-6 right-6 opacity-50 hover:opacity-100 transition-opacity"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              
+              <div className="flex justify-between items-end mb-6">
+                <div>
+                  <p className="text-[10px] uppercase tracking-widest opacity-50">Order Details</p>
+                  <h2 className="text-2xl font-serif">{viewingOrder.id}</h2>
+                </div>
+                <div className="text-right">
+                  <p className="text-[10px] uppercase tracking-widest opacity-50">Date</p>
+                  <p className="text-sm font-medium">{viewingOrder.date}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-8 mb-8 text-sm">
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-2">Customer Info</h3>
+                  <p className="font-medium">{viewingOrder.customerName}</p>
+                  <p>{viewingOrder.email}</p>
+                </div>
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-2">Shipping Address</h3>
+                  <p>{viewingOrder.address}</p>
+                  <p>{viewingOrder.city}, {viewingOrder.postalCode}</p>
+                </div>
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-2">Payment Info</h3>
+                  <p>{viewingOrder.paymentMethod}</p>
+                </div>
+                <div>
+                  <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-2">Current Status</h3>
+                  <p className="font-bold text-[#C5A059]">{viewingOrder.status}</p>
+                </div>
+              </div>
+
+              <div className="border-t border-zinc-100 pt-6">
+                <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-4">Purchased Items</h3>
+                <div className="space-y-4">
+                  {viewingOrder.items?.map((item) => (
+                    <div key={item.id} className="flex gap-4 items-center">
+                      <img src={item.image} alt={item.name} className="w-12 h-12 object-cover bg-zinc-100" />
+                      <div className="flex-1">
+                        <p className="font-medium text-sm">{item.name}</p>
+                        <p className="text-xs text-zinc-500">Qty: {item.quantity}</p>
+                      </div>
+                      <p className="font-serif">${(item.price * item.quantity).toFixed(2)}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="border-t border-zinc-100 mt-6 pt-4 flex justify-between items-center text-lg">
+                  <span className="font-bold">Total Amount</span>
+                  <span className="font-serif italic text-2xl">${viewingOrder.total.toFixed(2)}</span>
+                </div>
+              </div>
             </div>
           </div>
         )}

@@ -8,6 +8,12 @@ const Checkout = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
 
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+  const [city, setCity] = useState('');
+  const [postalCode, setPostalCode] = useState('');
+  const [paymentMethod, setPaymentMethod] = useState<'Card' | 'Cash on Delivery'>('Card');
+
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
   const shipping = subtotal > 200 ? 0 : 15;
   const total = subtotal + shipping;
@@ -19,6 +25,12 @@ const Checkout = () => {
     const newOrder: Order = {
       id: `ORD-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`,
       customerName: `${firstName} ${lastName}`.trim() || 'Guest Customer',
+      email,
+      address,
+      city,
+      postalCode,
+      items: cart,
+      paymentMethod,
       total,
       status: 'Pending',
       date: new Date().toISOString().split('T')[0]
@@ -54,22 +66,50 @@ const Checkout = () => {
             <div className="grid grid-cols-2 gap-4">
               <input type="text" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
               <input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="email" placeholder="Email Address" required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="Address" required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="City" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="text" placeholder="Postal Code" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="email" placeholder="Email Address" value={email} onChange={e => setEmail(e.target.value)} required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="Address" value={address} onChange={e => setAddress(e.target.value)} required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="City" value={city} onChange={e => setCity(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="text" placeholder="Postal Code" value={postalCode} onChange={e => setPostalCode(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
             </div>
           </section>
 
           <section>
             <h2 className="text-xl font-serif mb-6 border-b border-gray-200 pb-2">Payment</h2>
-            <div className="grid grid-cols-1 gap-4">
-              <input type="text" placeholder="Card Number" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <div className="grid grid-cols-2 gap-4">
-                <input type="text" placeholder="MM/YY" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-                <input type="text" placeholder="CVC" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              </div>
+            
+            <div className="flex gap-6 mb-6">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input 
+                  type="radio" 
+                  name="paymentMethod" 
+                  value="Card" 
+                  checked={paymentMethod === 'Card'}
+                  onChange={() => setPaymentMethod('Card')}
+                  className="w-4 h-4 text-black focus:ring-black"
+                />
+                <span>Credit Card</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input 
+                  type="radio" 
+                  name="paymentMethod" 
+                  value="Cash on Delivery"
+                  checked={paymentMethod === 'Cash on Delivery'}
+                  onChange={() => setPaymentMethod('Cash on Delivery')}
+                  className="w-4 h-4 text-black focus:ring-black"
+                />
+                <span>Cash on Delivery</span>
+              </label>
             </div>
+
+            {paymentMethod === 'Card' && (
+              <div className="grid grid-cols-1 gap-4">
+                <input type="text" placeholder="Card Number" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+                <div className="grid grid-cols-2 gap-4">
+                  <input type="text" placeholder="MM/YY" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+                  <input type="text" placeholder="CVC" required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
+                </div>
+              </div>
+            )}
           </section>
 
           <button 
