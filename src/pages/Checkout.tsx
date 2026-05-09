@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useStore, Order } from '../context/StoreContext';
 import { Link, useNavigate } from 'react-router-dom';
+import { sendOrderConfirmationEmail } from '../services/emailService';
 
 const Checkout = () => {
   const { cart, addOrder, clearCart } = useStore();
@@ -18,7 +19,7 @@ const Checkout = () => {
   const shipping = subtotal > 200 ? 0 : 15;
   const total = subtotal + shipping;
 
-  const handlePlaceOrder = (e: React.FormEvent) => {
+  const handlePlaceOrder = async (e: React.FormEvent) => {
     e.preventDefault();
     if (cart.length === 0) return;
 
@@ -30,7 +31,7 @@ const Checkout = () => {
       address,
       city,
       postalCode,
-      items: cart,
+      items: [...cart], // Clone to avoid reference issues after clearing
       paymentMethod,
       total,
       status: 'Pending',
@@ -38,6 +39,14 @@ const Checkout = () => {
     };
 
     addOrder(newOrder);
+    
+    // Attempt to send confirmation email
+    try {
+      await sendOrderConfirmationEmail(newOrder);
+    } catch (err) {
+      console.error("Order placed but email notification failed:", err);
+    }
+
     clearCart();
     
     // Pass the created order ID to the track-order page
