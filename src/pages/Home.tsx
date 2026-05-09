@@ -5,7 +5,7 @@ import { products } from '../data/products';
 import { ShoppingBag, Heart } from 'lucide-react';
 import { useStore, Product } from '../context/StoreContext';
 
-const ProductCard = ({ product }: { product: Product }) => {
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const { addToCart, toggleWishlist, wishlist } = useStore();
   const isWishlisted = wishlist.some((item) => item.id === product.id);
 

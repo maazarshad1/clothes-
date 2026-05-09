@@ -6,7 +6,7 @@ import { ShoppingBag, Heart, Search, SlidersHorizontal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 
-const ProductCard = ({ product }: { product: Product }) => {
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const { addToCart, toggleWishlist, wishlist } = useStore();
   const isWishlisted = wishlist.some((item) => item.id === product.id);
 
