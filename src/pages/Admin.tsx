@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useStore, Product, Order } from '../context/StoreContext';
-import { X } from 'lucide-react';
+import { X, Bell } from 'lucide-react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Admin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -12,6 +13,53 @@ const Admin = () => {
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
   const [viewingOrder, setViewingOrder] = useState<Order | null>(null);
+
+  const prevOrdersLength = useRef(orders.length);
+
+  useEffect(() => {
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'store_orders' && e.newValue) {
+        const newOrders = JSON.parse(e.newValue);
+        if (newOrders.length > prevOrdersLength.current) {
+          toast.success(`New Order Detected!`, {
+            duration: 5000,
+            icon: '🛍️',
+            style: {
+              borderRadius: '0px',
+              background: '#111111',
+              color: '#fff',
+              fontSize: '12px',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase'
+            }
+          });
+          prevOrdersLength.current = newOrders.length;
+        }
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, [isAuthenticated]);
+
+  useEffect(() => {
+    if (isAuthenticated && orders.length > prevOrdersLength.current) {
+      const newOrder = orders[0];
+      toast.success(`New Order Received: ${newOrder.id}`, {
+        duration: 5000,
+        icon: '🛍️',
+        style: {
+          borderRadius: '0px',
+          background: '#111111',
+          color: '#fff',
+          fontSize: '12px',
+          letterSpacing: '0.1em',
+          textTransform: 'uppercase'
+        }
+      });
+    }
+    prevOrdersLength.current = orders.length;
+  }, [orders, isAuthenticated]);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -82,6 +130,7 @@ const Admin = () => {
 
   return (
     <div className="flex h-screen w-full bg-[#F5F2ED] font-sans overflow-hidden text-[#111111]">
+      <Toaster position="top-right" />
       <div className="w-64 bg-[#111111] text-zinc-400 flex flex-col flex-shrink-0">
         <div className="p-8">
           <h2 className="text-white font-serif italic text-2xl tracking-widest uppercase">Fashion<br/>Admin</h2>
