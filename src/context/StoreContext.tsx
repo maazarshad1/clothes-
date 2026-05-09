@@ -51,12 +51,43 @@ const initialOrders: Order[] = [
 ];
 
 export const StoreProvider = ({ children }: { children: ReactNode }) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
-  const [wishlist, setWishlist] = useState<Product[]>([]);
+  const [cart, setCart] = useState<CartItem[]>(() => {
+    const saved = localStorage.getItem('store_cart');
+    return saved ? JSON.parse(saved) : [];
+  });
+  
+  const [wishlist, setWishlist] = useState<Product[]>(() => {
+    const saved = localStorage.getItem('store_wishlist');
+    return saved ? JSON.parse(saved) : [];
+  });
+  
   const [isDarkMode, setIsDarkMode] = useState(false);
   
-  const [products, setProducts] = useState<Product[]>(initialProducts);
-  const [orders, setOrders] = useState<Order[]>(initialOrders);
+  const [products, setProducts] = useState<Product[]>(() => {
+    const saved = localStorage.getItem('store_products');
+    return saved ? JSON.parse(saved) : initialProducts;
+  });
+  
+  const [orders, setOrders] = useState<Order[]>(() => {
+    const saved = localStorage.getItem('store_orders');
+    return saved ? JSON.parse(saved) : initialOrders;
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem('store_cart', JSON.stringify(cart));
+  }, [cart]);
+
+  React.useEffect(() => {
+    localStorage.setItem('store_wishlist', JSON.stringify(wishlist));
+  }, [wishlist]);
+
+  React.useEffect(() => {
+    localStorage.setItem('store_products', JSON.stringify(products));
+  }, [products]);
+
+  React.useEffect(() => {
+    localStorage.setItem('store_orders', JSON.stringify(orders));
+  }, [orders]);
 
   const addToCart = (product: Product) => {
     setCart((prev) => {
