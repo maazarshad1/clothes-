@@ -16,20 +16,35 @@ export const sendOrderConfirmationEmail = async (order: Order) => {
     return;
   }
 
-  const itemList = order.items
-    .map((item) => `${item.quantity}x ${item.name}${item.size ? ` (Size: ${item.size})` : ''} - $${(item.price * item.quantity).toFixed(2)}`)
-    .join('\n');
+  // Calculate subtotal to derive shipping (mirroring logic in Checkout.tsx)
+  const subtotal = order.items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+  const shipping = subtotal > 200 ? 0 : 15;
+  const tax = 0; // App currently doesn't track tax separated
+
+  // Map items to match the loop in the EmailJS template screenshot
+  const orders = order.items.map(item => ({
+    name: item.name + (item.size ? ` (${item.size})` : ''),
+    units: item.quantity,
+    price: item.price.toFixed(2),
+  }));
 
   const templateParams = {
-    to_name: order.customerName,
-    to_email: order.email,
     order_id: order.id,
-    order_date: order.date,
-    items: itemList,
-    total_amount: `$${order.total.toFixed(2)}`,
+    orders: orders, // For the {{#orders}} ... {{/orders}} block
+    cost: {
+      shipping: shipping.toFixed(2),
+      tax: tax.toFixed(2),
+      total: order.total.toFixed(2),
+    },
+    email: order.email,
+    to_name: order.customerName,
+    to_email: order.email, // keeping for backward compatibility if needed
+    address: order.address,
+    city: order.city,
+    postal_code: order.postalCode,
     shipping_address: `${order.address}, ${order.city}, ${order.postalCode}`,
     tracking_link: `${window.location.origin}/track-order?orderId=${order.id}`,
-    admin_email: 'maazq12345678@gmail.com', // Notifying admin as well if template supports it
+    admin_notification: `New order from ${order.customerName} (${order.email})`,
   };
 
   try {
