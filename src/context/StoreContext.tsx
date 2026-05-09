@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { products as initialProducts } from '../data/products';
 
 export interface Product {
   id: string;
@@ -8,6 +9,14 @@ export interface Product {
   image: string;
   rating: number;
   description: string;
+}
+
+export interface Order {
+  id: string;
+  customerName: string;
+  total: number;
+  status: 'Pending' | 'Processing' | 'Shipped' | 'Delivered' | 'Cancelled';
+  date: string;
 }
 
 interface CartItem extends Product {
@@ -23,14 +32,29 @@ interface StoreContextType {
   toggleWishlist: (product: Product) => void;
   isDarkMode: boolean;
   toggleDarkMode: () => void;
+  products: Product[];
+  addProduct: (product: Product) => void;
+  updateProduct: (id: string, product: Product) => void;
+  deleteProduct: (id: string) => void;
+  orders: Order[];
+  updateOrderStatus: (id: string, status: Order['status']) => void;
 }
 
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
+
+const initialOrders: Order[] = [
+  { id: 'ORD-001', customerName: 'John Doe', total: 120.0, status: 'Pending', date: new Date(Date.now() - 86400000).toISOString().split('T')[0] },
+  { id: 'ORD-002', customerName: 'Jane Smith', total: 345.5, status: 'Shipped', date: new Date(Date.now() - 172800000).toISOString().split('T')[0] },
+  { id: 'ORD-003', customerName: 'Alice Johnson', total: 45.0, status: 'Delivered', date: new Date(Date.now() - 259200000).toISOString().split('T')[0] },
+];
 
 export const StoreProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [wishlist, setWishlist] = useState<Product[]>([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  
+  const [products, setProducts] = useState<Product[]>(initialProducts);
+  const [orders, setOrders] = useState<Order[]>(initialOrders);
 
   const addToCart = (product: Product) => {
     setCart((prev) => {
@@ -77,6 +101,14 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
+  const addProduct = (product: Product) => setProducts(prev => [...prev, product]);
+  const updateProduct = (id: string, updated: Product) => setProducts(prev => prev.map(p => p.id === id ? updated : p));
+  const deleteProduct = (id: string) => setProducts(prev => prev.filter(p => p.id !== id));
+  
+  const updateOrderStatus = (id: string, status: Order['status']) => {
+    setOrders(prev => prev.map(o => o.id === id ? { ...o, status } : o));
+  };
+
   return (
     <StoreContext.Provider
       value={{
@@ -88,6 +120,12 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
         toggleWishlist,
         isDarkMode,
         toggleDarkMode,
+        products,
+        addProduct,
+        updateProduct,
+        deleteProduct,
+        orders,
+        updateOrderStatus,
       }}
     >
       {children}
