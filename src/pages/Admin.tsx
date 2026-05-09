@@ -170,9 +170,10 @@ const Admin = () => {
                 <>
                   <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100 sticky top-0">
                     <tr>
-                      <th className="px-6 py-3 font-semibold">Order ID</th>
-                      <th className="px-6 py-3 font-semibold">Customer</th>
-                      <th className="px-6 py-3 font-semibold">Date</th>
+                      <th className="px-6 py-3 font-semibold text-left">Order ID</th>
+                      <th className="px-6 py-3 font-semibold text-left">Customer</th>
+                      <th className="px-6 py-3 font-semibold text-left">Address</th>
+                      <th className="px-6 py-3 font-semibold text-left">Date</th>
                       <th className="px-6 py-3 font-semibold text-right">Total</th>
                       <th className="px-6 py-3 font-semibold text-center">Status</th>
                       <th className="px-6 py-3 font-semibold text-center">Actions</th>
@@ -182,7 +183,14 @@ const Admin = () => {
                     {orders.map(order => (
                       <tr key={order.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
                         <td className="px-6 py-4 font-medium">{order.id}</td>
-                        <td className="px-6 py-4">{order.customerName}</td>
+                        <td className="px-6 py-4">
+                          <div>{order.customerName}</div>
+                          <div className="text-xs opacity-60">{order.email}</div>
+                        </td>
+                        <td className="px-6 py-4 text-xs opacity-70">
+                          <div>{order.address}</div>
+                          <div>{order.city}, {order.postalCode}</div>
+                        </td>
                         <td className="px-6 py-4 text-xs opacity-70">{order.date}</td>
                         <td className="px-6 py-4 font-serif text-right">${order.total.toFixed(2)}</td>
                         <td className="px-6 py-4 text-center">
