@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useStore } from '../context/StoreContext';
 import { ShoppingBag, ArrowLeft } from 'lucide-react';
@@ -8,6 +8,7 @@ const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
   const { addToCart, products } = useStore();
   const product = products.find((p) => p.id === id);
+  const [selectedSize, setSelectedSize] = useState<string>('');
 
   if (!product) {
     return (
@@ -65,7 +66,11 @@ const ProductDetails = () => {
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-3">Size</h3>
               <div className="flex gap-3">
                 {['XS', 'S', 'M', 'L', 'XL'].map((size) => (
-                  <button key={size} className="w-12 h-12 border border-gray-300 flex items-center justify-center hover:border-black transition">
+                  <button 
+                    key={size} 
+                    onClick={() => setSelectedSize(size)}
+                    className={`w-12 h-12 border flex items-center justify-center hover:border-black transition ${selectedSize === size ? 'border-black bg-black text-white' : 'border-gray-300'}`}
+                  >
                     {size}
                   </button>
                 ))}
@@ -73,7 +78,13 @@ const ProductDetails = () => {
             </div>
 
             <button 
-              onClick={() => addToCart(product)}
+              onClick={() => {
+                if (!selectedSize) {
+                  alert('Please select a size');
+                  return;
+                }
+                addToCart(product, selectedSize);
+              }}
               className="w-full bg-black text-white py-5 flex items-center justify-center gap-3 text-sm font-semibold tracking-widest uppercase hover:bg-[#d4af37] transition mt-8"
             >
               <ShoppingBag size={20} /> Add to Cart

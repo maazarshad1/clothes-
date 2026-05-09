@@ -56,7 +56,7 @@ const Cart = () => {
                   <div className="w-24 h-32 flex-shrink-0 bg-gray-100 relative">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     <button 
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => removeFromCart(item.cartItemId)}
                       className="absolute -top-2 -left-2 bg-white rounded-full p-1 shadow hover:text-red-500 transition"
                     >
                       <X size={14} />
@@ -65,6 +65,7 @@ const Cart = () => {
                   <div>
                     <h3 className="font-serif text-lg">{item.name}</h3>
                     <p className="text-sm text-gray-500 mb-1">{item.category}</p>
+                    {item.size && <p className="text-sm text-gray-500 mb-1">Size: {item.size}</p>}
                     <p className="font-medium">${item.price.toFixed(2)}</p>
                   </div>
                 </div>
@@ -73,14 +74,14 @@ const Cart = () => {
                 <div className="col-span-3 flex justify-center w-full sm:w-auto">
                   <div className="flex items-center border border-gray-300">
                     <button 
-                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      onClick={() => updateQuantity(item.cartItemId, item.quantity - 1)}
                       className="px-3 py-2 hover:bg-gray-100 transition"
                     >
                       <Minus size={16} />
                     </button>
                     <span className="px-4 py-2 text-sm">{item.quantity}</span>
                     <button 
-                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                      onClick={() => updateQuantity(item.cartItemId, item.quantity + 1)}
                       className="px-3 py-2 hover:bg-gray-100 transition"
                     >
                       <Plus size={16} />
