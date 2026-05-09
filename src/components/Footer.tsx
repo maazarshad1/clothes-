@@ -29,7 +29,7 @@ const Footer = () => {
               <li><Link to="/contact" className="hover:text-[#d4af37] transition">Contact Us</Link></li>
               <li><Link to="#" className="hover:text-[#d4af37] transition">Shipping & Returns</Link></li>
               <li><Link to="#" className="hover:text-[#d4af37] transition">FAQ</Link></li>
-              <li><Link to="#" className="hover:text-[#d4af37] transition">Order Tracking</Link></li>
+              <li><Link to="/track-order" className="hover:text-[#d4af37] transition">Order Tracking</Link></li>
             </ul>
           </div>
 

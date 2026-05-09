@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingBag, Heart, Menu, X, User } from 'lucide-react';
+import { ShoppingBag, Heart, Menu, X, Package } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
 
 const Navbar = () => {
@@ -40,6 +40,9 @@ const Navbar = () => {
 
           {/* Icons */}
           <div className="flex items-center space-x-6">
+            <Link to="/track-order" className="text-black hover:text-[#d4af37] transition hidden md:block" title="Track Order">
+              <Package size={20} />
+            </Link>
             <Link to="/wishlist" className="text-black hover:text-[#d4af37] transition relative">
               <Heart size={20} />
               {wishlist.length > 0 && (
@@ -68,6 +71,7 @@ const Navbar = () => {
             <Link to="/shop?category=Men" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Men</Link>
             <Link to="/shop?category=Kids" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Kids</Link>
             <Link to="/shop?category=Accessories" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Accessories</Link>
+            <Link to="/track-order" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium tracking-widest uppercase p-2 border-b border-black/5">Track Order</Link>
           </div>
         </div>
       )}

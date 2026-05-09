@@ -14,6 +14,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import TrackOrder from './pages/TrackOrder';
 import Admin from './pages/Admin';
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="checkout" element={<Checkout />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="track-order" element={<TrackOrder />} />
           </Route>
           {/* Admin has no standard Layout (Navbar/Footer) */}
           <Route path="/admin" element={<Admin />} />
