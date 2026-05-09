@@ -7,8 +7,8 @@ const Checkout = () => {
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-
   const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [address, setAddress] = useState('');
   const [city, setCity] = useState('');
   const [postalCode, setPostalCode] = useState('');
@@ -26,6 +26,7 @@ const Checkout = () => {
       id: `ORD-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`,
       customerName: `${firstName} ${lastName}`.trim() || 'Guest Customer',
       email,
+      phoneNumber,
       address,
       city,
       postalCode,
@@ -66,7 +67,8 @@ const Checkout = () => {
             <div className="grid grid-cols-2 gap-4">
               <input type="text" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
               <input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
-              <input type="email" placeholder="Email Address" value={email} onChange={e => setEmail(e.target.value)} required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="email" placeholder="Email Address" value={email} onChange={e => setEmail(e.target.value)} required className="col-span-2 sm:col-span-1 p-3 border border-gray-300 focus:outline-none focus:border-black" />
+              <input type="tel" placeholder="Phone Number" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} required className="col-span-2 sm:col-span-1 p-3 border border-gray-300 focus:outline-none focus:border-black" />
               <input type="text" placeholder="Address" value={address} onChange={e => setAddress(e.target.value)} required className="col-span-2 p-3 border border-gray-300 focus:outline-none focus:border-black" />
               <input type="text" placeholder="City" value={city} onChange={e => setCity(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />
               <input type="text" placeholder="Postal Code" value={postalCode} onChange={e => setPostalCode(e.target.value)} required className="p-3 border border-gray-300 focus:outline-none focus:border-black" />

@@ -186,6 +186,7 @@ const Admin = () => {
                         <td className="px-6 py-4">
                           <div>{order.customerName}</div>
                           <div className="text-xs opacity-60">{order.email}</div>
+                          <div className="text-xs opacity-60">{order.phoneNumber}</div>
                         </td>
                         <td className="px-6 py-4 text-xs opacity-70">
                           <div>{order.address}</div>
@@ -326,7 +327,8 @@ const Admin = () => {
                 <div>
                   <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-2">Customer Info</h3>
                   <p className="font-medium">{viewingOrder.customerName}</p>
-                  <p>{viewingOrder.email}</p>
+                  <p className="text-zinc-600">{viewingOrder.email}</p>
+                  <p className="text-zinc-600">{viewingOrder.phoneNumber}</p>
                 </div>
                 <div>
                   <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-2">Shipping Address</h3>
@@ -347,11 +349,11 @@ const Admin = () => {
                 <h3 className="text-[10px] uppercase tracking-widest opacity-50 font-bold mb-4">Purchased Items</h3>
                 <div className="space-y-4">
                   {viewingOrder.items?.map((item) => (
-                    <div key={item.id} className="flex gap-4 items-center">
+                    <div key={item.cartItemId || item.id} className="flex gap-4 items-center">
                       <img src={item.image} alt={item.name} className="w-12 h-12 object-cover bg-zinc-100" />
                       <div className="flex-1">
                         <p className="font-medium text-sm">{item.name}</p>
-                        <p className="text-xs text-zinc-500">Qty: {item.quantity}</p>
+                        <p className="text-xs text-zinc-500">Qty: {item.quantity}{item.size ? ` • Size: ${item.size}` : ''}</p>
                       </div>
                       <p className="font-serif">${(item.price * item.quantity).toFixed(2)}</p>
                     </div>
