@@ -36,13 +36,16 @@ export const sendOrderConfirmationEmail = async (order: Order) => {
       tax: tax.toFixed(2),
       total: order.total.toFixed(2),
     },
+    // Recipient email aliases to ensure EmailJS finds the right variable
     email: order.email,
+    to_email: order.email,
+    customer_email: order.email,
+    
+    // Customer info
     to_name: order.customerName,
-    to_email: order.email, // keeping for backward compatibility if needed
-    address: order.address,
-    city: order.city,
-    postal_code: order.postalCode,
-    shipping_address: `${order.address}, ${order.city}, ${order.postalCode}`,
+    customer_name: order.customerName,
+    
+    // Links and notifications
     tracking_link: `${window.location.origin}/track-order?orderId=${order.id}`,
     admin_notification: `New order from ${order.customerName} (${order.email})`,
   };
