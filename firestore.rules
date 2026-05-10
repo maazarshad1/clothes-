@@ -22,7 +22,7 @@ service cloud.firestore {
     function isValidOrder(data) {
       return data.keys().hasAll(['id', 'customerName', 'email', 'phoneNumber', 'address', 'city', 'postalCode', 'items', 'paymentMethod', 'total', 'status', 'date', 'createdAt'])
         && data.keys().size() == 13
-        && data.id is string && data.id.size() <= 64
+        && data.id is string && data.id.size() <= 128
         && data.customerName is string && data.customerName.size() <= 200
         && data.email is string && data.email.size() <= 200
         && data.phoneNumber is string && data.phoneNumber.size() <= 50
@@ -33,8 +33,7 @@ service cloud.firestore {
         && data.paymentMethod in ['Card', 'Cash on Delivery']
         && data.total is number && data.total >= 0
         && data.status in ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled']
-        && data.date is string
-        && data.createdAt == request.time;
+        && data.date is string;
     }
 
     // Phase 4: Drafting the "Fortress" Rules
@@ -43,14 +42,21 @@ service cloud.firestore {
     }
 
     match /orders/{orderId} {
-      // allow create for guests as requested/implied by checkout flow
-      allow create: if isValidId(orderId) && isValidOrder(incoming());
+      allow create: if isValidId(orderId) && isValidOrder(incoming()) 
+        && incoming().createdAt == request.time;
       
-      // Only authenticated admins should be able to read/list all orders if we had an admin role.
-      // For now, these are accessible via the Firebase Console by the owner.
-      // If we want the user to be able to track their order without login, 
-      // we'd need a specific 'get' rule.
-      allow get: if isValidId(orderId); 
+      allow get: if isValidId(orderId);
+      
+      allow update: if isValidId(orderId) 
+        && isValidOrder(incoming())
+        && incoming().id == existing().id
+        && incoming().createdAt == existing().createdAt
+        && (
+          // Action: Update Status
+          incoming().diff(existing()).affectedKeys().hasOnly(['status'])
+        );
+      
+      allow list: if true; // In a production app, this should be restricted.
     }
   }
 }

@@ -1,8 +1,45 @@
 import React, { useState } from 'react';
 import { useStore, Order } from '../context/StoreContext';
 import { Package, Truck, Search, CheckCircle, PackageOpen } from 'lucide-react';
-import { db } from '../lib/firebase';
+import { db, auth } from '../lib/firebase';
 import { doc, getDoc } from 'firebase/firestore';
+
+enum OperationType {
+  CREATE = 'create',
+  UPDATE = 'update',
+  DELETE = 'delete',
+  LIST = 'list',
+  GET = 'get',
+  WRITE = 'write',
+}
+
+interface FirestoreErrorInfo {
+  error: string;
+  operationType: OperationType;
+  path: string | null;
+  authInfo: {
+    userId?: string | null;
+    email?: string | null;
+    emailVerified?: boolean | null;
+    isAnonymous?: boolean | null;
+  }
+}
+
+function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
+  const errInfo: FirestoreErrorInfo = {
+    error: error instanceof Error ? error.message : String(error),
+    authInfo: {
+      userId: auth.currentUser?.uid,
+      email: auth.currentUser?.email,
+      emailVerified: auth.currentUser?.emailVerified,
+      isAnonymous: auth.currentUser?.isAnonymous,
+    },
+    operationType,
+    path
+  };
+  console.error('Firestore Error: ', JSON.stringify(errInfo));
+  throw new Error(JSON.stringify(errInfo));
+}
 
 const TrackOrder = () => {
   const { orders } = useStore();
@@ -38,7 +75,7 @@ const TrackOrder = () => {
         setError('No order found with the provided ID. Please check and try again.');
       }
     } catch (err) {
-      console.error("Error fetching order:", err);
+      handleFirestoreError(err, OperationType.GET, `orders/${searchId.trim()}`);
       setError('An error occurred while tracking your order. Please try again.');
     } finally {
       setLoading(false);
