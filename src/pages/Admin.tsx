@@ -247,7 +247,7 @@ const Admin = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="flex h-screen w-full items-center justify-center bg-[#F5F2ED] font-sans">
+      <div className="flex flex-col h-screen w-full items-center justify-center bg-[#F5F2ED] font-sans p-4">
         <div className="bg-white p-8 border border-[rgba(0,0,0,0.05)] shadow-sm max-w-sm w-full">
           <h2 className="text-2xl font-serif mb-6 text-center">Admin Access</h2>
           <form onSubmit={handleLogin} className="space-y-4">
@@ -266,6 +266,27 @@ const Admin = () => {
               Login
             </button>
           </form>
+
+          <div className="mt-8 pt-8 border-t border-zinc-100">
+            {deferredPrompt ? (
+              <button 
+                onClick={handleInstallClick}
+                className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-3 text-[10px] uppercase tracking-widest font-bold hover:bg-blue-700 transition-colors"
+              >
+                <Download size={14} />
+                Install Mobile App
+              </button>
+            ) : (
+              <div className="text-center">
+                <p className="text-[9px] text-zinc-400 uppercase tracking-widest mb-1">To install as App on mobile:</p>
+                <p className="text-[9px] text-zinc-500 uppercase tracking-widest font-medium">
+                  iOS: Tap Share ⎋ then "Add to Home Screen"
+                  <br />
+                  Android: Tap ⋮ then "Install app"
+                </p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );
