@@ -391,8 +391,8 @@ const Admin = () => {
       `}>
         <div className="p-8 flex justify-between items-start">
           <div>
-            <h2 className="text-white font-serif italic text-2xl tracking-widest uppercase">Fashion<br/>Admin</h2>
-            <p className="text-[10px] tracking-[0.2em] mt-2 opacity-50">ADMINISTRATOR</p>
+            <h2 className="text-white font-serif italic text-2xl tracking-widest uppercase text-white/90">Fashion<br/>Admin</h2>
+            <p className="text-[10px] tracking-[0.2em] mt-2 opacity-30 text-white/60">ADMINISTRATOR</p>
           </div>
           <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden text-white p-2">
             <X size={20} />
@@ -501,37 +501,37 @@ const Admin = () => {
           </div>
 
           <div className="min-h-0 bg-white border border-zinc-200 flex flex-col overflow-hidden">
-            <div className="px-6 py-4 border-b border-zinc-100 flex justify-between items-center bg-white">
-              <h3 className="text-xs uppercase tracking-[0.2em] font-bold">
+            <div className="px-6 py-4 border-b border-zinc-100 flex justify-between items-center">
+              <h3 className="text-xs uppercase tracking-[0.2em] font-bold opacity-40">
                 {activeTab === 'products' ? 'Inventory' : 'Recent Orders'}
               </h3>
             </div>
-            <div className="overflow-x-auto bg-white">
+            <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse min-w-[700px] lg:min-w-0">
                 {activeTab === 'products' ? (
                   <>
                     <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100">
                       <tr>
-                        <th className="px-4 lg:px-6 py-3 font-semibold">Image</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold">Product</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold">Category</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-right">Price</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-center">Actions</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold">Image</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold">Product</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold">Category</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-right">Price</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-center">Actions</th>
                       </tr>
                     </thead>
-                    <tbody className="text-sm">
+                    <tbody className="text-xs">
                       {products.map(product => (
-                        <tr key={product.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
-                          <td className="px-4 lg:px-6 py-4">
-                            <img src={product.image} alt={product.name} className="w-10 h-10 object-cover" />
+                        <tr key={product.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50">
+                          <td className="px-4 lg:px-6 py-4 text-center">
+                            <img src={product.image} alt={product.name} className="w-10 h-10 object-cover mx-auto" />
                           </td>
-                          <td className="px-4 lg:px-6 py-4 font-medium">{product.name}</td>
-                          <td className="px-4 lg:px-6 py-4 text-xs opacity-70">{product.category}</td>
-                          <td className="px-4 lg:px-6 py-4 font-serif text-right">${product.price.toFixed(2)}</td>
+                          <td className="px-4 lg:px-6 py-4 font-bold">{product.name}</td>
+                          <td className="px-4 lg:px-6 py-4 text-[10px] opacity-40 font-medium uppercase tracking-wider">{product.category}</td>
+                          <td className="px-4 lg:px-6 py-4 font-serif text-right font-medium">${product.price.toFixed(2)}</td>
                           <td className="px-4 lg:px-6 py-4">
                             <div className="flex justify-center gap-4">
-                              <button onClick={() => setEditingProduct(product)} className="text-[#C5A059] hover:underline text-xs uppercase tracking-widest font-semibold">Edit</button>
-                              <button onClick={() => handleDeleteProduct(product.id)} className="text-rose-600 hover:underline text-xs uppercase tracking-widest font-semibold">Delete</button>
+                              <button onClick={() => setEditingProduct(product)} className="text-[#C5A059] hover:underline text-[9px] uppercase tracking-widest font-bold">Edit</button>
+                              <button onClick={() => handleDeleteProduct(product.id)} className="text-rose-600 hover:underline text-[9px] uppercase tracking-widest font-bold">Delete</button>
                             </div>
                           </td>
                         </tr>
@@ -542,43 +542,43 @@ const Admin = () => {
                   <>
                     <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100">
                       <tr>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-left">ID</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-left">Customer</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-left hidden lg:table-cell">Address</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-left">Date</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-right">Total</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-center">Status</th>
-                        <th className="px-4 lg:px-6 py-3 font-semibold text-center">Actions</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-left">ID</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-left">Customer</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-left hidden lg:table-cell">Address</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-left">Date</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-right">Total</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-center">Status</th>
+                        <th className="px-4 lg:px-6 py-3 font-bold text-center">Actions</th>
                       </tr>
                     </thead>
-                    <tbody className="text-sm">
+                    <tbody className="text-xs">
                       {orders.map(order => (
-                        <tr key={order.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
-                          <td className="px-4 lg:px-6 py-4 font-medium">{order.id}</td>
+                        <tr key={order.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50">
+                          <td className="px-4 lg:px-6 py-4 font-bold">{order.id}</td>
                           <td className="px-4 lg:px-6 py-4">
-                            <div className="truncate max-w-[100px] lg:max-w-none">{order.customerName}</div>
-                            <div className="text-[10px] opacity-60 truncate lg:max-w-none">{order.email}</div>
+                            <div className="truncate max-w-[100px] lg:max-w-none font-medium text-black">{order.customerName}</div>
+                            <div className="text-[9px] opacity-30 truncate lg:max-w-none uppercase tracking-tighter">{order.email}</div>
                           </td>
-                          <td className="px-4 lg:px-6 py-4 text-xs opacity-70 hidden lg:table-cell">
+                          <td className="px-4 lg:px-6 py-4 text-[10px] opacity-30 hidden lg:table-cell">
                             <div className="truncate">{order.address}</div>
                             <div className="truncate">{order.city}, {order.postalCode}</div>
                           </td>
-                          <td className="px-4 lg:px-6 py-4 text-[10px] lg:text-xs opacity-70">{order.date}</td>
-                          <td className="px-4 lg:px-6 py-4 font-serif text-right">${order.total.toFixed(2)}</td>
+                          <td className="px-4 lg:px-6 py-4 text-[10px] opacity-30 tracking-wider uppercase">{order.date}</td>
+                          <td className="px-4 lg:px-6 py-4 font-serif text-right font-medium">${order.total.toFixed(2)}</td>
                           <td className="px-4 lg:px-6 py-4 text-center">
-                            <span className={`px-2 py-1 text-[8px] lg:text-[10px] uppercase tracking-widest font-bold ${
-                              order.status === 'Delivered' ? 'text-green-600 bg-green-50' :
-                              order.status === 'Shipped' ? 'text-blue-600 bg-blue-50' :
-                              order.status === 'Pending' ? 'text-amber-600 bg-amber-50' :
-                              'text-zinc-600 bg-zinc-100'
+                            <span className={`px-2 py-1 text-[8px] uppercase tracking-widest font-bold border ${
+                              order.status === 'Delivered' ? 'text-green-600 border-green-600/20 bg-green-50' :
+                              order.status === 'Shipped' ? 'text-blue-600 border-blue-600/20 bg-blue-50' :
+                              order.status === 'Pending' ? 'text-amber-600 border-amber-600/20 bg-amber-50' :
+                              'text-zinc-600 border-zinc-100 bg-zinc-50'
                             }`}>
                               {order.status}
                             </span>
                           </td>
                           <td className="px-4 lg:px-6 py-4 text-center">
                             <div className="flex flex-col lg:flex-row justify-center gap-2 lg:gap-4">
-                              <button onClick={() => setViewingOrder(order)} className="text-blue-600 hover:underline text-[10px] lg:text-xs uppercase tracking-widest font-semibold">View</button>
-                              <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-[10px] lg:text-xs uppercase tracking-widest font-semibold">Update</button>
+                              <button onClick={() => setViewingOrder(order)} className="text-blue-600 hover:underline text-[9px] uppercase tracking-widest font-bold">View</button>
+                              <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-[9px] uppercase tracking-widest font-bold">Update</button>
                             </div>
                           </td>
                         </tr>

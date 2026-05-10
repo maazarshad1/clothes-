@@ -25,7 +25,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" 
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
         
         {/* Quick Actions */}
         <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
@@ -38,7 +38,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             </button>
             <button 
               onClick={() => toggleWishlist(product)}
-              className="bg-white text-black p-3 hover:bg-black hover:text-white transition flex items-center justify-center"
+              className="bg-white text-black border border-black/10 p-3 hover:bg-black hover:text-white transition flex items-center justify-center"
             >
               <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
             </button>
@@ -121,11 +121,11 @@ const Shop = () => {
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full border-b border-gray-300 py-2 pl-8 pr-4 text-sm focus:outline-none focus:border-black transition-colors"
+                className="w-full border-b border-gray-300 bg-transparent py-2 pl-8 pr-4 text-sm text-black placeholder-gray-400 focus:outline-none focus:border-black transition-colors"
               />
               <Search size={16} className="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400" />
             </div>
-            <button className="flex items-center gap-2 text-sm uppercase tracking-widest text-gray-600 hover:text-black">
+            <button className="flex items-center gap-2 text-xs uppercase tracking-widest text-gray-500 hover:text-black">
               <SlidersHorizontal size={16} /> Filters
             </button>
           </div>

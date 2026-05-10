@@ -22,7 +22,7 @@ const Navbar = () => {
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
-
+[... skipping many lines ...]
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center justify-center md:justify-start flex-1 md:flex-none">
             <Link to="/" className="text-2xl font-serif text-black tracking-widest font-semibold uppercase">
@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-5">
             <Link to="/track-order" className="text-black hover:text-[#d4af37] transition hidden md:block" title="Track Order">
               <Package size={20} />
             </Link>

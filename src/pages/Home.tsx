@@ -23,7 +23,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" 
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
         
         {/* Quick Actions */}
         <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
@@ -36,7 +36,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             </button>
             <button 
               onClick={() => toggleWishlist(product)}
-              className="bg-white text-black p-3 hover:bg-black hover:text-white transition flex items-center justify-center"
+              className="bg-white text-black border border-black/10 p-3 hover:bg-black hover:text-white transition flex items-center justify-center"
             >
               <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
             </button>
@@ -81,11 +81,11 @@ const Home = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <h4 className="text-[10px] tracking-[0.3em] font-semibold uppercase mb-2 text-white/80">Premium Collection</h4>
+            <h4 className="text-[10px] tracking-[0.3em] font-semibold uppercase mb-2 text-white">Premium Collection</h4>
             <h1 className="font-serif text-4xl sm:text-6xl font-light mb-6 leading-tight">Urban Elegance</h1>
             <Link 
               to="/shop" 
-              className="inline-block border border-white/30 bg-white/10 backdrop-blur-sm px-8 py-3 text-[10px] tracking-[0.2em] uppercase font-medium hover:bg-white hover:text-black transition duration-300"
+              className="inline-block border border-white px-8 py-3 text-xs tracking-widest uppercase font-medium hover:bg-white hover:text-black transition duration-300"
             >
               Shop All
             </Link>
@@ -94,7 +94,7 @@ const Home = () => {
       </section>
 
       {/* Featured Products (Moved up and section padding reduced) */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white shadow-sm border border-black/5 mt-[-2rem] relative z-10">
         <div className="flex flex-col items-center mb-12">
           <h2 className="font-serif text-3xl mb-3 text-center">New Arrivals</h2>
           <div className="w-12 h-px bg-[#d4af37]" />
