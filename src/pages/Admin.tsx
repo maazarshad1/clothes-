@@ -56,6 +56,7 @@ const Admin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passcode, setPasscode] = useState('');
   const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus, addOrder, syncOrders } = useStore();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'products' | 'orders'>('products');
   
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
@@ -213,153 +214,189 @@ const Admin = () => {
   };
 
   return (
-    <div className="flex h-screen w-full bg-[#F5F2ED] font-sans overflow-hidden text-[#111111]">
+    <div className="flex h-screen w-full bg-[#F5F2ED] font-sans overflow-hidden text-[#111111] relative">
       <Toaster position="top-right" />
-      <div className="w-64 bg-[#111111] text-zinc-400 flex flex-col flex-shrink-0">
-        <div className="p-8">
-          <h2 className="text-white font-serif italic text-2xl tracking-widest uppercase">Fashion<br/>Admin</h2>
-          <p className="text-[10px] tracking-[0.2em] mt-2 opacity-50">ADMINISTRATOR</p>
+      
+      {/* Mobile Sidebar Overlay */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
+      <div className={`
+        fixed inset-y-0 left-0 w-64 bg-[#111111] text-zinc-400 flex flex-col z-50 transition-transform duration-300 lg:relative lg:translate-x-0
+        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+      `}>
+        <div className="p-8 flex justify-between items-start">
+          <div>
+            <h2 className="text-white font-serif italic text-2xl tracking-widest uppercase">Fashion<br/>Admin</h2>
+            <p className="text-[10px] tracking-[0.2em] mt-2 opacity-50">ADMINISTRATOR</p>
+          </div>
+          <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden text-white p-2">
+            <X size={20} />
+          </button>
         </div>
         <ul className="flex-1 px-4 space-y-1 list-none m-0">
-          <li className={`border-l-[3px] ${activeTab === 'products' ? 'border-[#C5A059] bg-[rgba(255,255,255,0.05)] text-white' : 'border-transparent hover:text-white'} flex items-center px-4 py-3 text-sm cursor-pointer transition`} onClick={() => setActiveTab('products')}>Products</li>
-          <li className={`border-l-[3px] ${activeTab === 'orders' ? 'border-[#C5A059] bg-[rgba(255,255,255,0.05)] text-white' : 'border-transparent hover:text-white'} flex items-center px-4 py-3 text-sm cursor-pointer transition`} onClick={() => setActiveTab('orders')}>Orders</li>
+          <li 
+            className={`border-l-[3px] ${activeTab === 'products' ? 'border-[#C5A059] bg-[rgba(255,255,255,0.05)] text-white' : 'border-transparent hover:text-white'} flex items-center px-4 py-3 text-sm cursor-pointer transition`} 
+            onClick={() => { setActiveTab('products'); setIsSidebarOpen(false); }}
+          >
+            Products
+          </li>
+          <li 
+            className={`border-l-[3px] ${activeTab === 'orders' ? 'border-[#C5A059] bg-[rgba(255,255,255,0.05)] text-white' : 'border-transparent hover:text-white'} flex items-center px-4 py-3 text-sm cursor-pointer transition`} 
+            onClick={() => { setActiveTab('orders'); setIsSidebarOpen(false); }}
+          >
+            Orders
+          </li>
         </ul>
       </div>
 
-      <div className="flex-1 flex flex-col p-10 overflow-auto relative">
-        <div className="flex justify-between items-end mb-10">
-          <div className="space-y-1">
-            <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Overview</span>
-            <div className="flex items-center gap-4">
-              <h1 className="text-4xl font-serif italic">Admin Dashboard</h1>
-              {notificationPermission !== 'granted' && (
-                <button 
-                  onClick={requestNotificationPermission}
-                  className="flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 text-[10px] uppercase tracking-widest font-bold border border-amber-200 hover:bg-amber-100 transition-colors"
-                >
-                  <Bell size={12} />
-                  Enable Browser Notifications
-                </button>
-              )}
+      <div className="flex-1 flex flex-col overflow-auto relative">
+        {/* Mobile Header */}
+        <div className="lg:hidden flex items-center justify-between p-4 bg-[#111111] text-white">
+          <h2 className="text-sm font-serif italic tracking-widest uppercase">Urban Style</h2>
+          <button onClick={() => setIsSidebarOpen(true)} className="p-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <div className="p-4 lg:p-10">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 mb-10">
+            <div className="space-y-1">
+              <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Overview</span>
+              <div className="flex flex-col lg:flex-row lg:items-center gap-4">
+                <h1 className="text-3xl lg:text-4xl font-serif italic">Admin Dashboard</h1>
+                {notificationPermission !== 'granted' && (
+                  <button 
+                    onClick={requestNotificationPermission}
+                    className="flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 text-[10px] uppercase tracking-widest font-bold border border-amber-200 hover:bg-amber-100 transition-colors w-fit"
+                  >
+                    <Bell size={12} />
+                    Enable Browser Notifications
+                  </button>
+                )}
+              </div>
+            </div>
+            {activeTab === 'products' && (
+              <button 
+                onClick={() => setIsAddingProduct(true)}
+                className="px-6 py-3 lg:py-2 bg-[#111111] text-white text-xs uppercase tracking-widest hover:bg-black transition-colors w-full lg:w-auto"
+              >
+                Add Product
+              </button>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-10">
+            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
+              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Products</span>
+              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium">{products.length}</div>
+            </div>
+            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
+              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Orders</span>
+              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium">{orders.length}</div>
+            </div>
+            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
+              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Customers</span>
+              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium">890</div>
+            </div>
+            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
+              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold font-bold">Revenue</span>
+              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium truncate">${orders.reduce((acc, curr) => acc + curr.total, 0).toFixed(2)}</div>
             </div>
           </div>
-          {activeTab === 'products' && (
-            <button 
-              onClick={() => setIsAddingProduct(true)}
-              className="px-6 py-2 bg-[#111111] text-white text-xs uppercase tracking-widest hover:bg-black transition-colors"
-            >
-              Add Product
-            </button>
-          )}
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          <div className="bg-white border border-[rgba(0,0,0,0.05)] p-6 flex flex-col justify-between h-32">
-            <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Total Products</span>
-            <div className="text-2xl mt-2 font-serif tracking-tight font-medium">{products.length}</div>
-          </div>
-          <div className="bg-white border border-[rgba(0,0,0,0.05)] p-6 flex flex-col justify-between h-32">
-            <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Total Orders</span>
-            <div className="text-2xl mt-2 font-serif tracking-tight font-medium">{orders.length}</div>
-          </div>
-          <div className="bg-white border border-[rgba(0,0,0,0.05)] p-6 flex flex-col justify-between h-32">
-            <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Total Customers</span>
-            <div className="text-2xl mt-2 font-serif tracking-tight font-medium">890</div>
-          </div>
-          <div className="bg-white border border-[rgba(0,0,0,0.05)] p-6 flex flex-col justify-between h-32">
-            <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Revenue</span>
-            <div className="text-2xl mt-2 font-serif tracking-tight font-medium">${orders.reduce((acc, curr) => acc + curr.total, 0).toFixed(2)}</div>
-          </div>
-        </div>
-
-        <div className="flex-1 min-h-0 bg-white border border-zinc-200 flex flex-col">
-          <div className="px-6 py-4 border-b border-zinc-100 flex justify-between items-center bg-white">
-            <h3 className="text-xs uppercase tracking-[0.2em] font-bold">
-              {activeTab === 'products' ? 'Products Inventory' : 'Recent Orders'}
-            </h3>
-          </div>
-          <div className="overflow-y-auto flex-1 bg-white">
-            <table className="w-full text-left border-collapse">
-              {activeTab === 'products' ? (
-                <>
-                  <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100 sticky top-0">
-                    <tr>
-                      <th className="px-6 py-3 font-semibold">Image</th>
-                      <th className="px-6 py-3 font-semibold">Product</th>
-                      <th className="px-6 py-3 font-semibold">Category</th>
-                      <th className="px-6 py-3 font-semibold text-right">Price</th>
-                      <th className="px-6 py-3 font-semibold text-center">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-sm">
-                    {products.map(product => (
-                      <tr key={product.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
-                        <td className="px-6 py-4">
-                          <img src={product.image} alt={product.name} className="w-10 h-10 object-cover" />
-                        </td>
-                        <td className="px-6 py-4 font-medium">{product.name}</td>
-                        <td className="px-6 py-4 text-xs opacity-70">{product.category}</td>
-                        <td className="px-6 py-4 font-serif text-right">${product.price.toFixed(2)}</td>
-                        <td className="px-6 py-4">
-                          <div className="flex justify-center gap-4">
-                            <button onClick={() => setEditingProduct(product)} className="text-[#C5A059] hover:underline text-xs uppercase tracking-widest font-semibold">Edit</button>
-                            <button onClick={() => deleteProduct(product.id)} className="text-rose-600 hover:underline text-xs uppercase tracking-widest font-semibold">Delete</button>
-                          </div>
-                        </td>
+          <div className="min-h-0 bg-white border border-zinc-200 flex flex-col overflow-hidden">
+            <div className="px-6 py-4 border-b border-zinc-100 flex justify-between items-center bg-white">
+              <h3 className="text-xs uppercase tracking-[0.2em] font-bold">
+                {activeTab === 'products' ? 'Inventory' : 'Recent Orders'}
+              </h3>
+            </div>
+            <div className="overflow-x-auto bg-white">
+              <table className="w-full text-left border-collapse min-w-[700px] lg:min-w-0">
+                {activeTab === 'products' ? (
+                  <>
+                    <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100">
+                      <tr>
+                        <th className="px-4 lg:px-6 py-3 font-semibold">Image</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold">Product</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold">Category</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-right">Price</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-center">Actions</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </>
-              ) : (
-                <>
-                  <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100 sticky top-0">
-                    <tr>
-                      <th className="px-6 py-3 font-semibold text-left">Order ID</th>
-                      <th className="px-6 py-3 font-semibold text-left">Customer</th>
-                      <th className="px-6 py-3 font-semibold text-left">Address</th>
-                      <th className="px-6 py-3 font-semibold text-left">Date</th>
-                      <th className="px-6 py-3 font-semibold text-right">Total</th>
-                      <th className="px-6 py-3 font-semibold text-center">Status</th>
-                      <th className="px-6 py-3 font-semibold text-center">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-sm">
-                    {orders.map(order => (
-                      <tr key={order.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
-                        <td className="px-6 py-4 font-medium">{order.id}</td>
-                        <td className="px-6 py-4">
-                          <div>{order.customerName}</div>
-                          <div className="text-xs opacity-60">{order.email}</div>
-                          <div className="text-xs opacity-60">{order.phoneNumber}</div>
-                        </td>
-                        <td className="px-6 py-4 text-xs opacity-70">
-                          <div>{order.address}</div>
-                          <div>{order.city}, {order.postalCode}</div>
-                        </td>
-                        <td className="px-6 py-4 text-xs opacity-70">{order.date}</td>
-                        <td className="px-6 py-4 font-serif text-right">${order.total.toFixed(2)}</td>
-                        <td className="px-6 py-4 text-center">
-                          <span className={`px-2 py-1 text-[10px] uppercase tracking-widest font-bold ${
-                            order.status === 'Delivered' ? 'text-green-600 bg-green-50' :
-                            order.status === 'Shipped' ? 'text-blue-600 bg-blue-50' :
-                            order.status === 'Pending' ? 'text-amber-600 bg-amber-50' :
-                            'text-zinc-600 bg-zinc-100'
-                          }`}>
-                            {order.status}
-                          </span>
-                        </td>
-                        <td className="px-6 py-4 text-center">
-                          <div className="flex justify-center gap-4">
-                            <button onClick={() => setViewingOrder(order)} className="text-blue-600 hover:underline text-xs uppercase tracking-widest font-semibold">View Details</button>
-                            <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-xs uppercase tracking-widest font-semibold">Update Status</button>
-                          </div>
-                        </td>
+                    </thead>
+                    <tbody className="text-sm">
+                      {products.map(product => (
+                        <tr key={product.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
+                          <td className="px-4 lg:px-6 py-4">
+                            <img src={product.image} alt={product.name} className="w-10 h-10 object-cover" />
+                          </td>
+                          <td className="px-4 lg:px-6 py-4 font-medium">{product.name}</td>
+                          <td className="px-4 lg:px-6 py-4 text-xs opacity-70">{product.category}</td>
+                          <td className="px-4 lg:px-6 py-4 font-serif text-right">${product.price.toFixed(2)}</td>
+                          <td className="px-4 lg:px-6 py-4">
+                            <div className="flex justify-center gap-4">
+                              <button onClick={() => setEditingProduct(product)} className="text-[#C5A059] hover:underline text-xs uppercase tracking-widest font-semibold">Edit</button>
+                              <button onClick={() => deleteProduct(product.id)} className="text-rose-600 hover:underline text-xs uppercase tracking-widest font-semibold">Delete</button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </>
+                ) : (
+                  <>
+                    <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100">
+                      <tr>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-left">ID</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-left">Customer</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-left hidden lg:table-cell">Address</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-left">Date</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-right">Total</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-center">Status</th>
+                        <th className="px-4 lg:px-6 py-3 font-semibold text-center">Actions</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </>
-              )}
-            </table>
+                    </thead>
+                    <tbody className="text-sm">
+                      {orders.map(order => (
+                        <tr key={order.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50/50">
+                          <td className="px-4 lg:px-6 py-4 font-medium">{order.id}</td>
+                          <td className="px-4 lg:px-6 py-4">
+                            <div className="truncate max-w-[100px] lg:max-w-none">{order.customerName}</div>
+                            <div className="text-[10px] opacity-60 truncate lg:max-w-none">{order.email}</div>
+                          </td>
+                          <td className="px-4 lg:px-6 py-4 text-xs opacity-70 hidden lg:table-cell">
+                            <div className="truncate">{order.address}</div>
+                            <div className="truncate">{order.city}, {order.postalCode}</div>
+                          </td>
+                          <td className="px-4 lg:px-6 py-4 text-[10px] lg:text-xs opacity-70">{order.date}</td>
+                          <td className="px-4 lg:px-6 py-4 font-serif text-right">${order.total.toFixed(2)}</td>
+                          <td className="px-4 lg:px-6 py-4 text-center">
+                            <span className={`px-2 py-1 text-[8px] lg:text-[10px] uppercase tracking-widest font-bold ${
+                              order.status === 'Delivered' ? 'text-green-600 bg-green-50' :
+                              order.status === 'Shipped' ? 'text-blue-600 bg-blue-50' :
+                              order.status === 'Pending' ? 'text-amber-600 bg-amber-50' :
+                              'text-zinc-600 bg-zinc-100'
+                            }`}>
+                              {order.status}
+                            </span>
+                          </td>
+                          <td className="px-4 lg:px-6 py-4 text-center">
+                            <div className="flex flex-col lg:flex-row justify-center gap-2 lg:gap-4">
+                              <button onClick={() => setViewingOrder(order)} className="text-blue-600 hover:underline text-[10px] lg:text-xs uppercase tracking-widest font-semibold">View</button>
+                              <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-[10px] lg:text-xs uppercase tracking-widest font-semibold">Update</button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </>
+                )}
+              </table>
+            </div>
           </div>
         </div>
 
