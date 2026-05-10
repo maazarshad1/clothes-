@@ -38,6 +38,10 @@ service cloud.firestore {
     }
 
     // Phase 4: Drafting the "Fortress" Rules
+    match /test/connection {
+      allow get: if true;
+    }
+
     match /orders/{orderId} {
       // allow create for guests as requested/implied by checkout flow
       allow create: if isValidId(orderId) && isValidOrder(incoming());
