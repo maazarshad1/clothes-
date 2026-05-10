@@ -48,6 +48,7 @@ interface StoreContextType {
   orders: Order[];
   updateOrderStatus: (id: string, status: Order['status']) => void;
   addOrder: (order: Order) => void;
+  syncOrders: (syncedOrders: Order[]) => void;
   clearCart: () => void;
 }
 
@@ -153,6 +154,7 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   };
   
   const addOrder = (order: Order) => setOrders(prev => [order, ...prev]);
+  const syncOrders = (syncedOrders: Order[]) => setOrders(syncedOrders);
   const clearCart = () => setCart([]);
 
   return (
@@ -173,6 +175,7 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
         orders,
         updateOrderStatus,
         addOrder,
+        syncOrders,
         clearCart,
       }}
     >

@@ -2,11 +2,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useStore, Product, Order } from '../context/StoreContext';
 import { X, Bell } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
+import { db, auth } from '../lib/firebase';
+import { collection, onSnapshot, query, orderBy, doc, updateDoc } from 'firebase/firestore';
+
+enum OperationType {
+  CREATE = 'create',
+  UPDATE = 'update',
+  DELETE = 'delete',
+  LIST = 'list',
+  GET = 'get',
+  WRITE = 'write',
+}
+
+function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
+  console.error(`Firestore Error [${operationType}] at ${path}:`, error);
+}
 
 const Admin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passcode, setPasscode] = useState('');
-  const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus } = useStore();
+  const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus, addOrder, syncOrders } = useStore();
   const [activeTab, setActiveTab] = useState<'products' | 'orders'>('products');
   
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
@@ -14,52 +29,79 @@ const Admin = () => {
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
   const [viewingOrder, setViewingOrder] = useState<Order | null>(null);
 
-  const prevOrdersLength = useRef(orders.length);
+  const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>('default');
+  const [isFirstSync, setIsFirstSync] = useState(true);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'store_orders' && e.newValue) {
-        const newOrders = JSON.parse(e.newValue);
-        if (newOrders.length > prevOrdersLength.current) {
-          toast.success(`New Order Detected!`, {
-            duration: 5000,
-            icon: '🛍️',
-            style: {
-              borderRadius: '0px',
-              background: '#111111',
-              color: '#fff',
-              fontSize: '12px',
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase'
-            }
-          });
-          prevOrdersLength.current = newOrders.length;
-        }
+    if (typeof window !== 'undefined') {
+      if ('Notification' in window) {
+        setNotificationPermission(Notification.permission);
       }
-    };
+      audioRef.current = new Audio('https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3');
+    }
+  }, []);
 
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, [isAuthenticated]);
+  const requestNotificationPermission = async () => {
+    if (typeof window !== 'undefined' && 'Notification' in window) {
+      const permission = await Notification.requestPermission();
+      setNotificationPermission(permission);
+    }
+  };
 
+  const triggerNotification = (order: Order) => {
+    if (notificationPermission === 'granted') {
+      new Notification('New Order Received!', {
+        body: `Order ID: ${order.id}\nCustomer: ${order.customerName}\nTotal: $${order.total.toFixed(2)}`,
+        icon: '/favicon.ico' // Or any app icon
+      });
+      
+      if (audioRef.current) {
+        audioRef.current.play().catch(e => console.log('Audio play failed:', e));
+      }
+    }
+  };
+
+  // Sync orders with Firestore in real-time
   useEffect(() => {
-    if (isAuthenticated && orders.length > prevOrdersLength.current) {
-      const newOrder = orders[0];
-      toast.success(`New Order Received: ${newOrder.id}`, {
-        duration: 5000,
-        icon: '🛍️',
-        style: {
-          borderRadius: '0px',
-          background: '#111111',
-          color: '#fff',
-          fontSize: '12px',
-          letterSpacing: '0.1em',
-          textTransform: 'uppercase'
+    if (!isAuthenticated) return;
+
+    const q = query(collection(db, 'orders'), orderBy('createdAt', 'desc'));
+    
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const isInitial = isFirstSync;
+      if (isInitial) setIsFirstSync(false);
+
+      snapshot.docChanges().forEach((change) => {
+        if (change.type === 'added' && !isInitial) {
+          const data = change.doc.data() as Order;
+          const exists = orders.some(o => o.id === data.id);
+          if (!exists) {
+            triggerNotification(data);
+            toast.success(`New Order Received: ${data.id}`, {
+              duration: 5000,
+              icon: '🛍️',
+              style: {
+                borderRadius: '0px',
+                background: '#111111',
+                color: '#fff',
+                fontSize: '12px',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase'
+              }
+            });
+          }
         }
       });
-    }
-    prevOrdersLength.current = orders.length;
-  }, [orders, isAuthenticated]);
+
+      const syncedOrders = snapshot.docs.map(doc => ({ ...doc.data(), id: doc.id } as Order));
+      syncOrders(syncedOrders);
+    }, (error) => {
+      handleFirestoreError(error, OperationType.LIST, 'orders');
+    });
+
+    return () => unsubscribe();
+  }, [isAuthenticated, orders.length]); // Re-run if length changes to help with notification logic
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -118,13 +160,20 @@ const Admin = () => {
     setIsAddingProduct(false);
   };
 
-  const handleOrderSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleOrderSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const status = formData.get('status') as Order['status'];
     if (editingOrder) {
-      updateOrderStatus(editingOrder.id, status);
-      setEditingOrder(null);
+      try {
+        await updateDoc(doc(db, 'orders', editingOrder.id), { status });
+        updateOrderStatus(editingOrder.id, status);
+        setEditingOrder(null);
+        toast.success(`Order ${editingOrder.id} updated to ${status}`);
+      } catch (error) {
+        handleFirestoreError(error, OperationType.UPDATE, `orders/${editingOrder.id}`);
+        toast.error('Failed to update order status');
+      }
     }
   };
 
@@ -146,7 +195,18 @@ const Admin = () => {
         <div className="flex justify-between items-end mb-10">
           <div className="space-y-1">
             <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Overview</span>
-            <h1 className="text-4xl font-serif italic">Admin Dashboard</h1>
+            <div className="flex items-center gap-4">
+              <h1 className="text-4xl font-serif italic">Admin Dashboard</h1>
+              {notificationPermission !== 'granted' && (
+                <button 
+                  onClick={requestNotificationPermission}
+                  className="flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 text-[10px] uppercase tracking-widest font-bold border border-amber-200 hover:bg-amber-100 transition-colors"
+                >
+                  <Bell size={12} />
+                  Enable Browser Notifications
+                </button>
+              )}
+            </div>
           </div>
           {activeTab === 'products' && (
             <button 

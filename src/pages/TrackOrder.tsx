@@ -1,25 +1,47 @@
 import React, { useState } from 'react';
 import { useStore, Order } from '../context/StoreContext';
 import { Package, Truck, Search, CheckCircle, PackageOpen } from 'lucide-react';
+import { db } from '../lib/firebase';
+import { doc, getDoc } from 'firebase/firestore';
 
 const TrackOrder = () => {
   const { orders } = useStore();
   const [searchId, setSearchId] = useState('');
   const [searchedOrder, setSearchedOrder] = useState<Order | null>(null);
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchId.trim()) return;
 
+    setLoading(true);
+    setError('');
+
+    // First check local orders
     const foundOrder = orders.find(o => o.id.toLowerCase() === searchId.trim().toLowerCase());
     
     if (foundOrder) {
       setSearchedOrder(foundOrder);
-      setError('');
-    } else {
-      setSearchedOrder(null);
-      setError('No order found with the provided ID. Please check and try again.');
+      setLoading(false);
+      return;
+    }
+
+    // If not found in local context, check Firestore
+    try {
+      const orderDoc = await getDoc(doc(db, 'orders', searchId.trim()));
+      if (orderDoc.exists()) {
+        const data = orderDoc.data() as Order;
+        setSearchedOrder(data);
+      } else {
+        setSearchedOrder(null);
+        setError('No order found with the provided ID. Please check and try again.');
+      }
+    } catch (err) {
+      console.error("Error fetching order:", err);
+      setError('An error occurred while tracking your order. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -62,10 +84,11 @@ const TrackOrder = () => {
             />
             <button 
               type="submit" 
-              className="bg-[#111111] text-white px-8 uppercase tracking-widest text-xs font-bold hover:bg-[#d4af37] transition-colors flex items-center gap-2"
+              disabled={loading}
+              className="bg-[#111111] text-white px-8 uppercase tracking-widest text-xs font-bold hover:bg-[#d4af37] transition-colors flex items-center gap-2 disabled:opacity-50"
             >
               <Search size={16} />
-              <span>Track</span>
+              <span>{loading ? 'Searching...' : 'Track'}</span>
             </button>
           </div>
           {error && <p className="text-red-500 text-sm mt-3 text-center">{error}</p>}

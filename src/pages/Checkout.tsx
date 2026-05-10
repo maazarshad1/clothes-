@@ -1,6 +1,46 @@
 import React, { useState } from 'react';
 import { useStore, Order } from '../context/StoreContext';
 import { Link, useNavigate } from 'react-router-dom';
+import { db, auth } from '../lib/firebase';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { toast } from 'react-hot-toast';
+
+enum OperationType {
+  CREATE = 'create',
+  UPDATE = 'update',
+  DELETE = 'delete',
+  LIST = 'list',
+  GET = 'get',
+  WRITE = 'write',
+}
+
+interface FirestoreErrorInfo {
+  error: string;
+  operationType: OperationType;
+  path: string | null;
+  authInfo: {
+    userId?: string | null;
+    email?: string | null;
+    emailVerified?: boolean | null;
+    isAnonymous?: boolean | null;
+  }
+}
+
+function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
+  const errInfo: FirestoreErrorInfo = {
+    error: error instanceof Error ? error.message : String(error),
+    authInfo: {
+      userId: auth.currentUser?.uid,
+      email: auth.currentUser?.email,
+      emailVerified: auth.currentUser?.emailVerified,
+      isAnonymous: auth.currentUser?.isAnonymous,
+    },
+    operationType,
+    path
+  };
+  console.error('Firestore Error: ', JSON.stringify(errInfo));
+  throw new Error(JSON.stringify(errInfo));
+}
 
 const Checkout = () => {
   const { cart, addOrder, clearCart } = useStore();
@@ -18,12 +58,13 @@ const Checkout = () => {
   const shipping = subtotal > 200 ? 0 : 15;
   const total = subtotal + shipping;
 
-  const handlePlaceOrder = (e: React.FormEvent) => {
+  const handlePlaceOrder = async (e: React.FormEvent) => {
     e.preventDefault();
     if (cart.length === 0) return;
 
+    const orderId = `ORD-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
     const newOrder: Order = {
-      id: `ORD-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`,
+      id: orderId,
       customerName: `${firstName} ${lastName}`.trim() || 'Guest Customer',
       email,
       phoneNumber,
@@ -37,12 +78,25 @@ const Checkout = () => {
       date: new Date().toISOString().split('T')[0]
     };
 
-    addOrder(newOrder);
+    try {
+      // Save to local context
+      addOrder(newOrder);
 
-    clearCart();
-    
-    // Pass the created order ID to the track-order page
-    navigate('/track-order', { state: { newOrderId: newOrder.id } });
+      // Save to Firestore for notifications
+      await setDoc(doc(db, 'orders', orderId), {
+        ...newOrder,
+        createdAt: serverTimestamp()
+      });
+
+      toast.success('Order placed successfully!');
+      clearCart();
+      
+      // Pass the created order ID to the track-order page
+      navigate('/track-order', { state: { newOrderId: newOrder.id } });
+    } catch (error) {
+      handleFirestoreError(error, OperationType.WRITE, `orders/${orderId}`);
+      toast.error('Failed to place order. Please try again.');
+    }
   };
 
   if (cart.length === 0) {

@@ -6,6 +6,7 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { StoreProvider } from './context/StoreContext';
+import { Toaster } from 'react-hot-toast';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
@@ -20,6 +21,7 @@ import Admin from './pages/Admin';
 export default function App() {
   return (
     <StoreProvider>
+      <Toaster position="top-right" />
       <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
