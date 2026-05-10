@@ -69,7 +69,7 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>(categoryParam || 'All');
 
-  const categories = ['All', 'Women', 'Men', 'Kids', 'Accessories'];
+  const categories = ['All', 'Women', 'Men', 'Kids', 'Accessories', 'Shoes', 'Denim', 'Sportswear'];
 
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
