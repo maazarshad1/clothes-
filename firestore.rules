@@ -50,5 +50,12 @@ service cloud.firestore {
       
       allow update: if incoming().status in ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled'];
     }
+
+    match /products/{productId} {
+      // Products can be read by anyone (public)
+      allow read: if true;
+      // Products can be created, updated, or deleted by admins (for now, allowed for easy management)
+      allow write: if true;
+    }
   }
 }

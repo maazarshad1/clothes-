@@ -45,6 +45,7 @@ interface StoreContextType {
   addProduct: (product: Product) => void;
   updateProduct: (id: string, product: Product) => void;
   deleteProduct: (id: string) => void;
+  syncProducts: (syncedProducts: Product[]) => void;
   orders: Order[];
   updateOrderStatus: (id: string, status: Order['status']) => void;
   addOrder: (order: Order) => void;
@@ -73,15 +74,8 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   
   const [isDarkMode, setIsDarkMode] = useState(false);
   
-  const [products, setProducts] = useState<Product[]>(() => {
-    const saved = localStorage.getItem('store_products');
-    return saved ? JSON.parse(saved) : initialProducts;
-  });
-  
-  const [orders, setOrders] = useState<Order[]>(() => {
-    const saved = localStorage.getItem('store_orders');
-    return saved ? JSON.parse(saved) : initialOrders;
-  });
+  const [products, setProducts] = useState<Product[]>(initialProducts);
+  const [orders, setOrders] = useState<Order[]>([]);
 
   React.useEffect(() => {
     localStorage.setItem('store_cart', JSON.stringify(cart));
@@ -148,6 +142,7 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   const addProduct = (product: Product) => setProducts(prev => [...prev, product]);
   const updateProduct = (id: string, updated: Product) => setProducts(prev => prev.map(p => p.id === id ? updated : p));
   const deleteProduct = (id: string) => setProducts(prev => prev.filter(p => p.id !== id));
+  const syncProducts = (syncedProducts: Product[]) => setProducts(syncedProducts);
   
   const updateOrderStatus = (id: string, status: Order['status']) => {
     setOrders(prev => prev.map(o => o.id === id ? { ...o, status } : o));
@@ -172,6 +167,7 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
         addProduct,
         updateProduct,
         deleteProduct,
+        syncProducts,
         orders,
         updateOrderStatus,
         addOrder,

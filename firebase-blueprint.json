@@ -25,12 +25,31 @@
         "createdAt": { "type": "string", "format": "date-time" }
       },
       "required": ["id", "customerName", "email", "total", "status", "date"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "A product in the inventory",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "category": { "type": "string" },
+        "image": { "type": "string" },
+        "rating": { "type": "number" },
+        "description": { "type": "string" }
+      },
+      "required": ["id", "name", "price", "category", "image"]
     }
   },
   "firestore": {
     "orders": {
       "schema": "Order",
       "description": "Customer orders"
+    },
+    "products": {
+      "schema": "Product",
+      "description": "Store products"
     }
   }
 }

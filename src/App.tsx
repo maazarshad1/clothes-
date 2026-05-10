@@ -17,10 +17,33 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import TrackOrder from './pages/TrackOrder';
 import Admin from './pages/Admin';
+import { useStore } from './context/StoreContext';
+import { db } from './lib/firebase';
+import { collection, onSnapshot, query } from 'firebase/firestore';
+
+function ProductFetcher() {
+  const { syncProducts } = useStore();
+
+  React.useEffect(() => {
+    // Customers can always see products, no auth needed for read
+    const q = query(collection(db, 'products'));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const syncedProducts = snapshot.docs.map(doc => ({ ...doc.data(), id: doc.id } as any));
+      syncProducts(syncedProducts);
+    }, (error) => {
+      console.error("Error syncing products:", error);
+    });
+
+    return () => unsubscribe();
+  }, [syncProducts]);
+
+  return null;
+}
 
 export default function App() {
   return (
     <StoreProvider>
+      <ProductFetcher />
       <Toaster position="top-right" />
       <HashRouter>
         <Routes>
