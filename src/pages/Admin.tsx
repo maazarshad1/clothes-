@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useStore, Product, Order } from '../context/StoreContext';
-import { X, Bell } from 'lucide-react';
+import { X, Bell, Download } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 import { db, auth } from '../lib/firebase';
 import { collection, onSnapshot, query, orderBy, doc, updateDoc } from 'firebase/firestore';
@@ -70,6 +70,7 @@ const Admin = () => {
   const [viewingOrder, setViewingOrder] = useState<Order | null>(null);
 
   const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>('default');
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const isFirstSyncRef = useRef(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -79,8 +80,26 @@ const Admin = () => {
         setNotificationPermission(Notification.permission);
       }
       audioRef.current = new Audio('https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3');
+
+      const handleBeforeInstallPrompt = (e: any) => {
+        e.preventDefault();
+        setDeferredPrompt(e);
+      };
+
+      window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+      return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
     }
   }, []);
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      setDeferredPrompt(null);
+    }
+  };
 
   const requestNotificationPermission = async () => {
     if (typeof window !== 'undefined' && 'Notification' in window) {
@@ -411,6 +430,15 @@ const Admin = () => {
                     >
                       <Bell size={12} />
                       Test Notification
+                    </button>
+                  )}
+                  {deferredPrompt && (
+                    <button 
+                      onClick={handleInstallClick}
+                      className="flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 text-[10px] uppercase tracking-widest font-bold border border-blue-200 hover:bg-blue-100 transition-colors w-fit"
+                    >
+                      <Download size={12} />
+                      Install App
                     </button>
                   )}
                   <button 
