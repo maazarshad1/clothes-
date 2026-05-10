@@ -66,7 +66,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[85vh] sm:h-[90vh] bg-black">
+      <section className="relative h-[40vh] sm:h-[50vh] bg-black">
         <img 
           src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&auto=format&fit=crop&q=80" 
           alt="Fashion Hero" 
@@ -81,75 +81,41 @@ const Home = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <h4 className="text-xs tracking-[0.3em] font-semibold uppercase mb-4 text-white/80">Premium Collection</h4>
-            <h1 className="font-serif text-5xl sm:text-7xl lg:text-8xl font-light mb-8 leading-tight">Elevate Your<br />Everyday Look</h1>
+            <h4 className="text-[10px] tracking-[0.3em] font-semibold uppercase mb-2 text-white/80">Premium Collection</h4>
+            <h1 className="font-serif text-4xl sm:text-6xl font-light mb-6 leading-tight">Urban Elegance</h1>
             <Link 
               to="/shop" 
-              className="inline-block border border-white/30 bg-white/10 backdrop-blur-sm px-10 py-4 text-sm tracking-[0.2em] uppercase font-medium hover:bg-white hover:text-black transition duration-300"
+              className="inline-block border border-white/30 bg-white/10 backdrop-blur-sm px-8 py-3 text-[10px] tracking-[0.2em] uppercase font-medium hover:bg-white hover:text-black transition duration-300"
             >
-              Explore Collection
+              Shop All
             </Link>
           </motion.div>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link to="/shop?category=Women" className="group relative h-[600px] overflow-hidden bg-gray-100">
-            <img 
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80" 
-              alt="Women" 
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h2 className="font-serif text-5xl text-white font-light tracking-wide">Women</h2>
-            </div>
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-500">
-              <span className="text-white text-xs uppercase tracking-widest border-b border-white pb-1">Shop Now</span>
-            </div>
-          </Link>
-          
-          <Link to="/shop?category=Men" className="group relative h-[600px] overflow-hidden bg-gray-100">
-            <img 
-              src="https://images.unsplash.com/photo-1516826957135-700ede19c6ce?w=800&auto=format&fit=crop&q=80" 
-              alt="Men" 
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h2 className="font-serif text-5xl text-white font-light tracking-wide">Men</h2>
-            </div>
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition duration-500">
-              <span className="text-white text-xs uppercase tracking-widest border-b border-white pb-1">Shop Now</span>
-            </div>
+      {/* Featured Products (Moved up and section padding reduced) */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white">
+        <div className="flex flex-col items-center mb-12">
+          <h2 className="font-serif text-3xl mb-3 text-center">New Arrivals</h2>
+          <div className="w-12 h-px bg-[#d4af37]" />
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-10">
+          {products.slice(0, 8).map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Link 
+            to="/shop" 
+            className="inline-block border border-black px-8 py-3 text-xs tracking-widest uppercase font-medium hover:bg-black hover:text-white transition duration-300"
+          >
+            Explore Full Collection
           </Link>
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white">
-        <div className="flex flex-col items-center mb-16">
-          <h2 className="font-serif text-4xl mb-4 text-center">New Arrivals</h2>
-          <div className="w-16 h-px bg-[#d4af37]" />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-        <div className="mt-16 text-center">
-          <Link 
-            to="/shop" 
-            className="inline-block border border-black px-10 py-4 text-sm tracking-widest uppercase font-medium hover:bg-black hover:text-white transition duration-300"
-          >
-            View All
-          </Link>
-        </div>
-      </section>
+      {/* Optional: Small Categories bar if needed, but keeping it minimal as requested */}
+
     </div>
   );
 };
