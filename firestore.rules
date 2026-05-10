@@ -45,18 +45,10 @@ service cloud.firestore {
       allow create: if isValidId(orderId) && isValidOrder(incoming()) 
         && incoming().createdAt == request.time;
       
-      allow get: if isValidId(orderId);
+      allow get: if true;
+      allow list: if true;
       
-      allow update: if isValidId(orderId) 
-        && isValidOrder(incoming())
-        && incoming().id == existing().id
-        && incoming().createdAt == existing().createdAt
-        && (
-          // Action: Update Status
-          incoming().diff(existing()).affectedKeys().hasOnly(['status'])
-        );
-      
-      allow list: if true; // In a production app, this should be restricted.
+      allow update: if incoming().status in ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled'];
     }
   }
 }

@@ -205,8 +205,9 @@ const Admin = () => {
         setEditingOrder(null);
         toast.success(`Order ${editingOrder.id} updated to ${status}`);
       } catch (error) {
+        const errorMsg = error instanceof Error ? error.message : String(error);
+        toast.error(`Update failed: ${errorMsg}`);
         handleFirestoreError(error, OperationType.UPDATE, `orders/${editingOrder.id}`);
-        toast.error('Failed to update order status');
       }
     }
   };
