@@ -1,9 +1,9 @@
 const CACHE_NAME = 'urban-style-cache-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.webmanifest',
-  '/favicon.ico'
+  './',
+  'index.html',
+  'manifest.webmanifest',
+  'favicon.ico'
 ];
 
 self.addEventListener('install', (event) => {
@@ -45,11 +45,11 @@ self.addEventListener('push', (event) => {
     const data = event.data.json();
     const options = {
       body: data.body,
-      icon: data.icon || '/favicon.ico',
-      badge: '/favicon.ico',
+      icon: data.icon || 'favicon.ico',
+      badge: 'favicon.ico',
       vibrate: [100, 50, 100],
       data: {
-        url: data.url || '/'
+        url: data.url || './'
       },
       tag: 'order-notification',
       renotify: true

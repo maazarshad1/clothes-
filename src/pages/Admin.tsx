@@ -118,18 +118,18 @@ const Admin = () => {
           navigator.serviceWorker.ready.then(registration => {
             registration.showNotification(title, {
               body,
-              icon: '/favicon.ico',
-              badge: '/favicon.ico',
+              icon: 'favicon.ico',
+              badge: 'favicon.ico',
               vibrate: [200, 100, 200],
               tag: 'order-' + order.id,
               renotify: true,
-              data: { url: window.location.origin + '/#/admin' }
+              data: { url: window.location.href.split('#')[0] + '#/admin' }
             } as any);
           });
         } else {
           new Notification(title, {
             body,
-            icon: '/favicon.ico'
+            icon: 'favicon.ico'
           });
         }
       } catch (e) {
@@ -156,16 +156,16 @@ const Admin = () => {
       navigator.serviceWorker.ready.then(registration => {
         registration.showNotification(title, {
           body,
-          icon: '/favicon.ico',
-          badge: '/favicon.ico',
+          icon: 'favicon.ico',
+          badge: 'favicon.ico',
           vibrate: [200, 100, 200],
-          data: { url: window.location.origin + '/#/admin' }
+          data: { url: window.location.href.split('#')[0] + '#/admin' }
         } as any);
       });
     } else {
       new Notification(title, {
         body,
-        icon: '/favicon.ico'
+        icon: 'favicon.ico'
       });
     }
     

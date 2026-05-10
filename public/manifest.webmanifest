@@ -1,8 +1,8 @@
 {
   "name": "Urban Style Admin",
   "short_name": "US Admin",
-  "start_url": "/#/admin",
-  "scope": "/",
+  "start_url": "./index.html#/admin",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#F5F2ED",
   "theme_color": "#111111",
