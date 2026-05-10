@@ -53,9 +53,14 @@ function handleFirestoreError(error: unknown, operationType: OperationType, path
 }
 
 const Admin = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('admin_auth') === 'true';
+    }
+    return false;
+  });
   const [passcode, setPasscode] = useState('');
-  const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus, addOrder, syncOrders } = useStore();
+  const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus, addOrder, syncOrders, syncProducts } = useStore();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<'products' | 'orders'>('products');
   
@@ -86,14 +91,31 @@ const Admin = () => {
 
   const triggerNotification = (order: Order) => {
     if ('Notification' in window && Notification.permission === 'granted') {
+      const title = 'New Order Received!';
+      const body = `Order ID: ${order.id}\nCustomer: ${order.customerName}\nTotal: $${order.total.toFixed(2)}`;
+      
       try {
-        new Notification('New Order Received!', {
-          body: `Order ID: ${order.id}\nCustomer: ${order.customerName}\nTotal: $${order.total.toFixed(2)}`,
-          icon: '/favicon.ico'
-        });
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.ready.then(registration => {
+            registration.showNotification(title, {
+              body,
+              icon: '/favicon.ico',
+              badge: '/favicon.ico',
+              vibrate: [200, 100, 200],
+              tag: 'order-' + order.id,
+              renotify: true,
+              data: { url: window.location.origin + '/#/admin' }
+            } as any);
+          });
+        } else {
+          new Notification(title, {
+            body,
+            icon: '/favicon.ico'
+          });
+        }
       } catch (e) {
         // Fallback for some browsers or standalone modes
-        console.error('Notification constructor failed:', e);
+        console.error('Notification failed:', e);
       }
       
       if (audioRef.current) {
@@ -108,10 +130,25 @@ const Admin = () => {
       return;
     }
     
-    new Notification('Test Notification', {
-      body: 'If you see this, your notifications are working!',
-      icon: '/favicon.ico'
-    });
+    const title = 'Test Notification';
+    const body = 'If you see this, your notifications are working!';
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then(registration => {
+        registration.showNotification(title, {
+          body,
+          icon: '/favicon.ico',
+          badge: '/favicon.ico',
+          vibrate: [200, 100, 200],
+          data: { url: window.location.origin + '/#/admin' }
+        } as any);
+      });
+    } else {
+      new Notification(title, {
+        body,
+        icon: '/favicon.ico'
+      });
+    }
     
     if (audioRef.current) {
       audioRef.current.play().catch(e => console.log('Audio test failed:', e));
@@ -178,9 +215,15 @@ const Admin = () => {
     e.preventDefault();
     if (passcode === '1234') {
       setIsAuthenticated(true);
+      localStorage.setItem('admin_auth', 'true');
     } else {
       alert('Incorrect passcode');
     }
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('admin_auth');
   };
 
   if (!isAuthenticated) {
@@ -327,6 +370,12 @@ const Admin = () => {
             onClick={() => { setActiveTab('orders'); setIsSidebarOpen(false); }}
           >
             Orders
+          </li>
+          <li 
+            className="border-l-[3px] border-transparent hover:text-white flex items-center px-4 py-3 text-sm cursor-pointer transition mt-auto opacity-50 hover:opacity-100"
+            onClick={handleLogout}
+          >
+            Logout
           </li>
         </ul>
       </div>
