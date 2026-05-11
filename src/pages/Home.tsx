@@ -95,20 +95,27 @@ const Home = () => {
                     Featured
                   </div>
                 )}
+                
                 <div className="aspect-[4/5] overflow-hidden relative">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+                  <Link to={`/product/${product.id}`} className="block w-full h-full">
+                    <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+                  </Link>
                   <button 
-                    onClick={() => addToCart(product)}
-                    className="absolute bottom-2 left-2 right-2 bg-white text-black py-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 font-bold uppercase tracking-widest text-[8px]"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      addToCart(product);
+                    }}
+                    className="absolute bottom-2 left-2 right-2 bg-white text-black py-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 font-bold uppercase tracking-widest text-[8px] z-30"
                   >
                     Quick Add
                   </button>
                 </div>
-                <div className="p-3 text-center transition-colors flex-1 flex flex-col justify-between">
+
+                <Link to={`/product/${product.id}`} className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
                   <h3 className="font-serif text-xs mb-1 truncate px-1">{product.name}</h3>
                   <p className="text-theme-accent font-bold tracking-widest text-[10px]">PKR {product.price}</p>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>
