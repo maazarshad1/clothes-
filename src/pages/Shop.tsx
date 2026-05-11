@@ -18,43 +18,42 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       transition={{ duration: 0.3 }}
       className="group"
     >
-      <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-4">
+      <div className="relative aspect-[3/4] overflow-hidden bg-theme-card mb-4">
         <img 
           src={product.image} 
           alt={product.name} 
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" 
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
         
         {/* Quick Actions */}
         <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
           <div className="flex gap-2">
             <button 
               onClick={() => addToCart(product)}
-              className="flex-1 bg-white text-black py-3 text-xs font-semibold uppercase tracking-wider hover:bg-black hover:text-white transition flex items-center justify-center gap-2"
+              className="flex-1 bg-theme-accent text-theme-bg py-3 text-xs font-bold uppercase tracking-wider hover:bg-white transition flex items-center justify-center gap-2"
             >
               <ShoppingBag size={16} /> Add to Cart
             </button>
             <button 
               onClick={() => toggleWishlist(product)}
-              className="bg-white text-black border border-black/10 p-3 hover:bg-black hover:text-white transition flex items-center justify-center"
+              className="bg-theme-bg text-theme-accent border border-theme-border p-3 hover:bg-theme-accent hover:text-theme-bg transition flex items-center justify-center"
             >
               <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
             </button>
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-start">
-        <div>
-          <Link to={`/product/${product.id}`}>
-            <h3 className="font-serif text-lg hover:text-[#d4af37] transition">{product.name}</h3>
-          </Link>
-          <p className="text-sm text-gray-500">{product.category}</p>
-        </div>
-        <div className="text-right">
-          <span className="font-medium">${product.price.toFixed(2)}</span>
-          <div className="text-xs text-yellow-500 mt-1">★ {product.rating}</div>
+      <div className="flex flex-col gap-1">
+        <Link to={`/product/${product.id}`}>
+          <h3 className="font-serif text-lg hover:text-theme-accent transition truncate">{product.name}</h3>
+        </Link>
+        <div className="flex justify-between items-center">
+          <p className="text-xs uppercase tracking-widest text-theme-text/40">{product.category}</p>
+          <div className="text-right">
+            <span className="font-semibold text-theme-accent">PKR {product.price}</span>
+          </div>
         </div>
       </div>
     </motion.div>
@@ -69,7 +68,7 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>(categoryParam || 'All');
 
-  const categories = ['All', 'Women', 'Men', 'Kids', 'Accessories', 'Shoes', 'Denim', 'Sportswear'];
+  const categories = ['All', 'Slides', 'Clogs', 'Traditional'];
 
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
@@ -80,11 +79,11 @@ const Shop = () => {
   }, [activeCategory, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-theme-bg text-theme-text">
       {/* Header */}
-      <div className="bg-black text-white py-16 text-center">
-        <h1 className="font-serif text-5xl mb-4">Collection</h1>
-        <p className="text-gray-400 text-sm tracking-widest uppercase">Explore our latest pieces</p>
+      <div className="bg-black/40 text-theme-text py-20 text-center border-b border-theme-border">
+        <h1 className="font-serif text-6xl mb-4">The Collection</h1>
+        <p className="text-theme-accent text-sm tracking-[0.3em] uppercase">Premium Footwear by Zurbanz</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -103,10 +102,10 @@ const Shop = () => {
                   }
                   setSearchParams(searchParams);
                 }}
-                className={`text-sm tracking-widest uppercase pb-1 border-b-2 transition-colors ${
+                className={`text-sm tracking-widest uppercase pb-1 border-b-2 transition-all duration-300 ${
                   activeCategory === cat 
-                  ? 'border-black text-black font-semibold' 
-                  : 'border-transparent text-gray-500 hover:text-black'
+                  ? 'border-theme-accent text-theme-accent font-bold' 
+                  : 'border-transparent text-theme-text/40 hover:text-theme-text'
                 }`}
               >
                 {cat}
@@ -121,11 +120,11 @@ const Shop = () => {
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full border-b border-gray-300 bg-transparent py-2 pl-8 pr-4 text-sm text-black placeholder-gray-400 focus:outline-none focus:border-black transition-colors"
+                className="w-full border-b border-theme-border bg-transparent py-2 pl-8 pr-4 text-sm text-theme-text placeholder-theme-text/30 focus:outline-none focus:border-theme-accent transition-colors"
               />
-              <Search size={16} className="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400" />
+              <Search size={16} className="absolute left-0 top-1/2 -translate-y-1/2 text-theme-accent" />
             </div>
-            <button className="flex items-center gap-2 text-xs uppercase tracking-widest text-gray-500 hover:text-black">
+            <button className="flex items-center gap-2 text-xs uppercase tracking-widest text-theme-text/60 hover:text-theme-accent">
               <SlidersHorizontal size={16} /> Filters
             </button>
           </div>

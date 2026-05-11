@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:italic,wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #d4af37;
-  --color-beige: #f5f2ed;
-  --color-ink: #111111;
-  --color-paper: #ffffff;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   
-  --font-sans: 'Montserrat', system-ui, sans-serif;
-  --font-serif: 'Cormorant Garamond', serif;
+  --color-theme-bg: #1A2421;
+  --color-theme-text: #F8F9F8;
+  --color-theme-accent: #C5A059;
+  --color-theme-border: rgba(197, 160, 89, 0.2);
+  --color-theme-card: #24302C;
 }
 
 @layer base {
   body {
-    background-color: var(--color-beige);
-    color: var(--color-ink);
+    background-color: var(--color-theme-bg);
+    color: var(--color-theme-text);
     font-family: var(--font-sans);
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
 }

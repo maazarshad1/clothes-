@@ -2,302 +2,79 @@ import { Product } from '../context/StoreContext';
 
 export const products: Product[] = [
   {
-    id: '1',
-    name: 'Silk Blend Slip Dress',
-    price: 185.0,
-    category: 'Women',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80',
+    id: 'skecher-og-slides',
+    name: 'Skecher OG Slides - By Zurban',
+    price: 1550,
+    category: 'Slides',
+    image: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800&auto=format&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80'
     ],
     video: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-walking-on-a-beach-33987-large.mp4',
     rating: 4.8,
-    description: 'A minimal silk blend slip dress perfect for evening wear. Features a delicate cowl neck and adjustable straps.',
+    description: 'Welcome to Your Ultimate Comfort & Style Destination! Designed to provide exceptional comfort and care for your feet with premium materials.',
   },
   {
-    id: '2',
-    name: 'Tailored Wool Coat',
-    price: 320.0,
-    category: 'Men',
-    image: 'https://images.unsplash.com/photo-1520975954732-57dd22299614?w=800&auto=format&fit=crop&q=80',
+    id: 'skechers-premium-slides',
+    name: 'Skechers Premium Slides - by Zurban',
+    price: 1850,
+    category: 'Slides',
+    image: 'https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&auto=format&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1520975954732-57dd22299614?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=800&auto=format&fit=crop&q=80'
     ],
     video: 'https://assets.mixkit.co/videos/preview/mixkit-man-walking-in-front-of-a-classic-building-44755-large.mp4',
     rating: 4.9,
-    description: 'Classic double-breasted wool coat with a modern tailored fit.',
+    description: 'Elevate your daily walk with Zurban Premium Slides. Crafted for durability and ultimate cushioning.',
   },
   {
-    id: '3',
-    name: 'Minimalist Leather Tote',
-    price: 240.0,
-    category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=800&auto=format&fit=crop&q=80',
+    id: 'zurban-formal-slides',
+    name: 'Zurban Formal Slides',
+    price: 1250,
+    category: 'Slides',
+    image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1544816153-1574d6c4125b?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80'
     ],
     rating: 4.7,
-    description: 'Handcrafted full-grain leather tote with brass hardware and interior zip pocket.',
+    description: 'Sophisticated formal slides for occasions where comfort meets class. Hand-finished details.',
   },
   {
-    id: '4',
-    name: 'Cashmere Mock Neck Sweater',
-    price: 145.0,
-    category: 'Women',
-    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&auto=format&fit=crop&q=80',
+    id: 'classy-slides',
+    name: 'Classy Slides - By Zurban',
+    price: 1450,
+    category: 'Slides',
+    image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80'
     ],
     rating: 4.6,
-    description: 'Ultra-soft 100% cashmere sweater featuring a relaxed silhouette and mock neck design.',
+    description: 'The everyday essential. Lightweight, durable, and effortlessly classy design from the Zurban collection.',
   },
   {
-    id: '5',
-    name: 'Pleated Trousers',
-    price: 110.0,
-    category: 'Men',
-    image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80',
+    id: 'zurban-clogs-v1',
+    name: 'Zurban Pro Clogs',
+    price: 2100,
+    category: 'Clogs',
+    image: 'https://images.unsplash.com/photo-1592862902946-b3e8241ae203?w=800&auto=format&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.5,
-    description: 'Contemporary wide-leg pleated trousers made from breathable linen blend.',
-  },
-  {
-    id: '6',
-    name: 'Kids Cotton Romper',
-    price: 45.0,
-    category: 'Kids',
-    image: 'https://images.unsplash.com/photo-1519241047957-be31d7379a5d?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1519241047957-be31d7379a5d?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1592862902946-b3e8241ae203?w=800&auto=format&fit=crop&q=80'
     ],
     rating: 4.8,
-    description: 'Soft organic cotton romper for toddlers, featuring easy snap-button closures.',
+    description: 'Versatile clogs for all-day wear. Breathable and comfortable for active lifestyle.',
   },
   {
-    id: '7',
-    name: 'Gold Plated Chain Necklace',
-    price: 85.0,
-    category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1599643478514-4a4e08d56726?w=800&auto=format&fit=crop&q=80',
+    id: 'traditional-peshawari',
+    name: 'Handmade traditional peshawari chappal',
+    price: 2850,
+    category: 'Traditional',
+    image: 'https://images.unsplash.com/photo-1605733513597-a8f8d410fe3e?w=800&auto=format&fit=crop&q=80',
     images: [
-      'https://images.unsplash.com/photo-1599643478514-4a4e08d56726?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1605733513597-a8f8d410fe3e?w=800&auto=format&fit=crop&q=80'
     ],
     rating: 4.9,
-    description: '18k gold plated herringbone chain necklace. Water-resistant and tarnish-free.',
-  },
-  {
-    id: '8',
-    name: 'Structured Midi Skirt',
-    price: 95.0,
-    category: 'Women',
-    image: 'https://images.unsplash.com/photo-1583496661160-c5dcb2241c73?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1583496661160-c5dcb2241c73?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.4,
-    description: 'High-waisted structured midi skirt with an asymmetrical hemline.',
-  },
-  {
-    id: '9',
-    name: 'Leather Chelsea Boots',
-    price: 210.0,
-    category: 'Shoes',
-    image: 'https://images.unsplash.com/photo-1542288960-a292f1f6d900?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1542288960-a292f1f6d900?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.7,
-    description: 'Classic leather chelsea boots with elastic side panels and durable rubber soles.',
-  },
-  {
-    id: '10',
-    name: 'Oversized Denim Jacket',
-    price: 120.0,
-    category: 'Denim',
-    image: 'https://images.unsplash.com/photo-1527010159945-c4250922b29c?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1527010159945-c4250922b29c?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.6,
-    description: 'Vintage-wash oversized denim jacket with metallic buttons and four-pocket styling.',
-  },
-  {
-    id: '11',
-    name: 'High-Performance Leggings',
-    price: 85.0,
-    category: 'Sportswear',
-    image: 'https://images.unsplash.com/photo-1548330065-2956a1606248?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1548330065-2956a1606248?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.9,
-    description: 'Moisture-wicking, squat-proof leggings with a high waistband and side phone pockets.',
-  },
-  {
-    id: '12',
-    name: 'Suede Loafers',
-    price: 155.0,
-    category: 'Shoes',
-    image: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.5,
-    description: 'Elegant suede loafers with a comfortable cushioned insole.',
-  },
-  {
-    id: '13',
-    name: 'Linen Button-Up Shirt',
-    price: 78.0,
-    category: 'Men',
-    image: 'https://images.unsplash.com/photo-1594932224010-74f43a163548?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1594932224010-74f43a163548?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.4,
-    description: 'Breathable 100% linen shirt for a relaxed summer aesthetic.',
-  },
-  {
-    id: '14',
-    name: 'Floral Maxi Dress',
-    price: 135.0,
-    category: 'Women',
-    image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.7,
-    description: 'Flowy floral print maxi dress with a wrap front and tiered skirt.',
-  },
-  {
-    id: '15',
-    name: 'Classic Chronograph Watch',
-    price: 295.0,
-    category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.8,
-    description: 'Stainless steel chronograph watch with a genuine leather strap and sapphire glass.',
-  },
-  {
-    id: '16',
-    name: 'Kids Denim Overalls',
-    price: 55.0,
-    category: 'Kids',
-    image: 'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.6,
-    description: 'Durable denim overalls with adjustable straps for growing children.',
-  },
-  {
-    id: '17',
-    name: 'Canvas Sneakers',
-    price: 65.0,
-    category: 'Shoes',
-    image: 'https://images.unsplash.com/photo-1525966222034-adcdd8b2977b?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1525966222034-adcdd8b2977b?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.3,
-    description: 'Versatile canvas sneakers with a retro-inspired design.',
-  },
-  {
-    id: '18',
-    name: 'Technical Windbreaker',
-    price: 140.0,
-    category: 'Sportswear',
-    image: 'https://images.unsplash.com/photo-1544923246-77307dddd5e5?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1544923246-77307dddd5e5?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.8,
-    description: 'Water-repellent technical windbreaker with adjustable hood and reflective details.',
-  },
-  {
-    id: '19',
-    name: 'Slim Fit Chinos',
-    price: 88.0,
-    category: 'Men',
-    image: 'https://images.unsplash.com/photo-1473966968600-fa804b86829b?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1473966968600-fa804b86829b?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.5,
-    description: 'Classic slim-fit chinos made from premium cotton twill with a touch of stretch.',
-  },
-  {
-    id: '20',
-    name: 'Velvet Headband',
-    price: 28.0,
-    category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1576426863848-c2eb6635814d?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1576426863848-c2eb6635814d?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.7,
-    description: 'Soft velvet padded headband to elevate any hairstyle.',
-  },
-  {
-    id: '21',
-    name: 'High-Waisted Skinny Jeans',
-    price: 95.0,
-    category: 'Denim',
-    image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.6,
-    description: 'Flattering high-waisted skinny jeans with excellent shape retention.',
-  },
-  {
-    id: '22',
-    name: 'Yoga Mat Bag',
-    price: 42.0,
-    category: 'Sportswear',
-    image: 'https://images.unsplash.com/photo-1545208393-21655975024b?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1545208393-21655975024b?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.4,
-    description: 'Water-resistant yoga mat bag with a spacious interior and adjustable shoulder strap.',
-  },
-  {
-    id: '23',
-    name: 'Baby Knit Sweater Set',
-    price: 68.0,
-    category: 'Kids',
-    image: 'https://images.unsplash.com/photo-1522771935876-2497116a5a9e?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1522771935876-2497116a5a9e?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.9,
-    description: 'Cozy two-piece knit set made from soft hypoallergenic cotton.',
-  },
-  {
-    id: '24',
-    name: 'Polarized Sunglasses',
-    price: 125.0,
-    category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1511499767350-a1590fdb2861?w=800&auto=format&fit=crop&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1511499767350-a1590fdb2861?w=800&auto=format&fit=crop&q=80'
-    ],
-    rating: 4.7,
-    description: 'Classic aviator frames with polarized lenses for 100% UV protection.',
+    description: 'Premium quality handmade Peshawari Chappal (Kheri). Authentic craftsmanship with pure leather.',
   }
 ];
