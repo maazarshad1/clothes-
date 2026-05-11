@@ -5,44 +5,15 @@ import { ShoppingBag, Star, ArrowRight, CheckCircle, Shield, Truck } from 'lucid
 import { useStore } from '../context/StoreContext';
 import { toast } from 'react-hot-toast';
 
-const CategoryCard = ({ title, image, link }: { title: string; image: string; link: string }) => (
-  <Link to={link} className="group relative overflow-hidden aspect-square">
-    <img 
-      src={image} 
-      alt={title} 
-      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-    />
-    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors" />
-    <div className="absolute inset-0 flex items-center justify-center">
-      <h3 className="text-white font-serif text-2xl tracking-widest uppercase border-b-2 border-transparent group-hover:border-theme-accent p-2 transition-all">
-        {title}
-      </h3>
-    </div>
-  </Link>
-);
-
-const TestimonialCard = ({ name, comment, rating }: { name: string; comment: string; rating: number }) => (
-  <div className="bg-theme-card p-8 border border-theme-border">
-    <div className="flex text-theme-accent mb-4">
-      {[...Array(5)].map((_, i) => (
-        <Star key={i} size={16} fill={i < rating ? "currentColor" : "none"} stroke="currentColor" />
-      ))}
-    </div>
-    <p className="text-theme-text/80 italic mb-6 font-serif">"{comment}"</p>
-    <p className="text-theme-accent uppercase tracking-widest text-xs font-bold">— {name}</p>
-  </div>
-);
-
 const Home = () => {
   const { products: allCollection, collections } = useStore();
   const navigate = useNavigate();
 
-  // Combine static divisions with custom collections
-  // We prioritize custom collections assigned by the user
+  // Combine custom collections with all product groups
   const sections = React.useMemo(() => {
     const list: { title: string; id: string; category: string; type: 'collection' | 'category' }[] = [];
     
-    // Add custom collections
+    // Add custom collections first
     collections.forEach(col => {
       list.push({ 
         title: col.name, 
@@ -52,7 +23,7 @@ const Home = () => {
       });
     });
 
-    // Add all unique product categories that aren't already in common headers
+    // Ensure all unique categories are captured as fallback sections
     const productCategories = Array.from(new Set(allCollection.map(p => p.category)));
     productCategories.forEach(cat => {
       if (!list.some(s => s.title.toLowerCase() === cat.toLowerCase())) {
@@ -69,34 +40,45 @@ const Home = () => {
   }, [collections, allCollection]);
 
   return (
-    <div className="min-h-screen bg-black">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[80vh] flex items-center overflow-hidden">
+    <div className="min-h-screen bg-black text-white">
+      {/* Dynamic Hero Section */}
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop" 
-            alt="Hero Background" 
-            className="w-full h-full object-cover brightness-[0.3]"
+            src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop" 
+            alt="Premium Apparel" 
+            className="w-full h-full object-cover brightness-[0.25]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
         </div>
+        
         <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-            className="max-w-5xl mx-auto flex flex-col items-center"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="flex flex-col items-center"
           >
-            <h1 className="font-serif text-[70px] md:text-[160px] leading-none text-white mb-10 tracking-tighter uppercase drop-shadow-2xl">
-              COLLECTION
+            <span className="text-[#C2A46C] tracking-[0.6em] text-[10px] md:text-xs font-black uppercase mb-6">Established 2025</span>
+            <h1 className="font-serif text-[60px] md:text-[140px] leading-tight text-white mb-10 tracking-tighter uppercase">
+              DOPE PK
             </h1>
+            <p className="max-w-xl text-white/60 text-xs md:text-sm uppercase tracking-[0.3em] font-light mb-12 leading-relaxed">
+              Premium Streetwear & Refined Essentials <br/> Crafted for the Modern Individual
+            </p>
             <Link 
               to="/shop" 
-              className="bg-[#C2A46C] text-black px-16 py-5 text-sm uppercase tracking-[0.4em] font-black hover:bg-white transition-all transform hover:scale-105 duration-300 shadow-[0_10px_40px_rgba(194,164,108,0.3)]"
+              className="group relative overflow-hidden bg-[#C2A46C] text-black px-16 py-5 text-sm uppercase tracking-[0.4em] font-black transition-all hover:text-white"
             >
-              SHOP NOW
+              <span className="relative z-10">Explore Catalog</span>
+              <div className="absolute inset-x-0 bottom-0 h-0 bg-black transition-all group-hover:h-full" />
             </Link>
           </motion.div>
+        </div>
+        
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
+          <span className="text-[8px] uppercase tracking-[0.5em] font-black">Scroll to Discover</span>
+          <div className="w-[1px] h-20 bg-gradient-to-b from-white to-transparent" />
         </div>
       </section>
 

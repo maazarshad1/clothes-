@@ -109,9 +109,27 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
       if (syncedCollections.length === 0 && !snapshot.metadata.fromCache) {
         // Initialization if empty
         const defaults = [
-          { name: 'Winter Collection' },
-          { name: 'New Arrivals' },
-          { name: 'Featured' }
+          { name: "Basic Oversized | Dropshoulder Tees" },
+          { name: "Casual Shirts" },
+          { name: "Drop Needle Basic Tees" },
+          { name: "Drop Needle Zipper Polos" },
+          { name: "Full Sleeves T-Shirts" },
+          { name: "Graphic Tees" },
+          { name: "Hoodies" },
+          { name: "Men’s Bomber Jackets" },
+          { name: "Oversized Waffle Knit Raglan T-shirts" },
+          { name: "Oversized | Drop Shoulder" },
+          { name: "Panel Zip Polo" },
+          { name: "Sweatshirts" },
+          { name: "Tracksuits" },
+          { name: "Two Tone Johnny Collar Polo" },
+          { name: "Waffle Knit - Dual Stripe Zip Polo Shirt" },
+          { name: "Waffle Knit Cuban Shirts" },
+          { name: "Waffle Knit Round Neck" },
+          { name: "Waffle Knit Textured Stripe Polos" },
+          { name: "Waffle Knit Zipper Polo T-Shirts" },
+          { name: "Waffle Knitted Sweatshirts" },
+          { name: "WaffleZip Mocknecks" }
         ];
         defaults.forEach(async (col) => {
           const docRef = doc(collection(db, 'collections'));
