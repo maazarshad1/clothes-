@@ -99,32 +99,23 @@ const Home = () => {
                 <div className="aspect-[4/5] overflow-hidden relative">
                   <Link to={`/product/${product.id}`} className="block w-full h-full">
                     <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                   </Link>
-                  <div className="absolute bottom-2 left-2 right-2 flex flex-col gap-1 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-30">
-                    <button 
-                      onClick={(e) => {
-                        e.preventDefault();
-                        addToCart(product);
-                      }}
-                      className="bg-white text-black py-1.5 font-bold uppercase tracking-widest text-[7px]"
-                    >
-                      Quick Add
-                    </button>
-                    <Link
-                      to="/cart"
-                      onClick={() => addToCart(product)}
-                      className="bg-theme-accent text-theme-bg py-1.5 font-bold uppercase tracking-widest text-[7px] text-center"
-                    >
-                      Buy Now
-                    </Link>
-                  </div>
                 </div>
 
-                <Link to={`/product/${product.id}`} className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
-                  <h3 className="font-serif text-xs mb-1 truncate px-1">{product.name}</h3>
+                <div className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <h3 className="font-serif text-[10px] sm:text-xs truncate max-w-[70%]">{product.name}</h3>
+                    <Link 
+                      to="/cart" 
+                      onClick={() => addToCart(product)}
+                      className="bg-theme-accent text-theme-bg px-1.5 py-0.5 text-[7px] font-bold uppercase tracking-widest whitespace-nowrap"
+                    >
+                      Buy
+                    </Link>
+                  </div>
                   <p className="text-theme-accent font-bold tracking-widest text-[10px]">PKR {product.price}</p>
-                </Link>
+                </div>
               </motion.div>
             ))}
           </div>
