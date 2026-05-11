@@ -17,6 +17,8 @@
     background-color: var(--color-theme-bg);
     color: var(--color-theme-text);
     font-family: var(--font-sans);
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 

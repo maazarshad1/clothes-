@@ -56,7 +56,7 @@ const Home = () => {
             className="max-w-2xl"
           >
             <h4 className="text-theme-accent tracking-[0.3em] font-semibold uppercase mb-4">The New Standard</h4>
-            <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Elite Comfort <br/> Premium Design</h1>
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl mb-8 leading-tight">Elite Comfort <br/> Premium Design</h1>
             <p className="text-lg text-theme-text/70 mb-10 font-serif max-w-lg">
               Experience the pinnacle of footwear engineering. Our collection blends architectural style with unparalleled comfort.
             </p>
@@ -74,7 +74,7 @@ const Home = () => {
           <div className="w-20 h-1 bg-theme-accent mx-auto" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <CategoryCard title="Clogs" image="https://images.unsplash.com/photo-1592862902946-b3e8241ae203?w=800" link="/shop?category=Clogs" />
+          <CategoryCard title="Clogs" image="https://images.unsplash.com/photo-1559196696-6ca495fdb02f?w=800&auto=format&fit=crop" link="/shop?category=Clogs" />
           <CategoryCard title="Slides" image="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800" link="/shop?category=Slides" />
           <CategoryCard title="Traditional" image="https://images.unsplash.com/photo-1605733513597-a8f8d410fe3e?w=800" link="/shop?category=Traditional" />
         </div>
@@ -176,14 +176,14 @@ const Home = () => {
 
       {/* Newsletter */}
       <section className="py-24 container mx-auto px-4 border-t border-theme-border">
-        <div className="bg-theme-accent p-12 lg:p-24 text-theme-bg text-center">
-          <h2 className="font-serif text-4xl mb-6">GET 10% DISCOUNT</h2>
-          <p className="uppercase tracking-[0.2em] mb-10 opacity-80">Subscribe to our email list to unlock exclusive deals</p>
-          <div className="max-w-md mx-auto flex">
+        <div className="bg-theme-accent p-8 md:p-24 text-theme-bg text-center">
+          <h2 className="font-serif text-3xl md:text-4xl mb-6">GET 10% DISCOUNT</h2>
+          <p className="uppercase tracking-[0.2em] mb-10 opacity-80 text-xs md:text-sm">Subscribe to our email list to unlock exclusive deals</p>
+          <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-2 sm:gap-0">
             <input 
               type="email" 
               placeholder="Your email address" 
-              className="flex-1 bg-white border-none px-6 py-4 text-theme-bg focus:ring-0"
+              className="flex-1 bg-white border-none px-6 py-4 text-theme-bg focus:ring-0 min-w-0"
             />
             <button className="bg-theme-bg text-theme-accent px-8 py-4 font-bold uppercase tracking-widest hover:opacity-90 transition">
               Subscribe
