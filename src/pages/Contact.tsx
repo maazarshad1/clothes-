@@ -14,16 +14,16 @@ const Contact = () => {
             
             <div className="space-y-8 text-sm">
               <div>
-                <h3 className="font-bold uppercase tracking-[0.2em] mb-2 text-theme-accent">Email</h3>
-                <p className="text-theme-text/80 font-sans text-base">support@zurban.pk</p>
+                <h3 className="font-bold uppercase tracking-[0.2em] mb-2 text-theme-accent">Corporate Email</h3>
+                <p className="text-theme-text/80 font-sans text-base">contact@urbanstyle.app</p>
               </div>
               <div>
-                <h3 className="font-bold uppercase tracking-[0.2em] mb-2 text-theme-accent">WhatsApp</h3>
-                <p className="text-theme-text/80 font-sans text-base">+92 300 1234567</p>
+                <h3 className="font-bold uppercase tracking-[0.2em] mb-2 text-theme-accent">Direct Line</h3>
+                <p className="text-theme-text/80 font-sans text-base">+44 7700 900077</p>
               </div>
               <div>
-                <h3 className="font-bold uppercase tracking-[0.2em] mb-2 text-theme-accent">Office</h3>
-                <p className="text-theme-text/80 font-serif text-base leading-relaxed">Office 12, Level 4, Tech Plaza<br/>Lahore, Pakistan</p>
+                <h3 className="font-bold uppercase tracking-[0.2em] mb-2 text-theme-accent">Creative Studio</h3>
+                <p className="text-theme-text/80 font-serif text-base leading-relaxed">Studio 24, Heritage Square<br/>Central Avenue, London, UK</p>
               </div>
             </div>
           </div>

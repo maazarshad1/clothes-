@@ -25,7 +25,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="mb-10 font-serif"
         >
-          Zurban was born out of a desire for curated, timeless footwear in Pakistan. We believe that true luxury lies in simplicity, quality craftsmanship, and attention to detail.
+          Urban was born out of a desire for curated, timeless footwear. We believe that true luxury lies in simplicity, quality craftsmanship, and attention to detail.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="font-serif"
         >
-          Our mission is to provide pieces that elevate your everyday walk, focusing on premium materials and authentic craftsmanship. Every pair of Zurban slides or clogs is designed to keep you moving comfortably every step of the way.
+          Our mission is to provide pieces that elevate your everyday walk, focusing on premium materials and authentic craftsmanship. Every pair of Urban slides or clogs is designed to keep you moving comfortably every step of the way.
         </motion.p>
       </section>
     </div>

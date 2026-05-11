@@ -25,7 +25,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center justify-center md:justify-start flex-1 md:flex-none">
             <Link to="/" className="text-2xl font-serif text-theme-accent tracking-widest font-semibold uppercase">
-              ZURBAN
+              URBAN
             </Link>
           </div>
 

@@ -43,9 +43,9 @@ const Home = () => {
       <section className="relative h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2012&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop" 
             alt="Hero" 
-            className="w-full h-full object-cover brightness-[0.4]"
+            className="w-full h-full object-cover brightness-[0.5]"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -55,10 +55,10 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
           >
-            <h4 className="text-theme-accent tracking-[0.3em] font-semibold uppercase mb-4">Welcome to Zurban</h4>
-            <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Comfort Meets Premium Craftsmanship</h1>
+            <h4 className="text-theme-accent tracking-[0.3em] font-semibold uppercase mb-4">The New Standard</h4>
+            <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight">Elite Comfort <br/> Premium Design</h1>
             <p className="text-lg text-theme-text/70 mb-10 font-serif max-w-lg">
-              Footwear should be more than just stylish — it should provide exceptional comfort and care for your feet.
+              Experience the pinnacle of footwear engineering. Our collection blends architectural style with unparalleled comfort.
             </p>
             <Link to="/shop" className="bg-theme-accent text-theme-bg px-10 py-4 uppercase tracking-widest font-bold hover:bg-white transition-colors duration-300">
               Shop Collection
@@ -92,25 +92,35 @@ const Home = () => {
               View All <ArrowRight size={16} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {bestSellers.map((product) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {bestSellers.map((product, index) => (
               <motion.div 
                 key={product.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="bg-theme-card border border-theme-border group"
+                className="bg-theme-card border border-theme-border group relative"
               >
+                {index === 0 && (
+                  <div className="absolute top-4 left-4 z-20 bg-theme-accent text-theme-bg px-3 py-1 text-[10px] uppercase font-bold tracking-widest shadow-lg">
+                    Best Seller
+                  </div>
+                )}
                 <div className="aspect-[3/4] overflow-hidden relative">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
                   <button 
                     onClick={() => addToCart(product)}
-                    className="absolute bottom-0 left-0 right-0 bg-theme-accent text-theme-bg py-4 opacity-0 group-hover:opacity-100 transition-opacity font-bold uppercase tracking-widest"
+                    className="absolute bottom-6 left-6 right-6 bg-white text-black py-4 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 font-bold uppercase tracking-widest text-[10px]"
                   >
                     Add to Cart
                   </button>
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="font-serif text-lg mb-2 truncate">{product.name}</h3>
-                  <p className="text-theme-accent font-bold">PKR {product.price}</p>
+                <div className="p-8 text-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                  <h3 className="font-serif text-xl mb-3 truncate">{product.name}</h3>
+                  <p className="text-theme-accent font-bold tracking-widest text-sm">PKR {product.price}</p>
                 </div>
               </motion.div>
             ))}
@@ -124,15 +134,15 @@ const Home = () => {
           <div className="lg:w-1/2">
             <img 
               src="https://images.unsplash.com/photo-1544816153-1574d6c4125b?w=1200&auto=format&fit=crop&q=80" 
-              alt="About Zurban" 
+              alt="About Urban" 
               className="w-full h-[600px] object-cover shadow-2xl"
             />
           </div>
           <div className="lg:w-1/2">
-            <h4 className="text-theme-accent tracking-widest uppercase font-bold text-sm mb-4">About Our Brand</h4>
-            <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight">Quality and Elegance in Every Step</h2>
+            <h4 className="text-theme-accent tracking-widest uppercase font-bold text-sm mb-4">Our Methodology</h4>
+            <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight">Signature Comfort in Every Step</h2>
             <p className="text-theme-text/80 text-lg font-serif mb-8 leading-relaxed">
-              At Zurban, we believe that premium quality shouldn't come with an unreachable price tag. Our mission is to provide the perfect balance between style, durability, and comfort for the modern individual who values authentic craftsmanship.
+              At Urban, we believe that premium quality shouldn't come with an unreachable price tag. Our mission is to provide the perfect balance between high-end style and everyday durability.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-theme-accent">
@@ -157,9 +167,9 @@ const Home = () => {
             <p className="text-theme-accent uppercase tracking-widest text-xs">Real Feedback From Real People</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TestimonialCard name="Waseem Riaz" comment="The Skecher OG Slides are incredibly comfortable. Best purchase for daily use!" rating={5} />
-            <TestimonialCard name="Usman Rashid" comment="Superior quality and fast delivery. Highly recommended for premium footwear." rating={5} />
-            <TestimonialCard name="Arham Butt" comment="Classy design and very durable. Zurban never disappoints." rating={4} />
+            <TestimonialCard name="James Wilson" comment="These slides are a game changer for my post-gym recovery. Unmatched cushioning." rating={5} />
+            <TestimonialCard name="Sarah Chen" comment="Sophisticated design that actually feels good to walk in. Will be buying more." rating={5} />
+            <TestimonialCard name="Marcus Thorne" comment="Industrial strength quality with a luxury feel. Urban is my new go-to." rating={5} />
           </div>
         </div>
       </section>

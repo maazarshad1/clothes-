@@ -3,7 +3,7 @@ import { Product } from '../context/StoreContext';
 export const products: Product[] = [
   {
     id: 'skecher-og-slides',
-    name: 'Skecher OG Slides - By Zurban',
+    name: 'Skecher OG Slides - By Urban',
     price: 1550,
     category: 'Slides',
     image: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800&auto=format&fit=crop&q=80',
@@ -17,7 +17,7 @@ export const products: Product[] = [
   },
   {
     id: 'skechers-premium-slides',
-    name: 'Skechers Premium Slides - by Zurban',
+    name: 'Skechers Premium Slides - by Urban',
     price: 1850,
     category: 'Slides',
     image: 'https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&auto=format&fit=crop&q=80',
@@ -27,11 +27,11 @@ export const products: Product[] = [
     ],
     video: 'https://assets.mixkit.co/videos/preview/mixkit-man-walking-in-front-of-a-classic-building-44755-large.mp4',
     rating: 4.9,
-    description: 'Elevate your daily walk with Zurban Premium Slides. Crafted for durability and ultimate cushioning.',
+    description: 'Elevate your daily walk with Urban Premium Slides. Crafted for durability and ultimate cushioning.',
   },
   {
-    id: 'zurban-formal-slides',
-    name: 'Zurban Formal Slides',
+    id: 'urban-formal-slides',
+    name: 'Urban Formal Slides',
     price: 1250,
     category: 'Slides',
     image: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&auto=format&fit=crop&q=80',
@@ -43,7 +43,7 @@ export const products: Product[] = [
   },
   {
     id: 'classy-slides',
-    name: 'Classy Slides - By Zurban',
+    name: 'Classy Slides - By Urban',
     price: 1450,
     category: 'Slides',
     image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80',
@@ -51,11 +51,11 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80'
     ],
     rating: 4.6,
-    description: 'The everyday essential. Lightweight, durable, and effortlessly classy design from the Zurban collection.',
+    description: 'The everyday essential. Lightweight, durable, and effortlessly classy design from the Urban collection.',
   },
   {
-    id: 'zurban-clogs-v1',
-    name: 'Zurban Pro Clogs',
+    id: 'urban-clogs-v1',
+    name: 'Urban Pro Clogs',
     price: 2100,
     category: 'Clogs',
     image: 'https://images.unsplash.com/photo-1592862902946-b3e8241ae203?w=800&auto=format&fit=crop&q=80',
