@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
-            <h3 className="text-2xl font-serif tracking-widest uppercase font-bold text-theme-accent">URBAN OUTFITTER</h3>
+            <h3 className="text-2xl font-serif tracking-widest uppercase font-bold text-theme-accent">.URBAN OUTFITTER</h3>
             <p className="text-theme-text/60 text-sm leading-relaxed font-serif">
               Premium Streetwear & Refined Essentials. Crafted for the modern individual who values quality and distinctive style.
             </p>
@@ -51,7 +51,7 @@ const Footer = () => {
         
         <div className="border-t border-theme-border pt-10 text-center">
           <p className="text-[10px] uppercase tracking-[0.2em] text-theme-text/30">
-            &copy; {new Date().getFullYear()} URBAN OUTFITTER. All rights reserved.
+            &copy; {new Date().getFullYear()} .URBAN OUTFITTER. All rights reserved.
           </p>
         </div>
       </div>

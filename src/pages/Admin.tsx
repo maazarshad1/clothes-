@@ -210,7 +210,7 @@ const Admin = () => {
     return (
       <div className="flex flex-col h-screen w-full items-center justify-center bg-theme-bg font-sans p-4">
         <div className="bg-theme-card p-8 border border-theme-border shadow-2xl max-w-sm w-full">
-          <h2 className="text-3xl font-serif mb-6 text-center text-theme-accent uppercase tracking-widest">Urban Outfitter Admin</h2>
+          <h2 className="text-3xl font-serif mb-6 text-center text-theme-accent uppercase tracking-widest">.Urban Outfitter Admin</h2>
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-1">Passcode</label>
@@ -422,7 +422,7 @@ const Admin = () => {
       `}>
         <div className="p-8 flex justify-between items-start">
           <div>
-            <h2 className="text-theme-accent font-serif text-3xl tracking-widest uppercase mb-1">URBAN OUTFITTER</h2>
+            <h2 className="text-theme-accent font-serif text-3xl tracking-widest uppercase mb-1">.URBAN OUTFITTER</h2>
             <p className="text-[10px] tracking-[0.3em] font-bold opacity-30">ADMINISTRATOR</p>
           </div>
           <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden text-theme-accent p-2">
@@ -482,7 +482,7 @@ const Admin = () => {
       <div className="flex-1 flex flex-col overflow-auto relative">
         {/* Mobile Header */}
         <div className="lg:hidden flex items-center justify-between p-4 bg-black text-white border-b border-theme-border">
-          <h2 className="text-sm font-serif tracking-widest uppercase text-theme-accent">URBAN OUTFITTER ADMIN</h2>
+          <h2 className="text-sm font-serif tracking-widest uppercase text-theme-accent">.URBAN OUTFITTER ADMIN</h2>
           <button onClick={() => setIsSidebarOpen(true)} className="p-2 text-theme-accent">
             <Menu size={20} />
           </button>
