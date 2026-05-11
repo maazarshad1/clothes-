@@ -7,6 +7,12 @@ export const products: Product[] = [
     price: 185.0,
     category: 'Women',
     image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&auto=format&fit=crop&q=80'
+    ],
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-walking-on-a-beach-33987-large.mp4',
     rating: 4.8,
     description: 'A minimal silk blend slip dress perfect for evening wear. Features a delicate cowl neck and adjustable straps.',
   },
@@ -16,6 +22,12 @@ export const products: Product[] = [
     price: 320.0,
     category: 'Men',
     image: 'https://images.unsplash.com/photo-1520975954732-57dd22299614?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1520975954732-57dd22299614?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=800&auto=format&fit=crop&q=80'
+    ],
+    video: 'https://assets.mixkit.co/videos/preview/mixkit-man-walking-in-front-of-a-classic-building-44755-large.mp4',
     rating: 4.9,
     description: 'Classic double-breasted wool coat with a modern tailored fit.',
   },
@@ -25,6 +37,11 @@ export const products: Product[] = [
     price: 240.0,
     category: 'Accessories',
     image: 'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1544816153-1574d6c4125b?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.7,
     description: 'Handcrafted full-grain leather tote with brass hardware and interior zip pocket.',
   },
@@ -34,6 +51,10 @@ export const products: Product[] = [
     price: 145.0,
     category: 'Women',
     image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.6,
     description: 'Ultra-soft 100% cashmere sweater featuring a relaxed silhouette and mock neck design.',
   },
@@ -43,6 +64,10 @@ export const products: Product[] = [
     price: 110.0,
     category: 'Men',
     image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.5,
     description: 'Contemporary wide-leg pleated trousers made from breathable linen blend.',
   },
@@ -52,6 +77,10 @@ export const products: Product[] = [
     price: 45.0,
     category: 'Kids',
     image: 'https://images.unsplash.com/photo-1519241047957-be31d7379a5d?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1519241047957-be31d7379a5d?w=800&auto=format&fit=crop&q=80',
+      'https://images.unsplash.com/photo-1519689680058-324335c77eba?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.8,
     description: 'Soft organic cotton romper for toddlers, featuring easy snap-button closures.',
   },
@@ -61,6 +90,9 @@ export const products: Product[] = [
     price: 85.0,
     category: 'Accessories',
     image: 'https://images.unsplash.com/photo-1599643478514-4a4e08d56726?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1599643478514-4a4e08d56726?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.9,
     description: '18k gold plated herringbone chain necklace. Water-resistant and tarnish-free.',
   },
@@ -70,6 +102,9 @@ export const products: Product[] = [
     price: 95.0,
     category: 'Women',
     image: 'https://images.unsplash.com/photo-1583496661160-c5dcb2241c73?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1583496661160-c5dcb2241c73?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.4,
     description: 'High-waisted structured midi skirt with an asymmetrical hemline.',
   },
@@ -79,6 +114,9 @@ export const products: Product[] = [
     price: 210.0,
     category: 'Shoes',
     image: 'https://images.unsplash.com/photo-1542288960-a292f1f6d900?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1542288960-a292f1f6d900?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.7,
     description: 'Classic leather chelsea boots with elastic side panels and durable rubber soles.',
   },
@@ -88,6 +126,9 @@ export const products: Product[] = [
     price: 120.0,
     category: 'Denim',
     image: 'https://images.unsplash.com/photo-1527010159945-c4250922b29c?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1527010159945-c4250922b29c?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.6,
     description: 'Vintage-wash oversized denim jacket with metallic buttons and four-pocket styling.',
   },
@@ -97,6 +138,9 @@ export const products: Product[] = [
     price: 85.0,
     category: 'Sportswear',
     image: 'https://images.unsplash.com/photo-1548330065-2956a1606248?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1548330065-2956a1606248?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.9,
     description: 'Moisture-wicking, squat-proof leggings with a high waistband and side phone pockets.',
   },
@@ -106,6 +150,9 @@ export const products: Product[] = [
     price: 155.0,
     category: 'Shoes',
     image: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.5,
     description: 'Elegant suede loafers with a comfortable cushioned insole.',
   },
@@ -115,6 +162,9 @@ export const products: Product[] = [
     price: 78.0,
     category: 'Men',
     image: 'https://images.unsplash.com/photo-1594932224010-74f43a163548?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1594932224010-74f43a163548?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.4,
     description: 'Breathable 100% linen shirt for a relaxed summer aesthetic.',
   },
@@ -124,6 +174,9 @@ export const products: Product[] = [
     price: 135.0,
     category: 'Women',
     image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.7,
     description: 'Flowy floral print maxi dress with a wrap front and tiered skirt.',
   },
@@ -133,6 +186,9 @@ export const products: Product[] = [
     price: 295.0,
     category: 'Accessories',
     image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.8,
     description: 'Stainless steel chronograph watch with a genuine leather strap and sapphire glass.',
   },
@@ -142,6 +198,9 @@ export const products: Product[] = [
     price: 55.0,
     category: 'Kids',
     image: 'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.6,
     description: 'Durable denim overalls with adjustable straps for growing children.',
   },
@@ -151,6 +210,9 @@ export const products: Product[] = [
     price: 65.0,
     category: 'Shoes',
     image: 'https://images.unsplash.com/photo-1525966222034-adcdd8b2977b?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1525966222034-adcdd8b2977b?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.3,
     description: 'Versatile canvas sneakers with a retro-inspired design.',
   },
@@ -160,6 +222,9 @@ export const products: Product[] = [
     price: 140.0,
     category: 'Sportswear',
     image: 'https://images.unsplash.com/photo-1544923246-77307dddd5e5?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1544923246-77307dddd5e5?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.8,
     description: 'Water-repellent technical windbreaker with adjustable hood and reflective details.',
   },
@@ -169,6 +234,9 @@ export const products: Product[] = [
     price: 88.0,
     category: 'Men',
     image: 'https://images.unsplash.com/photo-1473966968600-fa804b86829b?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1473966968600-fa804b86829b?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.5,
     description: 'Classic slim-fit chinos made from premium cotton twill with a touch of stretch.',
   },
@@ -178,6 +246,9 @@ export const products: Product[] = [
     price: 28.0,
     category: 'Accessories',
     image: 'https://images.unsplash.com/photo-1576426863848-c2eb6635814d?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1576426863848-c2eb6635814d?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.7,
     description: 'Soft velvet padded headband to elevate any hairstyle.',
   },
@@ -187,6 +258,9 @@ export const products: Product[] = [
     price: 95.0,
     category: 'Denim',
     image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.6,
     description: 'Flattering high-waisted skinny jeans with excellent shape retention.',
   },
@@ -196,6 +270,9 @@ export const products: Product[] = [
     price: 42.0,
     category: 'Sportswear',
     image: 'https://images.unsplash.com/photo-1545208393-21655975024b?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1545208393-21655975024b?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.4,
     description: 'Water-resistant yoga mat bag with a spacious interior and adjustable shoulder strap.',
   },
@@ -205,6 +282,9 @@ export const products: Product[] = [
     price: 68.0,
     category: 'Kids',
     image: 'https://images.unsplash.com/photo-1522771935876-2497116a5a9e?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1522771935876-2497116a5a9e?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.9,
     description: 'Cozy two-piece knit set made from soft hypoallergenic cotton.',
   },
@@ -214,6 +294,9 @@ export const products: Product[] = [
     price: 125.0,
     category: 'Accessories',
     image: 'https://images.unsplash.com/photo-1511499767350-a1590fdb2861?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1511499767350-a1590fdb2861?w=800&auto=format&fit=crop&q=80'
+    ],
     rating: 4.7,
     description: 'Classic aviator frames with polarized lenses for 100% UV protection.',
   }

@@ -7,6 +7,8 @@ export interface Product {
   price: number;
   category: string;
   image: string;
+  images: string[];
+  video?: string;
   rating: number;
   description: string;
 }
@@ -56,9 +58,9 @@ interface StoreContextType {
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
 
 const initialOrders: Order[] = [
-  { id: 'ORD-001', customerName: 'John Doe', email: 'john@example.com', phoneNumber: '(555) 123-4567', address: '123 Main St', city: 'New York', postalCode: '10001', items: [{ id: '1', name: 'Product 1', price: 120.0, category: 'Men', image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', rating: 5, description: 'Test', quantity: 1, size: 'M', cartItemId: '1-M' }], paymentMethod: 'Card', total: 120.0, status: 'Pending', date: new Date(Date.now() - 86400000).toISOString().split('T')[0] },
-  { id: 'ORD-002', customerName: 'Jane Smith', email: 'jane@example.com', phoneNumber: '(555) 987-6543', address: '456 Elm St', city: 'Los Angeles', postalCode: '90001', items: [{ id: '2', name: 'Product 2', price: 345.5, category: 'Women', image: 'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', rating: 4, description: 'Test', quantity: 1, size: 'S', cartItemId: '2-S' }], paymentMethod: 'Cash on Delivery', total: 345.5, status: 'Shipped', date: new Date(Date.now() - 172800000).toISOString().split('T')[0] },
-  { id: 'ORD-003', customerName: 'Alice Johnson', email: 'alice@example.com', phoneNumber: '(555) 555-5555', address: '789 Oak St', city: 'Chicago', postalCode: '60001', items: [{ id: '3', name: 'Product 3', price: 45.0, category: 'Kids', image: 'https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', rating: 5, description: 'Test', quantity: 1, size: 'L', cartItemId: '3-L' }], paymentMethod: 'Card', total: 45.0, status: 'Delivered', date: new Date(Date.now() - 259200000).toISOString().split('T')[0] },
+  { id: 'ORD-001', customerName: 'John Doe', email: 'john@example.com', phoneNumber: '(555) 123-4567', address: '123 Main St', city: 'New York', postalCode: '10001', items: [{ id: '1', name: 'Product 1', price: 120.0, category: 'Men', image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', images: ['https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'], rating: 5, description: 'Test', quantity: 1, size: 'M', cartItemId: '1-M' }], paymentMethod: 'Card', total: 120.0, status: 'Pending', date: new Date(Date.now() - 86400000).toISOString().split('T')[0] },
+  { id: 'ORD-002', customerName: 'Jane Smith', email: 'jane@example.com', phoneNumber: '(555) 987-6543', address: '456 Elm St', city: 'Los Angeles', postalCode: '90001', items: [{ id: '2', name: 'Product 2', price: 345.5, category: 'Women', image: 'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', images: ['https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'], rating: 4, description: 'Test', quantity: 1, size: 'S', cartItemId: '2-S' }], paymentMethod: 'Cash on Delivery', total: 345.5, status: 'Shipped', date: new Date(Date.now() - 172800000).toISOString().split('T')[0] },
+  { id: 'ORD-003', customerName: 'Alice Johnson', email: 'alice@example.com', phoneNumber: '(555) 555-5555', address: '789 Oak St', city: 'Chicago', postalCode: '60001', items: [{ id: '3', name: 'Product 3', price: 45.0, category: 'Kids', image: 'https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', images: ['https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'], rating: 5, description: 'Test', quantity: 1, size: 'L', cartItemId: '3-L' }], paymentMethod: 'Card', total: 45.0, status: 'Delivered', date: new Date(Date.now() - 259200000).toISOString().split('T')[0] },
 ];
 
 export const StoreProvider = ({ children }: { children: ReactNode }) => {

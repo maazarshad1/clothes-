@@ -321,9 +321,16 @@ const Admin = () => {
       price: parseFloat(formData.get('price') as string),
       category: formData.get('category') as string,
       image: formData.get('image') as string,
+      images: (formData.get('images-list') as string).split(',').map(s => s.trim()).filter(s => s !== ''),
+      video: formData.get('video') as string || undefined,
       rating: parseFloat(formData.get('rating') as string) || 5,
       description: formData.get('description') as string,
     };
+
+    // Ensure the main image is in the images array if not already there
+    if (productData.image && !productData.images.includes(productData.image)) {
+      productData.images.unshift(productData.image);
+    }
 
     try {
       if (editingProduct) {
@@ -620,8 +627,16 @@ const Admin = () => {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Image URL</label>
+                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Main Image URL</label>
                   <input name="image" defaultValue={editingProduct?.image || ''} required className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" />
+                </div>
+                <div>
+                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Slideshow Images (comma separated URLs)</label>
+                  <input name="images-list" defaultValue={editingProduct?.images?.join(', ') || ''} className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" placeholder="url1, url2, url3" />
+                </div>
+                <div>
+                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Video URL (optional)</label>
+                  <input name="video" defaultValue={editingProduct?.video || ''} className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" placeholder="https://..." />
                 </div>
                 <div>
                   <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Description</label>
