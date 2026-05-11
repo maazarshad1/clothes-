@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useStore } from '../context/StoreContext';
-import { ShoppingBag, ArrowLeft, ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
+import { ShoppingBag, ArrowLeft, ChevronLeft, ChevronRight, Play, X, CreditCard } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { toast } from 'react-hot-toast';
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const { addToCart, products } = useStore();
   const product = products.find((p) => p.id === id);
   const [selectedSize, setSelectedSize] = useState<string>('');
@@ -166,14 +168,30 @@ const ProductDetails = () => {
             <button 
               onClick={() => {
                 if (!selectedSize) {
-                  alert('Please select a size');
+                  toast.error('Please select a size');
                   return;
                 }
                 addToCart(product, selectedSize);
+                toast.success('Added to cart');
               }}
               className="w-full bg-theme-accent text-theme-bg py-5 flex items-center justify-center gap-3 text-sm font-bold tracking-widest uppercase hover:bg-white transition mt-8"
             >
               <ShoppingBag size={20} /> Add to Cart
+            </button>
+
+            <button 
+              onClick={() => {
+                if (!selectedSize) {
+                  toast.error('Please select a size');
+                  return;
+                }
+                addToCart(product, selectedSize);
+                toast.success('Proceeding to checkout');
+                navigate('/cart');
+              }}
+              className="w-full bg-white text-theme-bg py-5 flex items-center justify-center gap-3 text-sm font-bold tracking-widest uppercase hover:bg-theme-accent transition mt-4"
+            >
+              <CreditCard size={20} /> Buy it Now
             </button>
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="border border-theme-border p-4 text-center">

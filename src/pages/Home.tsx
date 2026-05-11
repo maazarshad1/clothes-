@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingBag, Star, ArrowRight, CheckCircle, Shield, Truck } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
-import { products as allProducts } from '../data/products';
+import { toast } from 'react-hot-toast';
 
 const CategoryCard = ({ title, image, link }: { title: string; image: string; link: string }) => (
   <Link to={link} className="group relative overflow-hidden aspect-square">
@@ -34,8 +34,8 @@ const TestimonialCard = ({ name, comment, rating }: { name: string; comment: str
 );
 
 const Home = () => {
-  const { addToCart } = useStore();
-  const allCollection = allProducts;
+  const { addToCart, products: allCollection } = useStore();
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen">
@@ -104,17 +104,24 @@ const Home = () => {
                 </div>
 
                 <div className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
-                  <div className="flex items-center justify-center gap-2 mb-1">
-                    <h3 className="font-serif text-[10px] sm:text-xs truncate max-w-[70%]">{product.name}</h3>
-                    <Link 
-                      to="/cart" 
-                      onClick={() => addToCart(product)}
-                      className="bg-theme-accent text-theme-bg px-1.5 py-0.5 text-[7px] font-bold uppercase tracking-widest whitespace-nowrap"
-                    >
-                      Buy
+                  <div className="mb-2">
+                    <Link to={`/product/${product.id}`}>
+                      <h3 className="font-serif text-[11px] sm:text-xs truncate mb-1 hover:text-theme-accent transition-colors">{product.name}</h3>
                     </Link>
+                    <p className="text-theme-accent font-bold tracking-widest text-[10px] mb-3">PKR {product.price}</p>
+                    
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        addToCart(product);
+                        toast.success('Added to cart');
+                        navigate('/cart');
+                      }}
+                      className="w-full bg-theme-accent text-theme-bg py-2 text-[9px] font-bold uppercase tracking-widest hover:bg-white transition-colors"
+                    >
+                      Buy Now
+                    </button>
                   </div>
-                  <p className="text-theme-accent font-bold tracking-widest text-[10px]">PKR {product.price}</p>
                 </div>
               </motion.div>
             ))}
