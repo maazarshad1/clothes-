@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import { Product, useStore } from '../context/StoreContext';
 import { ShoppingBag, Heart, Search, SlidersHorizontal, CreditCard } from 'lucide-react';
@@ -91,14 +91,14 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [activeCollection, setActiveCollection] = useState<string>('All');
+  const productsRef = useRef<HTMLDivElement>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const categoryParam = searchParams.get('category');
     const collectionParam = searchParams.get('collection');
     
     if (categoryParam) {
       setActiveCategory(categoryParam);
-      // Reset collection if navigating to a specific category from home
       if (!collectionParam) setActiveCollection('All');
     } else {
       setActiveCategory('All');
@@ -106,10 +106,14 @@ const Shop = () => {
 
     if (collectionParam) {
       setActiveCollection(collectionParam);
-      // Reset category if navigating to a specific collection from home
       if (!categoryParam) setActiveCategory('All');
     } else if (!categoryParam) {
       setActiveCollection('All');
+    }
+
+    // Scroll to products if filtered
+    if ((categoryParam || collectionParam) && productsRef.current) {
+      productsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [searchParams]);
 
@@ -214,18 +218,20 @@ const Shop = () => {
           </div>
         </div>
 
-        {/* Product Grid */}
-        {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-            {filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-24 text-gray-500">
-            <p className="text-lg">No products found matching your criteria.</p>
-          </div>
-        )}
+        {/* Product Grid Area */}
+        <div ref={productsRef} className="scroll-mt-32">
+          {filteredProducts.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+              {filteredProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-24 text-gray-500">
+              <p className="text-lg">No products found matching your criteria.</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
