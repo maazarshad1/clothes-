@@ -5,7 +5,7 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   
-  --color-theme-bg: #1A2421;
+  --color-theme-bg: #000000;
   --color-theme-text: #F8F9F8;
   --color-theme-accent: #C5A059;
   --color-theme-border: rgba(197, 160, 89, 0.2);
@@ -14,16 +14,12 @@
 
 @layer base {
   body {
-  background-color: var(--color-theme-bg);
-  color: var(--color-theme-text);
-  font-family: var(--font-sans);
-  overflow-x: hidden;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
+    background-color: #000000;
+    color: var(--color-theme-text);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    width: 100%;
+  }
 }
 
 .font-serif {

@@ -58,15 +58,15 @@ const Home = () => {
             : `/shop?category=${section.category}`;
 
           return (
-            <section key={section.id || section.category} className="py-24 border-b border-white/5">
+            <section key={section.id || section.category} className="py-12 md:py-24 border-b border-white/5">
               <div className="container mx-auto px-4">
-                <div className="flex justify-between items-end mb-16 border-b border-white/10 pb-8">
-                  <div className="group">
-                    <h2 className="font-serif text-5xl md:text-6xl uppercase tracking-tight text-white mb-2">{section.title}</h2>
-                    <div className="h-1.5 w-40 bg-[#C2A46C] transition-all group-hover:w-full"></div>
+                <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-10 md:mb-16 border-b border-white/10 pb-6 md:pb-8 gap-6">
+                  <div className="group flex-1">
+                    <h2 className="font-serif text-3xl md:text-6xl uppercase tracking-tight text-white mb-2 break-words">{section.title}</h2>
+                    <div className="h-1 w-20 md:h-1.5 md:w-40 bg-[#C2A46C] transition-all group-hover:w-full"></div>
                   </div>
-                  <Link to={linkPath} className="text-white/40 uppercase tracking-[0.4em] text-[11px] font-black flex items-center gap-2 hover:text-[#C2A46C] transition-all group">
-                    VIEW ALL <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
+                  <Link to={linkPath} className="text-white/40 uppercase tracking-[0.4em] text-[10px] md:text-[11px] font-black flex items-center gap-2 hover:text-[#C2A46C] transition-all group self-start md:self-auto">
+                    VIEW ALL <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
                   </Link>
                 </div>
                 
