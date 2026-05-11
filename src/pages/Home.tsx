@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'motion/react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingBag, Star, ArrowRight, CheckCircle, Shield, Truck } from 'lucide-react';
 import { useStore } from '../context/StoreContext';

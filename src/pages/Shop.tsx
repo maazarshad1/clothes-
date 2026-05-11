@@ -123,14 +123,21 @@ const Shop = () => {
     return ['All', ...Array.from(cats)].filter(c => c);
   }, [products]);
 
+  const collectionNameMap = useMemo(() => {
+    const map = new Map<string, string>();
+    collections.forEach(c => map.set(c.id, c.name));
+    return map;
+  }, [collections]);
+
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       const matchesCategory = activeCategory === 'All' || product.category === activeCategory;
-      const matchesCollection = activeCollection === 'All' || product.collections?.includes(activeCollection) || product.collections?.includes(collections.find(c => c.id === activeCollection)?.name || '');
+      const collectionName = collectionNameMap.get(activeCollection);
+      const matchesCollection = activeCollection === 'All' || product.collections?.includes(activeCollection) || product.collections?.includes(collectionName || '');
       const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && matchesCollection && matchesSearch;
     });
-  }, [activeCategory, activeCollection, searchQuery, collections]);
+  }, [activeCategory, activeCollection, searchQuery, collectionNameMap, products]);
 
   return (
     <div className="min-h-screen bg-theme-bg text-theme-text">
