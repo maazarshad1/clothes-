@@ -73,7 +73,7 @@ const Home = () => {
               return p.collections?.some(c => c === section.id || c === section.title);
             }
             return p.category === section.category;
-          }).slice(0, 12);
+          }).slice(0, 2);
 
           if (sectionProducts.length === 0) return null;
 
@@ -94,7 +94,7 @@ const Home = () => {
                   </Link>
                 </div>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16">
+                <div className="grid grid-cols-2 gap-8 md:gap-16 lg:gap-24 max-w-6xl">
                   {sectionProducts.map((product, index) => (
                     <div 
                       key={product.id}
