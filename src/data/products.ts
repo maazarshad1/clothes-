@@ -76,5 +76,29 @@ export const products: Product[] = [
     ],
     rating: 4.9,
     description: 'Premium quality handmade Peshawari Chappal (Kheri). Authentic craftsmanship with pure leather.',
+  },
+  {
+    id: 'urban-essential-tee',
+    name: 'Urban Essential Tee',
+    price: 950,
+    category: 'Shirts',
+    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&auto=format&fit=crop&q=80'
+    ],
+    rating: 4.5,
+    description: 'High-quality cotton blend tee. Perfect fit for the modern urban lifestyle.',
+  },
+  {
+    id: 'urban-slim-denim',
+    name: 'Urban Slim Fit Denim',
+    price: 3450,
+    category: 'Pants',
+    image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&auto=format&fit=crop&q=80'
+    ],
+    rating: 4.9,
+    description: 'Premium raw denim with a modern slim silhouette. Engineered for durability.',
   }
 ];

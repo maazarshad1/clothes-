@@ -27,6 +27,19 @@ const ProductDetails = () => {
 
   const images = product.images || [product.image];
 
+  const getSizes = () => {
+    switch (product.category) {
+      case 'Shirts':
+        return ['S', 'M', 'L', 'XL', 'XXL'];
+      case 'Pants':
+        return ['28', '30', '32', '34', '36', '38'];
+      default: // Footwear / Others
+        return ['7', '8', '9', '10', '11', '12'];
+    }
+  };
+
+  const sizes = getSizes();
+
   const nextImage = () => {
     setActiveImageIndex((prev) => (prev + 1) % images.length);
   };
@@ -152,12 +165,12 @@ const ProductDetails = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-3 text-theme-text/60">Select Size</h3>
-              <div className="flex gap-3">
-                {['7', '8', '9', '10', '11'].map((size) => (
+              <div className="flex flex-wrap gap-3">
+                {sizes.map((size) => (
                   <button 
                     key={size} 
                     onClick={() => setSelectedSize(size)}
-                    className={`w-12 h-12 border flex items-center justify-center hover:border-theme-accent transition ${selectedSize === size ? 'border-theme-accent bg-theme-accent text-theme-bg font-bold' : 'border-theme-border text-theme-text'}`}
+                    className={`min-w-[3rem] h-12 border px-2 flex items-center justify-center hover:border-theme-accent transition ${selectedSize === size ? 'border-theme-accent bg-theme-accent text-theme-bg font-bold' : 'border-theme-border text-theme-text'}`}
                   >
                     {size}
                   </button>
