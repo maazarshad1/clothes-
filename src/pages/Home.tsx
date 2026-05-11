@@ -40,48 +40,7 @@ const Home = () => {
   }, [collections, allCollection]);
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Dynamic Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop" 
-            alt="Premium Apparel" 
-            className="w-full h-full object-cover brightness-[0.25]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="flex flex-col items-center"
-          >
-            <span className="text-[#C2A46C] tracking-[0.6em] text-[10px] md:text-xs font-black uppercase mb-6">Established 2025</span>
-            <h1 className="font-serif text-[60px] md:text-[140px] leading-tight text-white mb-10 tracking-tighter uppercase">
-              DOPE PK
-            </h1>
-            <p className="max-w-xl text-white/60 text-xs md:text-sm uppercase tracking-[0.3em] font-light mb-12 leading-relaxed">
-              Premium Streetwear & Refined Essentials <br/> Crafted for the Modern Individual
-            </p>
-            <Link 
-              to="/shop" 
-              className="group relative overflow-hidden bg-[#C2A46C] text-black px-16 py-5 text-sm uppercase tracking-[0.4em] font-black transition-all hover:text-white"
-            >
-              <span className="relative z-10">Explore Catalog</span>
-              <div className="absolute inset-x-0 bottom-0 h-0 bg-black transition-all group-hover:h-full" />
-            </Link>
-          </motion.div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
-          <span className="text-[8px] uppercase tracking-[0.5em] font-black">Scroll to Discover</span>
-          <div className="w-[1px] h-20 bg-gradient-to-b from-white to-transparent" />
-        </div>
-      </section>
-
+    <div className="min-h-screen bg-black text-white pt-20">
       {/* Dynamic Sections */}
       <div className="bg-black">
         {sections.map((section, sIdx) => {
