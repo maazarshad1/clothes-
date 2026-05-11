@@ -26,7 +26,7 @@ const Navbar = () => {
           {/* Logo Center */}
           <div className="flex-grow flex justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
             <Link to="/" className="text-2xl md:text-3xl font-serif text-[#C2A46C] tracking-[0.3em] font-black uppercase">
-              DOPE PK
+              URBAN OUTFITTER
             </Link>
           </div>
 

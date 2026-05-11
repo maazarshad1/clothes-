@@ -10,14 +10,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const isWishlisted = wishlist.some((item) => item.id === product.id);
 
   return (
-    <motion.div 
-      layout
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
-      className="group"
-    >
+    <div className="group">
       <div className="relative aspect-[3/4] overflow-hidden bg-theme-card mb-4">
         <Link to={`/product/${product.id}`}>
           <img 
@@ -85,7 +78,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -202,13 +195,11 @@ const Shop = () => {
 
         {/* Product Grid */}
         {filteredProducts.length > 0 ? (
-          <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-            <AnimatePresence>
-              {filteredProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </AnimatePresence>
-          </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+            {filteredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
         ) : (
           <div className="text-center py-24 text-gray-500">
             <p className="text-lg">No products found matching your criteria.</p>

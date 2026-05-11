@@ -73,12 +73,7 @@ const ProductDetails = () => {
       
       <div className="flex flex-col lg:flex-row gap-16">
         {/* Images Slideshow */}
-        <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="lg:w-[60%] flex gap-4"
-        >
+        <div className="lg:w-[60%] flex gap-4">
           {/* Thumbnails */}
           <div className="hidden md:flex flex-col gap-4 w-20">
             {images.map((img, idx) => (
@@ -156,15 +151,10 @@ const ProductDetails = () => {
               </button>
             )}
           </div>
-        </motion.div>
+        </div>
 
           {/* Info */}
-        <motion.div 
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex-1 flex flex-col justify-center"
-        >
+        <div className="flex-1 flex flex-col justify-center">
           <div className="mb-8 border-b border-theme-border pb-8">
             <p className="text-sm text-theme-accent uppercase tracking-widest mb-4 font-bold">{product.category}</p>
             <div className="flex items-center gap-4 mb-4">
@@ -251,7 +241,7 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Video Modal */}

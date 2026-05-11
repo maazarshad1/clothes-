@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
-            <h3 className="text-2xl font-serif tracking-widest uppercase font-bold text-theme-accent">DOPE PK</h3>
+            <h3 className="text-2xl font-serif tracking-widest uppercase font-bold text-theme-accent">URBAN OUTFITTER</h3>
             <p className="text-theme-text/60 text-sm leading-relaxed font-serif">
               Premium Streetwear & Refined Essentials. Crafted for the modern individual who values quality and distinctive style.
             </p>
@@ -43,15 +43,15 @@ const Footer = () => {
             <h4 className="text-xs uppercase tracking-widest font-bold mb-4 text-theme-accent">Contact</h4>
             <ul className="space-y-4 text-sm text-theme-text/60">
               <li className="flex items-center gap-3 font-sans"><Phone size={16} className="text-theme-accent" /> +92 300 1234567</li>
-              <li className="flex items-center gap-3 font-sans"><Mail size={16} className="text-theme-accent" /> support@dopepk.com</li>
-              <li className="flex items-start gap-3"><MapPin size={16} className="text-theme-accent mt-1" /> Dope PK HQ, Fashion District, Karachi, Pakistan</li>
+              <li className="flex items-center gap-3 font-sans"><Mail size={16} className="text-theme-accent" /> support@urbanoutfitter.com</li>
+              <li className="flex items-start gap-3"><MapPin size={16} className="text-theme-accent mt-1" /> Urban Outfitter HQ, Karachi, Pakistan</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-theme-border pt-10 text-center">
           <p className="text-[10px] uppercase tracking-[0.2em] text-theme-text/30">
-            &copy; {new Date().getFullYear()} DOPE PK. All rights reserved.
+            &copy; {new Date().getFullYear()} URBAN OUTFITTER. All rights reserved.
           </p>
         </div>
       </div>

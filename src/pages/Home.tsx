@@ -36,7 +36,31 @@ const Home = () => {
       }
     });
 
-    return list;
+    // Automatic Seasonal Sorting System
+    const currentMonth = new Date().getMonth(); // 0-11
+    const isWinter = currentMonth === 10 || currentMonth === 11 || currentMonth === 0 || currentMonth === 1; // Nov, Dec, Jan, Feb
+    
+    const winterCats = ['Hoodies', 'Sweatshirts', 'Tracksuits', 'Bomber Jackets', 'Waffle Knitted Sweatshirts', 'WaffleZip Mocknecks', 'Full Sleeves T-Shirts'];
+    const summerCats = ['Graphic Tees', 'Basic Oversized', 'Casual Shirts', 'Zipper Polos', 'Round Neck', 'Cuban Shirts'];
+
+    return list.sort((a, b) => {
+      const aTitle = a.title.toLowerCase();
+      const bTitle = b.title.toLowerCase();
+      
+      const getScore = (title: string) => {
+        let score = 0;
+        if (isWinter) {
+          if (winterCats.some(c => title.includes(c.toLowerCase()))) score += 10;
+          if (summerCats.some(c => title.includes(c.toLowerCase()))) score -= 10;
+        } else {
+          if (summerCats.some(c => title.includes(c.toLowerCase()))) score += 10;
+          if (winterCats.some(c => title.includes(c.toLowerCase()))) score -= 10;
+        }
+        return score;
+      };
+
+      return getScore(bTitle) - getScore(aTitle);
+    });
   }, [collections, allCollection]);
 
   return (
@@ -72,12 +96,8 @@ const Home = () => {
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16">
                   {sectionProducts.map((product, index) => (
-                    <motion.div 
+                    <div 
                       key={product.id}
-                      initial={{ opacity: 0, y: 50 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
-                      transition={{ delay: index * 0.1, duration: 0.8 }}
                       className="group flex flex-col"
                     >
                       <div className="relative aspect-[4/5] overflow-hidden bg-white/5 mb-8 shadow-2xl group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-700">
@@ -100,7 +120,7 @@ const Home = () => {
                           PKR {product.price.toLocaleString()}
                         </p>
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
