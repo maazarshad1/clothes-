@@ -89,8 +89,29 @@ const Shop = () => {
   const collectionParam = searchParams.get('collection');
   
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState<string>(categoryParam || 'All');
-  const [activeCollection, setActiveCollection] = useState<string>(collectionParam || 'All');
+  const [activeCategory, setActiveCategory] = useState<string>('All');
+  const [activeCollection, setActiveCollection] = useState<string>('All');
+
+  React.useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    const collectionParam = searchParams.get('collection');
+    
+    if (categoryParam) {
+      setActiveCategory(categoryParam);
+      // Reset collection if navigating to a specific category from home
+      if (!collectionParam) setActiveCollection('All');
+    } else {
+      setActiveCategory('All');
+    }
+
+    if (collectionParam) {
+      setActiveCollection(collectionParam);
+      // Reset category if navigating to a specific collection from home
+      if (!categoryParam) setActiveCategory('All');
+    } else if (!categoryParam) {
+      setActiveCollection('All');
+    }
+  }, [searchParams]);
 
   const categories = useMemo(() => {
     const cats = new Set(products.map(p => p.category));
