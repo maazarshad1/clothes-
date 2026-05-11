@@ -91,6 +91,7 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [activeCollection, setActiveCollection] = useState<string>('All');
+  const [showFilters, setShowFilters] = useState(false);
   const productsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -111,7 +112,7 @@ const Shop = () => {
       setActiveCollection('All');
     }
 
-    // Scroll to products if filtered
+    // If navigated with params, show products
     if ((categoryParam || collectionParam) && productsRef.current) {
       productsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -136,87 +137,125 @@ const Shop = () => {
       {/* Header */}
       <div className="bg-black/40 text-theme-text py-20 text-center border-b border-theme-border">
         <h1 className="font-serif text-6xl mb-4 uppercase tracking-tighter">The Collection</h1>
-        <p className="text-theme-accent text-sm tracking-[0.3em] uppercase">Premium Apparel by DOPE PK</p>
+        <p className="text-theme-accent text-sm tracking-[0.3em] uppercase">Premium Apparel by .URBAN OUTFITTER</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Collection Selector */}
-        <div className="mb-12 border-b border-theme-border pb-6 overflow-x-auto">
-          <p className="text-[10px] uppercase tracking-[0.4em] text-theme-accent font-bold mb-4">Curated Selections</p>
-          <div className="flex gap-6 whitespace-nowrap min-w-full pb-2">
-            <button
-              onClick={() => {
-                setActiveCollection('All');
-                searchParams.delete('collection');
-                setSearchParams(searchParams);
-              }}
-              className={`text-xl font-serif tracking-tight transition-all ${
-                activeCollection === 'All' ? 'text-theme-accent underline decoration-2 underline-offset-8' : 'text-theme-text/40 hover:text-theme-text'
+        
+        {/* Toolbar */}
+        <div className="flex justify-between items-center mb-8 border-b border-theme-border pb-6">
+          <div className="flex items-center gap-6">
+            <button 
+              onClick={() => setShowFilters(!showFilters)}
+              className={`flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-bold px-4 py-2 border transition-all ${
+                showFilters 
+                ? 'bg-theme-accent text-theme-bg border-theme-accent' 
+                : 'text-theme-text/60 border-theme-border hover:border-theme-accent hover:text-theme-accent'
               }`}
             >
-              All Items
+              <SlidersHorizontal size={14} /> 
+              {showFilters ? 'Hide Filters' : 'Show Filters'}
             </button>
-            {collections.map((col) => (
-              <button
-                key={col.id}
-                onClick={() => {
-                  setActiveCollection(col.id);
-                  searchParams.set('collection', col.id);
-                  setSearchParams(searchParams);
-                }}
-                className={`text-xl font-serif tracking-tight transition-all ${
-                  activeCollection === col.id ? 'text-theme-accent underline decoration-2 underline-offset-8' : 'text-theme-text/40 hover:text-theme-text'
-                }`}
-              >
-                {col.name}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Toolbar */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-          <div className="flex flex-wrap gap-4 items-center">
-            <span className="text-[10px] uppercase tracking-widest text-theme-text/40 font-bold mr-2">Divisions:</span>
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => {
-                  setActiveCategory(cat);
-                  if (cat === 'All') {
-                    searchParams.delete('category');
-                  } else {
-                    searchParams.set('category', cat);
-                  }
-                  setSearchParams(searchParams);
-                }}
-                className={`text-sm tracking-widest uppercase pb-1 border-b-2 transition-all duration-300 ${
-                  activeCategory === cat 
-                  ? 'border-theme-accent text-theme-accent font-bold' 
-                  : 'border-transparent text-theme-text/40 hover:text-theme-text'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-4 w-full md:w-auto">
-            <div className="relative flex-1 md:w-64">
-              <input
-                type="text"
-                placeholder="Search products..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full border-b border-theme-border bg-transparent py-2 pl-8 pr-4 text-sm text-theme-text placeholder-theme-text/30 focus:outline-none focus:border-theme-accent transition-colors"
-              />
-              <Search size={16} className="absolute left-0 top-1/2 -translate-y-1/2 text-theme-accent" />
+            <div className="hidden md:block text-[10px] uppercase tracking-widest text-theme-text/30">
+              {filteredProducts.length} Results
             </div>
-            <button className="flex items-center gap-2 text-xs uppercase tracking-widest text-theme-text/60 hover:text-theme-accent">
-              <SlidersHorizontal size={16} /> Filters
-            </button>
+          </div>
+
+          <div className="relative w-48 md:w-64">
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full border-b border-theme-border bg-transparent py-2 pl-8 pr-4 text-xs text-theme-text placeholder-theme-text/30 focus:outline-none focus:border-theme-accent transition-colors"
+            />
+            <Search size={14} className="absolute left-0 top-1/2 -translate-y-1/2 text-theme-accent" />
           </div>
         </div>
+
+        {/* Collapsible Filter Section */}
+        <AnimatePresence>
+          {showFilters && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className="overflow-hidden mb-12 bg-black/20 border border-theme-border"
+            >
+              <div className="p-8 space-y-10">
+                {/* Collection Selector */}
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.4em] text-theme-accent font-bold mb-6">Collections</p>
+                  <div className="flex flex-wrap gap-4">
+                    <button
+                      onClick={() => {
+                        setActiveCollection('All');
+                        searchParams.delete('collection');
+                        setSearchParams(searchParams);
+                      }}
+                      className={`px-4 py-2 text-xs uppercase tracking-widest border transition-all ${
+                        activeCollection === 'All' 
+                        ? 'bg-theme-accent text-theme-bg border-theme-accent font-black' 
+                        : 'border-theme-border text-theme-text/40 hover:border-theme-text/60 hover:text-theme-text'
+                      }`}
+                    >
+                      All Collections
+                    </button>
+                    {collections.map((col) => (
+                      <button
+                        key={col.id}
+                        onClick={() => {
+                          setActiveCollection(col.id);
+                          searchParams.set('collection', col.id);
+                          setSearchParams(searchParams);
+                        }}
+                        className={`px-4 py-2 text-xs uppercase tracking-widest border transition-all ${
+                          activeCollection === col.id 
+                          ? 'bg-theme-accent text-theme-bg border-theme-accent font-black' 
+                          : 'border-theme-border text-theme-text/40 hover:border-theme-text/60 hover:text-theme-text'
+                        }`}
+                      >
+                        {col.name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Categories Selector */}
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.4em] text-theme-accent font-bold mb-6">Divisions</p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-4 gap-x-8">
+                    {categories.map((cat) => (
+                      <button
+                        key={cat}
+                        onClick={() => {
+                          setActiveCategory(cat);
+                          if (cat === 'All') {
+                            searchParams.delete('category');
+                          } else {
+                            searchParams.set('category', cat);
+                          }
+                          setSearchParams(searchParams);
+                        }}
+                        className={`text-left text-[11px] tracking-widest uppercase transition-all flex items-center gap-2 group ${
+                          activeCategory === cat 
+                          ? 'text-theme-accent font-black' 
+                          : 'text-theme-text/40 hover:text-theme-text'
+                        }`}
+                      >
+                        <div className={`w-1.5 h-1.5 rounded-full transition-all ${
+                          activeCategory === cat ? 'bg-theme-accent scale-125' : 'bg-white/10 group-hover:bg-white/30'
+                        }`} />
+                        {cat}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Product Grid Area */}
         <div ref={productsRef} className="scroll-mt-32">
