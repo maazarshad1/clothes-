@@ -90,7 +90,7 @@ const Home = () => {
               return p.collections?.some(c => c === section.id || c === section.title);
             }
             return p.category === section.category;
-          }).slice(0, 8);
+          }).slice(0, 12);
 
           if (sectionProducts.length === 0) return null;
 
@@ -124,7 +124,7 @@ const Home = () => {
                       <div className="relative aspect-[4/5] overflow-hidden bg-white/5 mb-8 shadow-2xl group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.8)] transition-all duration-700">
                         <Link to={`/product/${product.id}`}>
                           <img 
-                            src={product.image} 
+                            src={product.image || undefined} 
                             alt={product.name} 
                             className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105" 
                           />

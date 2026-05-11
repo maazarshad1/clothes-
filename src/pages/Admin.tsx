@@ -602,7 +602,7 @@ const Admin = () => {
                         <tr key={product.id} className="border-b border-theme-border transition-all hover:bg-theme-accent/5 group">
                           <td className="px-8 py-6">
                             <div className="relative w-16 h-20 bg-theme-bg overflow-hidden border border-theme-border group-hover:border-theme-accent transition-colors">
-                              <img src={product.image} alt={product.name} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
+                              <img src={product.image || undefined} alt={product.name} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
                               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent" />
                             </div>
                           </td>
@@ -975,7 +975,7 @@ const Admin = () => {
                 <div className="space-y-4">
                   {viewingOrder.items?.map((item) => (
                     <div key={item.cartItemId || item.id} className="flex gap-4 items-center">
-                      <img src={item.image} alt={item.name} className="w-12 h-12 object-cover bg-zinc-100" />
+                      <img src={item.image || undefined} alt={item.name} className="w-12 h-12 object-cover bg-zinc-100" />
                       <div className="flex-1">
                         <p className="font-medium text-sm">{item.name}</p>
                         <p className="text-xs text-zinc-500">Qty: {item.quantity}{item.size ? ` • Size: ${item.size}` : ''}</p>

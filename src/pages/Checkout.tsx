@@ -148,7 +148,7 @@ const Checkout = () => {
               <div className="space-y-4 mb-6 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
                 {cart.map((item) => (
                   <div key={item.id} className="flex gap-4">
-                    <img src={item.image} alt={item.name} className="w-16 h-20 object-cover bg-theme-bg" referrerPolicy="no-referrer" />
+                    <img src={item.image || undefined} alt={item.name} className="w-16 h-20 object-cover bg-theme-bg" referrerPolicy="no-referrer" />
                     <div className="flex-1">
                       <h4 className="font-serif text-sm line-clamp-1">{item.name}</h4>
                       <p className="text-[10px] uppercase tracking-widest text-theme-accent">Qty: {item.quantity}</p>

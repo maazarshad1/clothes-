@@ -21,7 +21,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       <div className="relative aspect-[3/4] overflow-hidden bg-theme-card mb-4">
         <Link to={`/product/${product.id}`}>
           <img 
-            src={product.image} 
+            src={product.image || undefined} 
             alt={product.name} 
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" 
             referrerPolicy="no-referrer"

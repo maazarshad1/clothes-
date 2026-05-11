@@ -87,7 +87,7 @@ const ProductDetails = () => {
                 onClick={() => setActiveImageIndex(idx)}
                 className={`aspect-[3/4] border-2 transition-all overflow-hidden ${activeImageIndex === idx ? 'border-theme-accent' : 'border-transparent opacity-40 hover:opacity-100'}`}
               >
-                <img src={img} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-cover" />
+                <img src={img || undefined} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-cover" />
               </button>
             ))}
             {product.video && (
@@ -95,7 +95,7 @@ const ProductDetails = () => {
                 onClick={() => setIsVideoOpen(true)}
                 className="aspect-[3/4] bg-theme-card flex items-center justify-center border-2 border-transparent hover:border-theme-accent transition-all relative overflow-hidden group"
               >
-                <img src={images[0]} alt="Video thumbnail" className="w-full h-full object-cover opacity-50" />
+                <img src={images[0] || undefined} alt="Video thumbnail" className="w-full h-full object-cover opacity-50" />
                 <Play size={24} className="absolute z-10 text-theme-accent group-hover:scale-110 transition-transform" />
               </button>
             )}
@@ -106,7 +106,7 @@ const ProductDetails = () => {
             <AnimatePresence mode="wait">
               <motion.img
                 key={activeImageIndex}
-                src={images[activeImageIndex]}
+                src={images[activeImageIndex] || undefined}
                 alt={product.name}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -271,7 +271,7 @@ const ProductDetails = () => {
             </button>
             <div className="w-full max-w-5xl aspect-video relative">
               <video 
-                src={product.video} 
+                src={product.video || undefined} 
                 className="w-full h-full" 
                 controls 
                 autoPlay 

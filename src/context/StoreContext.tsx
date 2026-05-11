@@ -106,39 +106,8 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
     const q = query(collection(db, 'collections'), orderBy('name'));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const syncedCollections = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Collection));
-      if (syncedCollections.length === 0 && !snapshot.metadata.fromCache) {
-        // Initialization if empty
-        const defaults = [
-          { name: "Basic Oversized | Dropshoulder Tees" },
-          { name: "Casual Shirts" },
-          { name: "Drop Needle Basic Tees" },
-          { name: "Drop Needle Zipper Polos" },
-          { name: "Full Sleeves T-Shirts" },
-          { name: "Graphic Tees" },
-          { name: "Hoodies" },
-          { name: "Men’s Bomber Jackets" },
-          { name: "Oversized Waffle Knit Raglan T-shirts" },
-          { name: "Oversized | Drop Shoulder" },
-          { name: "Panel Zip Polo" },
-          { name: "Sweatshirts" },
-          { name: "Tracksuits" },
-          { name: "Two Tone Johnny Collar Polo" },
-          { name: "Waffle Knit - Dual Stripe Zip Polo Shirt" },
-          { name: "Waffle Knit Cuban Shirts" },
-          { name: "Waffle Knit Round Neck" },
-          { name: "Waffle Knit Textured Stripe Polos" },
-          { name: "Waffle Knit Zipper Polo T-Shirts" },
-          { name: "Waffle Knitted Sweatshirts" },
-          { name: "WaffleZip Mocknecks" }
-        ];
-        defaults.forEach(async (col) => {
-          const docRef = doc(collection(db, 'collections'));
-          await setDoc(docRef, col);
-        });
-      } else {
-        setCollections(syncedCollections);
-        localStorage.setItem('store_collections', JSON.stringify(syncedCollections));
-      }
+      setCollections(syncedCollections);
+      localStorage.setItem('store_collections', JSON.stringify(syncedCollections));
     }, (error) => {
       handleFirestoreError(error, OperationType.LIST, 'collections');
     });
@@ -150,16 +119,8 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
     const q = query(collection(db, 'products'));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const syncedProducts = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Product));
-      
-      if (syncedProducts.length === 0 && initialProducts.length > 0 && !snapshot.metadata.fromCache) {
-        // Initialization if empty - Push local data to Firestore
-        initialProducts.forEach(async (p) => {
-          await setDoc(doc(db, 'products', p.id), p);
-        });
-      } else if (syncedProducts.length > 0) {
-        setProducts(syncedProducts);
-        localStorage.setItem('store_products', JSON.stringify(syncedProducts));
-      }
+      setProducts(syncedProducts);
+      localStorage.setItem('store_products', JSON.stringify(syncedProducts));
       setIsInitializing(false);
     }, (error) => {
       handleFirestoreError(error, OperationType.LIST, 'products');

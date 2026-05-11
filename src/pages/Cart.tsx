@@ -61,7 +61,7 @@ const Cart = () => {
                   {/* Product Info */}
                   <div className="col-span-6 flex items-center gap-4 w-full">
                     <div className="w-24 h-32 flex-shrink-0 bg-theme-card relative overflow-hidden">
-                      <img src={item.image} alt={item.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      <img src={item.image || undefined} alt={item.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                       <button 
                         onClick={() => removeFromCart(item.cartItemId)}
                         className="absolute -top-1 -left-1 bg-theme-accent text-theme-bg rounded-none p-1 shadow hover:bg-white transition"
