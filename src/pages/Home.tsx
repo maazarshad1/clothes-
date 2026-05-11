@@ -101,15 +101,24 @@ const Home = () => {
                     <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
                   </Link>
-                  <button 
-                    onClick={(e) => {
-                      e.preventDefault();
-                      addToCart(product);
-                    }}
-                    className="absolute bottom-2 left-2 right-2 bg-white text-black py-2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 font-bold uppercase tracking-widest text-[8px] z-30"
-                  >
-                    Quick Add
-                  </button>
+                  <div className="absolute bottom-2 left-2 right-2 flex flex-col gap-1 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-30">
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        addToCart(product);
+                      }}
+                      className="bg-white text-black py-1.5 font-bold uppercase tracking-widest text-[7px]"
+                    >
+                      Quick Add
+                    </button>
+                    <Link
+                      to="/cart"
+                      onClick={() => addToCart(product)}
+                      className="bg-theme-accent text-theme-bg py-1.5 font-bold uppercase tracking-widest text-[7px] text-center"
+                    >
+                      Buy Now
+                    </Link>
+                  </div>
                 </div>
 
                 <Link to={`/product/${product.id}`} className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
