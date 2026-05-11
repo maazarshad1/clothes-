@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useStore, Product, Order } from '../context/StoreContext';
-import { X, Bell, Download, Menu } from 'lucide-react';
+import { X, Bell, Download, Menu, Receipt, Clock, CheckCircle, Package, Search, Plus, Filter, MoreVertical, Eye, Edit2, Trash2 } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 import { db, auth } from '../lib/firebase';
 import { collection, onSnapshot, query, orderBy, doc, updateDoc } from 'firebase/firestore';
@@ -62,12 +62,28 @@ const Admin = () => {
   const [passcode, setPasscode] = useState('');
   const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus, addOrder, syncOrders, syncProducts } = useStore();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<'products' | 'orders'>('products');
+  const [activeTab, setActiveTab] = useState<'products' | 'orders' | 'transactions'>('products');
+  const [orderFilter, setOrderFilter] = useState<'all' | 'Pending' | 'Delivered' | 'Processing' | 'Shipped' | 'Cancelled'>('all');
   
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
   const [viewingOrder, setViewingOrder] = useState<Order | null>(null);
+
+  const filteredOrders = orders.filter(o => {
+    if (activeTab === 'transactions') {
+      return o.status === 'Delivered';
+    }
+    if (activeTab === 'orders') {
+      if (orderFilter === 'all') return true;
+      return o.status === orderFilter;
+    }
+    return true;
+  });
+
+  const pendingOrdersCount = orders.filter(o => o.status === 'Pending').length;
+  const deliveredOrdersCount = orders.filter(o => o.status === 'Delivered').length;
+  const totalRevenue = orders.filter(o => o.status === 'Delivered').reduce((acc, curr) => acc + curr.total, 0);
 
   const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>('default');
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
@@ -407,22 +423,44 @@ const Admin = () => {
         </div>
         <ul className="flex-1 px-4 space-y-2 list-none m-0">
           <li 
-            className={`border-l-[4px] ${activeTab === 'products' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent'} flex items-center px-4 py-4 text-xs uppercase tracking-widest cursor-pointer transition`} 
+            className={`flex items-center gap-3 px-4 py-4 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] ${activeTab === 'products' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
             onClick={() => { setActiveTab('products'); setIsSidebarOpen(false); }}
           >
-            Inventory
+            <Package size={16} /> Inventory
           </li>
           <li 
-            className={`border-l-[4px] ${activeTab === 'orders' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent'} flex items-center px-4 py-4 text-xs uppercase tracking-widest cursor-pointer transition`} 
-            onClick={() => { setActiveTab('orders'); setIsSidebarOpen(false); }}
+            className={`flex items-center gap-3 px-4 py-4 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] ${activeTab === 'transactions' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
+            onClick={() => { setActiveTab('transactions'); setIsSidebarOpen(false); }}
           >
-            Orders
+            <Receipt size={16} /> Transactions
           </li>
+          <div className="py-2 px-4">
+            <p className="text-[8px] uppercase tracking-[0.2em] opacity-30 font-bold mb-2">Order Management</p>
+            <li 
+              className={`flex items-center justify-between px-4 py-3 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] mb-1 rounded-sm ${activeTab === 'orders' && orderFilter === 'Pending' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
+              onClick={() => { setActiveTab('orders'); setOrderFilter('Pending'); setIsSidebarOpen(false); }}
+            >
+              <div className="flex items-center gap-3"><Clock size={14} /> Pending</div>
+              {pendingOrdersCount > 0 && <span className="bg-amber-500 text-black text-[8px] font-bold px-1.5 rounded-full">{pendingOrdersCount}</span>}
+            </li>
+            <li 
+              className={`flex items-center gap-3 px-4 py-3 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] rounded-sm ${activeTab === 'orders' && orderFilter === 'Delivered' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
+              onClick={() => { setActiveTab('orders'); setOrderFilter('Delivered'); setIsSidebarOpen(false); }}
+            >
+              <CheckCircle size={14} /> Delivered
+            </li>
+            <li 
+              className={`flex items-center gap-3 px-4 py-3 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] rounded-sm ${activeTab === 'orders' && orderFilter === 'all' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
+              onClick={() => { setActiveTab('orders'); setOrderFilter('all'); setIsSidebarOpen(false); }}
+            >
+              <Filter size={14} /> All Orders
+            </li>
+          </div>
           <li 
-            className="border-l-[4px] border-transparent hover:text-red-500 flex items-center px-4 py-4 text-xs uppercase tracking-widest cursor-pointer transition mt-auto mb-10 opacity-60 hover:opacity-100"
+            className="border-l-[4px] border-transparent hover:text-red-500 flex items-center gap-3 px-4 py-4 text-[10px] uppercase tracking-widest cursor-pointer transition mt-auto mb-10 opacity-60 hover:opacity-100"
             onClick={handleLogout}
           >
-            Sign Out
+            <X size={16} /> Sign Out
           </li>
         </ul>
       </div>
@@ -480,58 +518,120 @@ const Admin = () => {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mb-12">
-            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Inventory Units</span>
-              <div className="text-3xl mt-1 font-serif text-theme-text">{products.length}</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-40 group hover:border-theme-accent transition-all duration-500">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Total Inventory</span>
+                <Package size={16} className="text-theme-text/20 group-hover:text-theme-accent transition-colors" />
+              </div>
+              <div className="flex items-baseline gap-2">
+                <div className="text-4xl mt-1 font-serif text-theme-text">{products.length}</div>
+                <span className="text-[9px] text-theme-text/40 font-bold uppercase">SKUs</span>
+              </div>
             </div>
-            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Total Orders</span>
-              <div className="text-3xl mt-1 font-serif text-theme-text">{orders.length}</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-40 group hover:border-theme-accent transition-all duration-500">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-amber-500 font-bold">Pending Orders</span>
+                <Clock size={16} className="text-amber-500/20 group-hover:text-amber-500 transition-colors" />
+              </div>
+              <div className="text-4xl mt-1 font-serif text-theme-text">{pendingOrdersCount}</div>
             </div>
-            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Active Customers</span>
-              <div className="text-3xl mt-1 font-serif text-theme-text">1,240</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-40 group hover:border-theme-accent transition-all duration-500">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-green-500 font-bold">Successful Deliveries</span>
+                <CheckCircle size={16} className="text-green-500/20 group-hover:text-green-500 transition-colors" />
+              </div>
+              <div className="text-4xl mt-1 font-serif text-theme-text">{deliveredOrdersCount}</div>
             </div>
-            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Gross Revenue</span>
-              <div className="text-3xl mt-1 font-serif text-theme-accent truncate">PKR {orders.reduce((acc, curr) => acc + curr.total, 0)}</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-40 group hover:border-theme-accent transition-all duration-500">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Revenue (Finalized)</span>
+                <Receipt size={16} className="text-theme-accent/20 group-hover:text-theme-accent transition-colors" />
+              </div>
+              <div className="text-3xl mt-1 font-serif text-theme-accent truncate">PKR {totalRevenue.toLocaleString()}</div>
             </div>
           </div>
 
-          <div className="bg-theme-card border border-theme-border flex flex-col overflow-hidden">
-            <div className="px-8 py-6 border-b border-theme-border flex justify-between items-center bg-black/40">
-              <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-theme-accent">
-                {activeTab === 'products' ? 'Inventory Catalogue' : 'Order Ledger'}
+          <div className="bg-theme-card border border-theme-border flex flex-col overflow-hidden shadow-2xl">
+            <div className="px-8 py-6 border-b border-theme-border flex flex-col md:flex-row justify-between items-center bg-black/40 gap-4">
+              <h3 className="text-[11px] uppercase tracking-[0.4em] font-bold text-theme-accent">
+                {activeTab === 'products' ? 'Inventory Catalogue' : 
+                 activeTab === 'transactions' ? 'Collection Transactions' : 
+                 `Order Ledger: ${orderFilter}`}
               </h3>
+              <div className="relative w-full md:w-64">
+                <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-theme-text/40" />
+                <input 
+                  type="text" 
+                  placeholder="Universal Search..." 
+                  className="w-full bg-theme-bg border border-theme-border py-2 pl-9 pr-4 text-[10px] uppercase tracking-widest text-theme-text focus:outline-none focus:border-theme-accent transition-colors"
+                />
+              </div>
             </div>
             <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse min-w-[800px]">
+              <table className="w-full text-left border-collapse min-w-[900px]">
                 {activeTab === 'products' ? (
                   <>
                     <thead className="bg-black/60 text-[9px] uppercase tracking-widest text-theme-text/40 border-b border-theme-border">
                       <tr>
-                        <th className="px-8 py-4 font-bold">Asset</th>
-                        <th className="px-8 py-4 font-bold">Identity</th>
-                        <th className="px-8 py-4 font-bold">Category</th>
-                        <th className="px-8 py-4 font-bold text-right">Value (PKR)</th>
-                        <th className="px-8 py-4 font-bold text-center">Operations</th>
+                        <th className="px-8 py-5 font-black">Visual Asset</th>
+                        <th className="px-8 py-5 font-black text-center">SKU</th>
+                        <th className="px-8 py-5 font-black">Product Details</th>
+                        <th className="px-8 py-5 font-black">Division</th>
+                        <th className="px-8 py-5 font-black text-right">Valuation (PKR)</th>
+                        <th className="px-8 py-5 font-black text-center">Status</th>
+                        <th className="px-8 py-5 font-black text-center">Operations</th>
                       </tr>
                     </thead>
                     <tbody className="text-xs">
                       {products.map(product => (
-                        <tr key={product.id} className="border-b border-theme-border transition-colors hover:bg-theme-accent/5">
-                          <td className="px-8 py-5">
-                            <div className="w-12 h-16 bg-theme-bg overflow-hidden border border-theme-border">
-                              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                        <tr key={product.id} className="border-b border-theme-border transition-all hover:bg-theme-accent/5 group">
+                          <td className="px-8 py-6">
+                            <div className="relative w-16 h-20 bg-theme-bg overflow-hidden border border-theme-border group-hover:border-theme-accent transition-colors">
+                              <img src={product.image} alt={product.name} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
+                              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent" />
                             </div>
                           </td>
-                          <td className="px-8 py-5 font-serif text-base text-theme-text">{product.name}</td>
-                          <td className="px-8 py-5 text-[10px] text-theme-accent font-bold uppercase tracking-widest">{product.category}</td>
-                          <td className="px-8 py-5 font-bold text-right text-theme-text/80">{product.price}</td>
-                          <td className="px-8 py-5">
-                            <div className="flex justify-center gap-6">
-                              <button onClick={() => setEditingProduct(product)} className="text-theme-accent hover:text-white transition-colors text-[9px] uppercase tracking-widest font-bold">Modify</button>
-                              <button onClick={() => handleDeleteProduct(product.id)} className="text-red-500 hover:text-red-400 transition-colors text-[9px] uppercase tracking-widest font-bold">Purge</button>
+                          <td className="px-8 py-6 text-center">
+                            <span className="font-mono text-[9px] px-2 py-1 bg-white/5 rounded border border-white/10 text-theme-text/60">
+                              {product.id.substring(0, 8)}
+                            </span>
+                          </td>
+                          <td className="px-8 py-6">
+                            <div className="font-serif text-lg text-theme-text group-hover:text-theme-accent transition-colors mb-1">{product.name}</div>
+                            <div className="text-[9px] text-theme-text/30 font-bold uppercase tracking-widest truncate max-w-[200px]">
+                              {product.description?.substring(0, 60)}...
+                            </div>
+                          </td>
+                          <td className="px-8 py-6">
+                            <span className="text-[10px] text-theme-accent font-black uppercase tracking-[0.2em] border border-theme-accent/20 px-2 py-1 rounded-sm bg-theme-accent/5">
+                              {product.category}
+                            </span>
+                          </td>
+                          <td className="px-8 py-6 font-black text-right text-lg text-theme-text/90">
+                            {product.price.toLocaleString()}
+                          </td>
+                          <td className="px-8 py-6 text-center">
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-500/10 text-green-500 text-[8px] font-black uppercase tracking-widest border border-green-500/20">
+                              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                              Active
+                            </span>
+                          </td>
+                          <td className="px-8 py-6">
+                            <div className="flex justify-center gap-3">
+                              <button 
+                                onClick={() => setEditingProduct(product)} 
+                                className="p-2 bg-theme-bg border border-theme-border text-theme-accent hover:bg-theme-accent hover:text-white transition-all shadow-sm"
+                                title="Edit Asset"
+                              >
+                                <Edit2 size={14} />
+                              </button>
+                              <button 
+                                onClick={() => handleDeleteProduct(product.id)} 
+                                className="p-2 bg-theme-bg border border-theme-border text-red-500 hover:bg-red-500 hover:text-white transition-all shadow-sm"
+                                title="Purge Asset"
+                              >
+                                <Trash2 size={14} />
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -542,31 +642,41 @@ const Admin = () => {
                   <>
                     <thead className="bg-black/60 text-[9px] uppercase tracking-widest text-theme-text/40 border-b border-theme-border">
                       <tr>
-                        <th className="px-8 py-4 font-bold">Order ID</th>
-                        <th className="px-8 py-4 font-bold">Beneficiary</th>
-                        <th className="px-8 py-4 font-bold hidden lg:table-cell">Shipping</th>
-                        <th className="px-8 py-4 font-bold">Timestamp</th>
-                        <th className="px-8 py-4 font-bold text-right">Total (PKR)</th>
-                        <th className="px-8 py-4 font-bold text-center">Status</th>
-                        <th className="px-8 py-4 font-bold text-center">Actions</th>
+                        <th className="px-8 py-5 font-black">Transaction ID</th>
+                        <th className="px-8 py-5 font-black">End Customer</th>
+                        <th className="px-8 py-5 font-black hidden lg:table-cell">Logistics</th>
+                        <th className="px-8 py-5 font-black">Registry Date</th>
+                        <th className="px-8 py-5 font-black text-right">Settlement (PKR)</th>
+                        <th className="px-8 py-5 font-black text-center">System State</th>
+                        <th className="px-8 py-5 font-black text-center">Audit</th>
                       </tr>
                     </thead>
                     <tbody className="text-xs">
-                      {orders.map(order => (
-                        <tr key={order.id} className="border-b border-theme-border transition-colors hover:bg-theme-accent/5">
-                          <td className="px-8 py-5 font-bold text-theme-accent">{order.id}</td>
-                          <td className="px-8 py-5">
-                            <div className="font-serif text-sm text-theme-text">{order.customerName}</div>
-                            <div className="text-[9px] text-theme-text/40 uppercase tracking-tighter">{order.email}</div>
+                      {filteredOrders.map(order => (
+                        <tr key={order.id} className="border-b border-theme-border transition-all hover:bg-theme-accent/5 group">
+                          <td className="px-8 py-6">
+                            <span className="font-mono text-[10px] font-bold text-theme-accent group-hover:text-white transition-colors">
+                              {order.id}
+                            </span>
                           </td>
-                          <td className="px-8 py-5 text-[10px] text-theme-text/40 hidden lg:table-cell">
-                            <div className="truncate">{order.city}</div>
-                            <div className="truncate opacity-60">Express Delivery</div>
+                          <td className="px-8 py-6 text-theme-text/80">
+                            <div className="font-serif text-lg text-theme-text mb-1">{order.customerName}</div>
+                            <div className="text-[9px] text-theme-text/40 uppercase tracking-widest font-bold">{order.email}</div>
                           </td>
-                          <td className="px-8 py-5 text-[9px] text-theme-text/40 tracking-wider uppercase">{order.date}</td>
-                          <td className="px-8 py-5 font-bold text-right text-theme-text">{order.total}</td>
-                          <td className="px-8 py-5 text-center">
-                            <span className={`px-3 py-1.5 text-[8px] uppercase tracking-widest font-bold border ${
+                          <td className="px-8 py-6 text-[10px] text-theme-text/40 hidden lg:table-cell">
+                            <div className="flex flex-col gap-1">
+                              <span className="uppercase tracking-tighter text-theme-text/60 font-bold group-hover:text-theme-text transition-colors">{order.city}</span>
+                              <span className="text-[8px] opacity-40 uppercase font-black">{order.paymentMethod}</span>
+                            </div>
+                          </td>
+                          <td className="px-8 py-6 text-[10px] text-theme-text/40 tracking-widest uppercase font-bold">
+                            {new Date(order.date).toLocaleDateString()}
+                          </td>
+                          <td className="px-8 py-6 font-black text-right text-lg text-theme-text">
+                            {order.total.toLocaleString()}
+                          </td>
+                          <td className="px-8 py-6 text-center">
+                            <span className={`px-4 py-2 text-[8px] font-black uppercase tracking-[0.2em] border shadow-sm ${
                               order.status === 'Delivered' ? 'text-green-500 border-green-500/20 bg-green-500/10' :
                               order.status === 'Shipped' ? 'text-blue-400 border-blue-400/20 bg-blue-400/10' :
                               order.status === 'Pending' ? 'text-amber-500 border-amber-500/20 bg-amber-500/10' :
@@ -575,10 +685,22 @@ const Admin = () => {
                               {order.status}
                             </span>
                           </td>
-                          <td className="px-8 py-5 text-center">
-                            <div className="flex flex-col lg:flex-row justify-center gap-3">
-                              <button onClick={() => setViewingOrder(order)} className="text-theme-text/60 hover:text-theme-text transition-colors text-[9px] uppercase tracking-widest font-bold">View</button>
-                              <button onClick={() => setEditingOrder(order)} className="text-theme-accent hover:text-white transition-colors text-[9px] uppercase tracking-widest font-bold">Update</button>
+                          <td className="px-8 py-6">
+                            <div className="flex justify-center gap-3">
+                              <button 
+                                onClick={() => setViewingOrder(order)} 
+                                className="p-2 bg-theme-bg border border-theme-border text-theme-text/40 hover:text-theme-accent transition-all shadow-sm"
+                                title="View Details"
+                              >
+                                <Eye size={14} />
+                              </button>
+                              <button 
+                                onClick={() => setEditingOrder(order)} 
+                                className="p-2 bg-theme-bg border border-theme-border text-theme-accent hover:bg-theme-accent hover:text-white transition-all shadow-sm"
+                                title="Update State"
+                              >
+                                <Edit2 size={14} />
+                              </button>
                             </div>
                           </td>
                         </tr>
@@ -588,6 +710,12 @@ const Admin = () => {
                 )}
               </table>
             </div>
+            {filteredOrders.length === 0 && (
+              <div className="py-32 flex flex-col items-center justify-center text-theme-text/20 uppercase tracking-[0.4em] font-black">
+                <Package size={64} className="mb-6 opacity-10" />
+                No records found in current view
+              </div>
+            )}
           </div>
         </div>
 
@@ -616,10 +744,17 @@ const Admin = () => {
                   </div>
                   <div>
                     <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Division</label>
-                    <select name="category" defaultValue={editingProduct?.category || 'Slides'} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent">
-                      <option value="Slides">Slides</option>
-                      <option value="Clogs">Clogs</option>
-                      <option value="Traditional">Traditional</option>
+                    <select name="category" defaultValue={editingProduct?.category || 'Dual Stripe Zip Polos'} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent">
+                      <option value="Dual Stripe Zip Polos">Dual Stripe Zip Polos</option>
+                      <option value="Two Tone Polos">Two Tone Polos</option>
+                      <option value="Textured Stripe Polos">Textured Stripe Polos</option>
+                      <option value="WaffleZip Mocknecks">WaffleZip Mocknecks</option>
+                      <option value="Panel Zip Polos">Panel Zip Polos</option>
+                      <option value="Sweatshirts">Sweatshirts</option>
+                      <option value="Bomber Jackets">Bomber Jackets</option>
+                      <option value="T-Shirts">T-Shirts</option>
+                      <option value="Polos">Polos</option>
+                      <option value="Winter Arrivals">Winter Arrivals</option>
                     </select>
                   </div>
                 </div>
