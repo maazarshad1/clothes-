@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { products as initialProducts } from '../data/products';
+import { db, handleFirestoreError, OperationType } from '../lib/firebase';
+import { collection, onSnapshot, query, orderBy, doc, setDoc, deleteDoc } from 'firebase/firestore';
 
 export interface Product {
   id: string;
@@ -88,16 +90,76 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   
   const [isDarkMode, setIsDarkMode] = useState(false);
   
-  const [products, setProducts] = useState<Product[]>(initialProducts);
+  const [products, setProducts] = useState<Product[]>(() => {
+    const saved = localStorage.getItem('store_products');
+    return saved ? JSON.parse(saved) : initialProducts;
+  });
   const [orders, setOrders] = useState<Order[]>([]);
   const [collections, setCollections] = useState<Collection[]>(() => {
     const saved = localStorage.getItem('store_collections');
-    return saved ? JSON.parse(saved) : [
-      { id: 'col-1', name: 'Winter Collection' },
-      { id: 'col-2', name: 'New Arrivals' },
-      { id: 'col-3', name: 'Featured' }
-    ];
+    return saved ? JSON.parse(saved) : [];
   });
+  const [isInitializing, setIsInitializing] = useState(true);
+
+  // Sync collections with Firestore
+  React.useEffect(() => {
+    const q = query(collection(db, 'collections'), orderBy('name'));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const syncedCollections = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Collection));
+      if (syncedCollections.length === 0 && !snapshot.metadata.fromCache) {
+        // Initialization if empty
+        const defaults = [
+          { name: 'Winter Collection' },
+          { name: 'New Arrivals' },
+          { name: 'Featured' }
+        ];
+        defaults.forEach(async (col) => {
+          const docRef = doc(collection(db, 'collections'));
+          await setDoc(docRef, col);
+        });
+      } else {
+        setCollections(syncedCollections);
+        localStorage.setItem('store_collections', JSON.stringify(syncedCollections));
+      }
+    }, (error) => {
+      handleFirestoreError(error, OperationType.LIST, 'collections');
+    });
+    return () => unsubscribe();
+  }, []);
+
+  // Sync products with Firestore
+  React.useEffect(() => {
+    const q = query(collection(db, 'products'));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const syncedProducts = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Product));
+      
+      if (syncedProducts.length === 0 && initialProducts.length > 0 && !snapshot.metadata.fromCache) {
+        // Initialization if empty - Push local data to Firestore
+        initialProducts.forEach(async (p) => {
+          await setDoc(doc(db, 'products', p.id), p);
+        });
+      } else if (syncedProducts.length > 0) {
+        setProducts(syncedProducts);
+        localStorage.setItem('store_products', JSON.stringify(syncedProducts));
+      }
+      setIsInitializing(false);
+    }, (error) => {
+      handleFirestoreError(error, OperationType.LIST, 'products');
+    });
+    return () => unsubscribe();
+  }, []);
+
+  // Sync orders with Firestore
+  React.useEffect(() => {
+    const q = query(collection(db, 'orders'), orderBy('createdAt', 'desc'));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const syncedOrders = snapshot.docs.map(doc => ({ ...doc.data(), id: doc.id } as Order));
+      setOrders(syncedOrders);
+    }, (error) => {
+      handleFirestoreError(error, OperationType.LIST, 'orders');
+    });
+    return () => unsubscribe();
+  }, []);
 
   React.useEffect(() => {
     localStorage.setItem('store_cart', JSON.stringify(cart));
@@ -178,13 +240,21 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   const syncOrders = (syncedOrders: Order[]) => setOrders(syncedOrders);
   const clearCart = () => setCart([]);
 
-  const addCollection = (name: string) => {
-    const id = `col-${Date.now()}`;
-    setCollections(prev => [...prev, { id, name }]);
+  const addCollection = async (name: string) => {
+    try {
+      const docRef = doc(collection(db, 'collections'));
+      await setDoc(docRef, { name });
+    } catch (error) {
+      console.error('Error adding collection:', error);
+    }
   };
 
-  const deleteCollection = (id: string) => {
-    setCollections(prev => prev.filter(c => c.id !== id));
+  const deleteCollection = async (id: string) => {
+    try {
+      await deleteDoc(doc(db, 'collections', id));
+    } catch (error) {
+      console.error('Error deleting collection:', error);
+    }
   };
 
   return (

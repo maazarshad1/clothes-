@@ -37,9 +37,20 @@
         "category": { "type": "string" },
         "image": { "type": "string" },
         "rating": { "type": "number" },
-        "description": { "type": "string" }
+        "description": { "type": "string" },
+        "colors": { "type": "array" }
       },
       "required": ["id", "name", "price", "category", "image"]
+    },
+    "Collection": {
+      "title": "Collection",
+      "description": "A curated group of products",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      },
+      "required": ["name"]
     }
   },
   "firestore": {
@@ -50,6 +61,10 @@
     "products": {
       "schema": "Product",
       "description": "Store products"
+    },
+    "collections": {
+      "schema": "Collection",
+      "description": "Curated product collections"
     }
   }
 }

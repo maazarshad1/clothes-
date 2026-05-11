@@ -41,21 +41,23 @@ service cloud.firestore {
       allow get: if true;
     }
 
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /collections/{collectionId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
     match /orders/{orderId} {
       allow create: if isValidId(orderId) && isValidOrder(incoming()) 
         && incoming().createdAt == request.time;
       
-      allow get: if true;
-      allow list: if true;
+      allow get, list: if true; // Public for now to allow tracking and admin dashboard
       
-      allow update: if incoming().status in ['Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled'];
-    }
-
-    match /products/{productId} {
-      // Products can be read by anyone (public)
-      allow read: if true;
-      // Products can be created, updated, or deleted by admins (for now, allowed for easy management)
-      allow write: if true;
+      allow update: if true; // Allow status updates
     }
   }
 }

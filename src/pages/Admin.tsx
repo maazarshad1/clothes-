@@ -2,55 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useStore, Product, Order } from '../context/StoreContext';
 import { X, Bell, Download, Menu, Receipt, Clock, CheckCircle, Package, Search, Plus, Filter, MoreVertical, Eye, Edit2, Trash2 } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
-import { db, auth } from '../lib/firebase';
+import { db, auth, handleFirestoreError, OperationType } from '../lib/firebase';
 import { collection, onSnapshot, query, orderBy, doc, updateDoc } from 'firebase/firestore';
-
-enum OperationType {
-  CREATE = 'create',
-  UPDATE = 'update',
-  DELETE = 'delete',
-  LIST = 'list',
-  GET = 'get',
-  WRITE = 'write',
-}
-
-interface FirestoreErrorInfo {
-  error: string;
-  operationType: OperationType;
-  path: string | null;
-  authInfo: {
-    userId?: string | null;
-    email?: string | null;
-    emailVerified?: boolean | null;
-    isAnonymous?: boolean | null;
-    tenantId?: string | null;
-    providerInfo?: {
-      providerId?: string | null;
-      email?: string | null;
-    }[];
-  }
-}
-
-function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
-  const errInfo: FirestoreErrorInfo = {
-    error: error instanceof Error ? error.message : String(error),
-    authInfo: {
-      userId: auth.currentUser?.uid,
-      email: auth.currentUser?.email,
-      emailVerified: auth.currentUser?.emailVerified,
-      isAnonymous: auth.currentUser?.isAnonymous,
-      tenantId: auth.currentUser?.tenantId,
-      providerInfo: auth.currentUser?.providerData?.map(provider => ({
-        providerId: provider.providerId,
-        email: provider.email,
-      })) || []
-    },
-    operationType,
-    path
-  };
-  console.error('Firestore Error: ', JSON.stringify(errInfo));
-  throw new Error(JSON.stringify(errInfo));
-}
 
 const Admin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -197,10 +150,15 @@ const Admin = () => {
     toast.success('Test notification sent!');
   };
 
-  // Sync orders with Firestore in real-time
+  // Products are now synced globally in StoreContext
+  // We don't need a local listener here unless we want specific admin-only logic
+  // Same for orders, but Admin has notification logic
+  
+  // Update order synchronization to not duplicate effort but still handle notifications
   useEffect(() => {
     if (!isAuthenticated) return;
 
+    // Use a fresh listener for notifications to handle the docChanges specifically
     const q = query(collection(db, 'orders'), orderBy('createdAt', 'desc'));
     
     const unsubscribe = onSnapshot(q, (snapshot) => {
@@ -209,9 +167,8 @@ const Admin = () => {
       snapshot.docChanges().forEach((change) => {
         if (change.type === 'added' && !isInitial) {
           const data = change.doc.data() as Order;
-          // Verify we aren't notifying for an order that's already in the local state's initial batch
-          triggerNotification(data);
-          toast.success(`New Order Received: ${data.id}`, {
+          triggerNotification({ ...data, id: change.doc.id });
+          toast.success(`New Order Received: ${change.doc.id}`, {
             duration: 8000,
             icon: '🛍️',
             style: {
@@ -227,26 +184,8 @@ const Admin = () => {
       });
 
       if (isInitial) isFirstSyncRef.current = false;
-
-      const syncedOrders = snapshot.docs.map(doc => ({ ...doc.data(), id: doc.id } as Order));
-      syncOrders(syncedOrders);
     }, (error) => {
       handleFirestoreError(error, OperationType.LIST, 'orders');
-    });
-
-    return () => unsubscribe();
-  }, [isAuthenticated]);
-
-  // Sync products with Firestore
-  useEffect(() => {
-    if (!isAuthenticated) return;
-
-    const q = query(collection(db, 'products'));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const syncedProducts = snapshot.docs.map(doc => ({ ...doc.data(), id: doc.id } as Product));
-      syncProducts(syncedProducts);
-    }, (error) => {
-      handleFirestoreError(error, OperationType.LIST, 'products');
     });
 
     return () => unsubscribe();
