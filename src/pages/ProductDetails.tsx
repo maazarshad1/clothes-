@@ -28,17 +28,33 @@ const ProductDetails = () => {
   const images = product.images || [product.image];
 
   const getSizes = () => {
-    switch (product.category) {
-      case 'Shirts':
-        return ['S', 'M', 'L', 'XL', 'XXL'];
-      case 'Pants':
-        return ['28', '30', '32', '34', '36', '38'];
-      default: // Footwear / Others
-        return ['7', '8', '9', '10', '11', '12'];
+    const name = product.name.toLowerCase();
+    const category = product.category.toLowerCase();
+    
+    if (name.includes('shirt') || name.includes('polo') || category.includes('shirt') || category.includes('clothing')) {
+      return ['S', 'M', 'L', 'XL', 'XXL'];
     }
+    if (name.includes('pant') || name.includes('denim') || name.includes('jean') || category.includes('pant')) {
+      return ['28', '30', '32', '34', '36', '38'];
+    }
+    if (name.includes('shoe') || name.includes('slide') || name.includes('clog') || name.includes('sandal') || category.includes('footwear')) {
+      return ['7', '8', '9', '10', '11', '12'];
+    }
+    // Default fallback
+    return ['S', 'M', 'L', 'XL', 'XXL'];
   };
 
   const sizes = getSizes();
+
+  const handleBuyNow = () => {
+    if (!selectedSize) {
+      toast.error('Please select a size');
+      return;
+    }
+    addToCart(product, selectedSize);
+    toast.success('Proceeding to checkout');
+    navigate('/checkout');
+  };
 
   const nextImage = () => {
     setActiveImageIndex((prev) => (prev + 1) % images.length);
@@ -150,7 +166,15 @@ const ProductDetails = () => {
         >
           <div className="mb-8 border-b border-theme-border pb-8">
             <p className="text-sm text-theme-accent uppercase tracking-widest mb-4 font-bold">{product.category}</p>
-            <h1 className="font-serif text-4xl sm:text-5xl mb-4 text-theme-text">{product.name}</h1>
+            <div className="flex items-center gap-4 mb-4">
+              <h1 className="font-serif text-4xl sm:text-5xl text-theme-text">{product.name}</h1>
+              <button 
+                onClick={handleBuyNow}
+                className="bg-theme-accent text-theme-bg px-3 py-1 text-xs font-bold uppercase tracking-widest hover:bg-white transition"
+              >
+                Buy
+              </button>
+            </div>
             <div className="flex items-center gap-4 mb-6">
               <span className="text-2xl font-bold text-theme-accent">PKR {product.price}</span>
               <div className="flex text-theme-accent text-sm">
@@ -193,15 +217,7 @@ const ProductDetails = () => {
             </button>
 
             <button 
-              onClick={() => {
-                if (!selectedSize) {
-                  toast.error('Please select a size');
-                  return;
-                }
-                addToCart(product, selectedSize);
-                toast.success('Proceeding to checkout');
-                navigate('/cart');
-              }}
+              onClick={handleBuyNow}
               className="w-full bg-white text-theme-bg py-5 flex items-center justify-center gap-3 text-sm font-bold tracking-widest uppercase hover:bg-theme-accent transition mt-4"
             >
               <CreditCard size={20} /> Buy it Now

@@ -1,6 +1,4 @@
-import { Product } from '../context/StoreContext';
-
-export const products: Product[] = [
+[
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-9",
     "name": "Pack of 2 - Waffle Knit Dual Stripe Zip Polo Shirt",
@@ -3681,4 +3679,4 @@ export const products: Product[] = [
     "rating": "4.5",
     "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de..."
   }
-];
+]

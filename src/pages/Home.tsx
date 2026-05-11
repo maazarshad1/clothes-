@@ -105,17 +105,26 @@ const Home = () => {
 
                 <div className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
                   <div className="mb-2">
-                    <Link to={`/product/${product.id}`}>
-                      <h3 className="font-serif text-[11px] sm:text-xs truncate mb-1 hover:text-theme-accent transition-colors">{product.name}</h3>
-                    </Link>
+                    <div className="flex items-start justify-center gap-2 mb-1">
+                      <Link to={`/product/${product.id}`}>
+                        <h3 className="font-serif text-[11px] sm:text-xs truncate hover:text-theme-accent transition-colors">{product.name}</h3>
+                      </Link>
+                      <button 
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigate(`/product/${product.id}`);
+                        }}
+                        className="text-[8px] bg-theme-accent text-theme-bg px-1 rounded font-bold uppercase shrink-0 mt-0.5"
+                      >
+                        Buy
+                      </button>
+                    </div>
                     <p className="text-theme-accent font-bold tracking-widest text-[10px] mb-3">PKR {product.price}</p>
                     
                     <button 
                       onClick={(e) => {
                         e.preventDefault();
-                        addToCart(product);
-                        toast.success('Added to cart');
-                        navigate('/cart');
+                        navigate(`/product/${product.id}`);
                       }}
                       className="w-full bg-theme-accent text-theme-bg py-2 text-[9px] font-bold uppercase tracking-widest hover:bg-white transition-colors"
                     >

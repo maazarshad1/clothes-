@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import { Product, useStore } from '../context/StoreContext';
-import { ShoppingBag, Heart, Search, SlidersHorizontal } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ShoppingBag, Heart, Search, SlidersHorizontal, CreditCard } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const { addToCart, toggleWishlist, wishlist } = useStore();
+  const navigate = useNavigate();
   const isWishlisted = wishlist.some((item) => item.id === product.id);
 
   return (
@@ -19,36 +19,58 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       className="group"
     >
       <div className="relative aspect-[3/4] overflow-hidden bg-theme-card mb-4">
-        <img 
-          src={product.image} 
-          alt={product.name} 
-          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" 
-          referrerPolicy="no-referrer"
-        />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+        <Link to={`/product/${product.id}`}>
+          <img 
+            src={product.image} 
+            alt={product.name} 
+            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-in-out" 
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+        </Link>
         
         {/* Quick Actions */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-          <div className="flex gap-2">
+        <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-all group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
+          <div className="flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <button 
-              onClick={() => addToCart(product)}
-              className="flex-1 bg-theme-accent text-theme-bg py-3 text-xs font-bold uppercase tracking-wider hover:bg-white transition flex items-center justify-center gap-2"
+              onClick={() => {
+                navigate(`/product/${product.id}`);
+              }}
+              className="w-full bg-theme-accent text-theme-bg py-3 text-xs font-bold uppercase tracking-wider hover:bg-white transition flex items-center justify-center gap-2"
             >
-              <ShoppingBag size={16} /> Add to Cart
+              <CreditCard size={16} /> Buy Now
             </button>
-            <button 
-              onClick={() => toggleWishlist(product)}
-              className="bg-theme-bg text-theme-accent border border-theme-border p-3 hover:bg-theme-accent hover:text-theme-bg transition flex items-center justify-center"
-            >
-              <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
-            </button>
+            <div className="flex gap-2">
+              <button 
+                onClick={() => {
+                  navigate(`/product/${product.id}`);
+                }}
+                className="flex-1 bg-white text-theme-bg py-3 text-xs font-bold uppercase tracking-wider hover:bg-theme-accent transition flex items-center justify-center gap-2"
+              >
+                <ShoppingBag size={16} /> Options
+              </button>
+              <button 
+                onClick={() => toggleWishlist(product)}
+                className="bg-theme-bg/80 backdrop-blur-sm text-theme-accent border border-theme-border p-3 hover:bg-theme-accent hover:text-theme-bg transition flex items-center justify-center"
+              >
+                <Heart size={16} fill={isWishlisted ? "currentColor" : "none"} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-1">
-        <Link to={`/product/${product.id}`}>
-          <h3 className="font-serif text-lg hover:text-theme-accent transition truncate">{product.name}</h3>
-        </Link>
+        <div className="flex items-start justify-between gap-2">
+          <Link to={`/product/${product.id}`} className="flex-1 overflow-hidden">
+            <h3 className="font-serif text-lg hover:text-theme-accent transition truncate">{product.name}</h3>
+          </Link>
+          <button 
+            onClick={() => navigate(`/product/${product.id}`)}
+            className="text-[10px] bg-theme-accent text-theme-bg px-1.5 py-0.5 rounded font-bold uppercase shrink-0 mt-1.5"
+          >
+            Buy
+          </button>
+        </div>
         <div className="flex justify-between items-center">
           <p className="text-xs uppercase tracking-widest text-theme-text/40">{product.category}</p>
           <div className="text-right">
@@ -68,7 +90,10 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>(categoryParam || 'All');
 
-  const categories = ['All', 'Slides', 'Clogs', 'Traditional'];
+  const categories = useMemo(() => {
+    const cats = new Set(products.map(p => p.category));
+    return ['All', ...Array.from(cats)].filter(c => c);
+  }, [products]);
 
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
