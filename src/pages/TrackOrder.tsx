@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 import { useStore, Order } from '../context/StoreContext';
 import { Package, Truck, Search, CheckCircle, PackageOpen } from 'lucide-react';
 import { db, auth } from '../lib/firebase';
@@ -103,60 +104,64 @@ const TrackOrder = () => {
   const activeStep = searchedOrder ? getStatusStep(searchedOrder.status) : 0;
 
   return (
-    <div className="min-h-screen bg-zinc-50 pt-10 pb-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-serif text-center mb-4 tracking-tight">Track Your Order</h1>
-        <p className="text-center text-zinc-500 mb-10 max-w-lg mx-auto">
-          Enter your order ID to keep an eye on your shipment. For any issues, please contact our support team.
+    <div className="min-h-screen bg-theme-bg text-theme-text pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-6xl font-serif text-center mb-6 tracking-tight text-theme-accent uppercase">Track Order</h1>
+        <p className="text-center text-theme-text/60 mb-16 max-w-xl mx-auto font-serif text-lg">
+          Please enter your unique Order ID to receive real-time updates on your shipment status.
         </p>
 
-        <form onSubmit={handleSearch} className="mb-12">
-          <div className="flex bg-white border border-zinc-200 overflow-hidden shadow-sm">
+        <form onSubmit={handleSearch} className="mb-16">
+          <div className="flex bg-theme-card border border-theme-border overflow-hidden shadow-2xl max-w-2xl mx-auto">
             <input
               type="text"
               value={searchId}
               onChange={(e) => setSearchId(e.target.value)}
-              placeholder="e.g. ORD-001"
-              className="px-6 py-4 flex-1 outline-none font-medium placeholder:font-normal"
+              placeholder="e.g. ORD-12345"
+              className="px-8 py-5 flex-1 outline-none font-medium bg-theme-bg text-theme-text placeholder:text-theme-text/30"
             />
             <button 
               type="submit" 
               disabled={loading}
-              className="bg-[#111111] text-white px-8 uppercase tracking-widest text-xs font-bold hover:bg-[#d4af37] transition-colors flex items-center gap-2 disabled:opacity-50"
+              className="bg-theme-accent text-theme-bg px-10 uppercase tracking-[0.2em] text-xs font-bold hover:bg-white transition-all flex items-center gap-2 disabled:opacity-50"
             >
-              <Search size={16} />
+              <Search size={18} />
               <span>{loading ? 'Searching...' : 'Track'}</span>
             </button>
           </div>
-          {error && <p className="text-red-500 text-sm mt-3 text-center">{error}</p>}
+          {error && <p className="text-red-400 text-xs mt-4 text-center font-bold uppercase tracking-widest">{error}</p>}
         </form>
 
         {searchedOrder && (
-          <div className="bg-white border border-zinc-100 shadow-sm p-8">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-100 pb-6 mb-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-theme-card border border-theme-border shadow-2xl p-10"
+          >
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-theme-border pb-8 mb-10">
               <div>
-                <p className="text-[10px] uppercase tracking-widest text-zinc-400 font-bold mb-1">Order Details</p>
-                <h2 className="text-2xl font-serif">{searchedOrder.id}</h2>
+                <p className="text-[10px] uppercase tracking-[0.3em] text-theme-accent font-bold mb-2">Identification</p>
+                <h2 className="text-3xl font-serif">{searchedOrder.id}</h2>
               </div>
-              <div className="mt-4 sm:mt-0 text-left sm:text-right">
-                <p className="text-[10px] uppercase tracking-widest text-zinc-400 font-bold mb-1">Ordered On</p>
-                <p className="font-medium text-sm">{new Date(searchedOrder.date).toLocaleDateString()}</p>
+              <div className="mt-6 sm:mt-0 text-left sm:text-right">
+                <p className="text-[10px] uppercase tracking-[0.3em] text-theme-accent font-bold mb-2">Manifested On</p>
+                <p className="font-bold text-base">{new Date(searchedOrder.date).toLocaleDateString()}</p>
               </div>
             </div>
 
             {searchedOrder.status === 'Cancelled' ? (
-              <div className="text-center py-10 bg-red-50 border border-red-100 text-red-600 mb-8">
-                <PackageOpen className="mx-auto mb-3" size={40} />
-                <h3 className="text-xl font-bold mb-2">Order Cancelled</h3>
-                <p className="text-sm">This order has been cancelled.</p>
+              <div className="text-center py-16 bg-red-950/20 border border-red-500/20 text-red-500 mb-10">
+                <PackageOpen className="mx-auto mb-4" size={48} />
+                <h3 className="text-2xl font-serif mb-2">Order Revoked</h3>
+                <p className="text-sm uppercase tracking-widest font-bold">This shipment has been cancelled by administration.</p>
               </div>
             ) : (
               <>
-                <div className="mb-12 relative">
+                <div className="mb-16 relative px-4">
                   {/* Progress Line */}
-                  <div className="absolute top-6 left-[10%] right-[10%] h-0.5 bg-zinc-100 -z-10">
+                  <div className="absolute top-6 left-[10%] right-[10%] h-[2px] bg-theme-border -z-0">
                     <div 
-                      className="absolute top-0 left-0 h-full bg-[#111111] transition-all duration-500" 
+                      className="absolute top-0 left-0 h-full bg-theme-accent transition-all duration-700 shadow-[0_0_10px_rgba(197,160,89,0.5)]" 
                       style={{ width: `${((activeStep - 1) / 3) * 100}%` }}
                     />
                   </div>
@@ -165,55 +170,63 @@ const TrackOrder = () => {
                   <div className="flex justify-between text-center relative z-10">
                     {/* Step 1: Pending */}
                     <div className="flex flex-col items-center w-1/4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border-4 ${activeStep >= 1 ? 'border-white bg-[#111111] text-white shadow-md' : 'border-white bg-zinc-100 text-zinc-400'}`}>
-                        <Package size={20} />
+                      <div className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all duration-500 ${activeStep >= 1 ? 'border-theme-accent bg-theme-accent text-theme-bg shadow-lg shadow-theme-accent/20' : 'border-theme-border bg-theme-bg text-theme-text/20'}`}>
+                        <Package size={22} />
                       </div>
-                      <p className={`mt-3 text-xs uppercase tracking-wider font-bold ${activeStep >= 1 ? 'text-black' : 'text-zinc-400'}`}>Pending</p>
+                      <p className={`mt-4 text-[10px] uppercase tracking-[0.2em] font-bold ${activeStep >= 1 ? 'text-theme-accent' : 'text-theme-text/20'}`}>Pending</p>
                     </div>
 
                     {/* Step 2: Processing */}
                     <div className="flex flex-col items-center w-1/4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border-4 ${activeStep >= 2 ? 'border-white bg-[#111111] text-white shadow-md' : 'border-white bg-zinc-100 text-zinc-400'}`}>
-                        <PackageOpen size={20} />
+                      <div className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all duration-500 ${activeStep >= 2 ? 'border-theme-accent bg-theme-accent text-theme-bg shadow-lg shadow-theme-accent/20' : 'border-theme-border bg-theme-bg text-theme-text/20'}`}>
+                        <PackageOpen size={22} />
                       </div>
-                      <p className={`mt-3 text-xs uppercase tracking-wider font-bold ${activeStep >= 2 ? 'text-black' : 'text-zinc-400'}`}>Processing</p>
+                      <p className={`mt-4 text-[10px] uppercase tracking-[0.2em] font-bold ${activeStep >= 2 ? 'text-theme-accent' : 'text-theme-text/20'}`}>Processing</p>
                     </div>
 
                     {/* Step 3: Shipped */}
                     <div className="flex flex-col items-center w-1/4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border-4 ${activeStep >= 3 ? 'border-white bg-[#111111] text-white shadow-md' : 'border-white bg-zinc-100 text-zinc-400'}`}>
-                        <Truck size={20} />
+                      <div className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all duration-500 ${activeStep >= 3 ? 'border-theme-accent bg-theme-accent text-theme-bg shadow-lg shadow-theme-accent/20' : 'border-theme-border bg-theme-bg text-theme-text/20'}`}>
+                        <Truck size={22} />
                       </div>
-                      <p className={`mt-3 text-xs uppercase tracking-wider font-bold ${activeStep >= 3 ? 'text-black' : 'text-zinc-400'}`}>Shipped</p>
+                      <p className={`mt-4 text-[10px] uppercase tracking-[0.2em] font-bold ${activeStep >= 3 ? 'text-theme-accent' : 'text-theme-text/20'}`}>Shipped</p>
                     </div>
 
                     {/* Step 4: Delivered */}
                     <div className="flex flex-col items-center w-1/4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border-4 ${activeStep >= 4 ? 'border-white bg-[#d4af37] text-white shadow-md' : 'border-white bg-zinc-100 text-zinc-400'}`}>
-                        <CheckCircle size={20} />
+                      <div className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all duration-500 ${activeStep >= 4 ? 'border-white bg-white text-theme-bg shadow-lg' : 'border-theme-border bg-theme-bg text-theme-text/20'}`}>
+                        <CheckCircle size={22} />
                       </div>
-                      <p className={`mt-3 text-xs uppercase tracking-wider font-bold ${activeStep >= 4 ? 'text-black' : 'text-zinc-400'}`}>Delivered</p>
+                      <p className={`mt-4 text-[10px] uppercase tracking-[0.2em] font-bold ${activeStep >= 4 ? 'text-white' : 'text-theme-text/20'}`}>Delivered</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-zinc-50 p-6 flex flex-col md:flex-row justify-between items-center gap-4">
-                  <div>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold mb-1">Estimated Delivery</p>
+                <div className="bg-black/40 p-8 flex flex-col md:flex-row justify-between items-center gap-8 border border-theme-border">
+                  <div className="text-center md:text-left">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-theme-accent font-bold mb-2">Arrival Projection</p>
                     {activeStep === 4 ? (
-                      <p className="text-xl font-serif text-[#d4af37]">Delivered</p>
+                      <p className="text-3xl font-serif text-white uppercase tracking-widest">Received</p>
                     ) : (
-                      <p className="text-xl font-serif">{calculateEstimatedDelivery(searchedOrder.date)}</p>
+                      <p className="text-2xl font-serif text-theme-text">{calculateEstimatedDelivery(searchedOrder.date)}</p>
                     )}
                   </div>
-                  <div className="text-right">
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 font-bold mb-1">Customer</p>
-                    <p className="text-sm font-medium">{searchedOrder.customerName}</p>
+                  <div className="text-center md:text-right">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-theme-accent font-bold mb-2">Recipient</p>
+                    <p className="text-lg font-serif text-theme-text">{searchedOrder.customerName}</p>
+                    <p className="text-xs text-theme-text/40">{searchedOrder.city}, Pakistan</p>
                   </div>
+                </div>
+
+                <div className="mt-10 pt-8 border-t border-theme-border">
+                   <div className="flex justify-between items-center bg-theme-accent/10 p-4 border border-theme-accent/20">
+                      <span className="text-[10px] uppercase tracking-widest font-bold text-theme-accent">Total Amount</span>
+                      <span className="text-xl font-bold text-theme-text">PKR {searchedOrder.total}</span>
+                   </div>
                 </div>
               </>
             )}
-          </div>
+          </motion.div>
         )}
       </div>
     </div>

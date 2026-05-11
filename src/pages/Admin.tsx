@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useStore, Product, Order } from '../context/StoreContext';
-import { X, Bell, Download } from 'lucide-react';
+import { X, Bell, Download, Menu } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 import { db, auth } from '../lib/firebase';
 import { collection, onSnapshot, query, orderBy, doc, updateDoc } from 'firebase/firestore';
@@ -247,23 +247,23 @@ const Admin = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="flex flex-col h-screen w-full items-center justify-center bg-[#F5F2ED] font-sans p-4">
-        <div className="bg-white p-8 border border-[rgba(0,0,0,0.05)] shadow-sm max-w-sm w-full">
-          <h2 className="text-2xl font-serif mb-6 text-center">Admin Access</h2>
+      <div className="flex flex-col h-screen w-full items-center justify-center bg-theme-bg font-sans p-4">
+        <div className="bg-theme-card p-8 border border-theme-border shadow-2xl max-w-sm w-full">
+          <h2 className="text-3xl font-serif mb-6 text-center text-theme-accent uppercase tracking-widest">Zuran Admin</h2>
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
-              <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Passcode</label>
+              <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-1">Passcode</label>
               <input 
                 type="password" 
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
                 placeholder="Enter 1234"
-                className="w-full border border-zinc-200 p-3 text-sm focus:outline-none focus:border-[#111111]" 
+                className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" 
                 required
               />
             </div>
-            <button type="submit" className="w-full bg-[#111111] text-white py-3 text-xs uppercase tracking-widest hover:bg-black transition-colors">
-              Login
+            <button type="submit" className="w-full bg-theme-accent text-theme-bg py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-white transition-colors">
+              Enter Dashboard
             </button>
           </form>
 
@@ -381,99 +381,90 @@ const Admin = () => {
   };
 
   return (
-    <div className="flex h-screen w-full bg-[#F5F2ED] font-sans overflow-hidden text-[#111111] relative">
+    <div className="flex h-screen w-full bg-theme-bg font-sans overflow-hidden text-theme-text relative">
       <Toaster position="top-right" />
       
       {/* Mobile Sidebar Overlay */}
       {isSidebarOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+          className="fixed inset-0 bg-black/60 z-40 lg:hidden"
           onClick={() => setIsSidebarOpen(false)}
         />
       )}
 
       <div className={`
-        fixed inset-y-0 left-0 w-64 bg-[#111111] text-zinc-400 flex flex-col z-50 transition-transform duration-300 lg:relative lg:translate-x-0
+        fixed inset-y-0 left-0 w-64 bg-black text-theme-text/60 flex flex-col z-50 transition-transform duration-300 lg:relative lg:translate-x-0 border-r border-theme-border
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         <div className="p-8 flex justify-between items-start">
           <div>
-            <h2 className="text-white font-serif italic text-2xl tracking-widest uppercase text-white/90">Fashion<br/>Admin</h2>
-            <p className="text-[10px] tracking-[0.2em] mt-2 opacity-30 text-white/60">ADMINISTRATOR</p>
+            <h2 className="text-theme-accent font-serif text-3xl tracking-widest uppercase mb-1">ZURBAN</h2>
+            <p className="text-[10px] tracking-[0.3em] font-bold opacity-30">ADMINISTRATOR</p>
           </div>
-          <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden text-white p-2">
+          <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden text-theme-accent p-2">
             <X size={20} />
           </button>
         </div>
-        <ul className="flex-1 px-4 space-y-1 list-none m-0">
+        <ul className="flex-1 px-4 space-y-2 list-none m-0">
           <li 
-            className={`border-l-[3px] ${activeTab === 'products' ? 'border-[#C5A059] bg-[rgba(255,255,255,0.05)] text-white' : 'border-transparent hover:text-white'} flex items-center px-4 py-3 text-sm cursor-pointer transition`} 
+            className={`border-l-[4px] ${activeTab === 'products' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent'} flex items-center px-4 py-4 text-xs uppercase tracking-widest cursor-pointer transition`} 
             onClick={() => { setActiveTab('products'); setIsSidebarOpen(false); }}
           >
-            Products
+            Inventory
           </li>
           <li 
-            className={`border-l-[3px] ${activeTab === 'orders' ? 'border-[#C5A059] bg-[rgba(255,255,255,0.05)] text-white' : 'border-transparent hover:text-white'} flex items-center px-4 py-3 text-sm cursor-pointer transition`} 
+            className={`border-l-[4px] ${activeTab === 'orders' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent'} flex items-center px-4 py-4 text-xs uppercase tracking-widest cursor-pointer transition`} 
             onClick={() => { setActiveTab('orders'); setIsSidebarOpen(false); }}
           >
             Orders
           </li>
           <li 
-            className="border-l-[3px] border-transparent hover:text-white flex items-center px-4 py-3 text-sm cursor-pointer transition mt-auto opacity-50 hover:opacity-100"
+            className="border-l-[4px] border-transparent hover:text-red-500 flex items-center px-4 py-4 text-xs uppercase tracking-widest cursor-pointer transition mt-auto mb-10 opacity-60 hover:opacity-100"
             onClick={handleLogout}
           >
-            Logout
+            Sign Out
           </li>
         </ul>
       </div>
 
       <div className="flex-1 flex flex-col overflow-auto relative">
         {/* Mobile Header */}
-        <div className="lg:hidden flex items-center justify-between p-4 bg-[#111111] text-white">
-          <h2 className="text-sm font-serif italic tracking-widest uppercase">Urban Style</h2>
-          <button onClick={() => setIsSidebarOpen(true)} className="p-2">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <div className="lg:hidden flex items-center justify-between p-4 bg-black text-white border-b border-theme-border">
+          <h2 className="text-sm font-serif tracking-widest uppercase text-theme-accent">ZURBAN ADMIN</h2>
+          <button onClick={() => setIsSidebarOpen(true)} className="p-2 text-theme-accent">
+            <Menu size={20} />
           </button>
         </div>
 
         <div className="p-4 lg:p-10">
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 mb-10">
-            <div className="space-y-1">
-              <span className="text-[10px] uppercase tracking-[0.3em] opacity-40">Overview</span>
-              <div className="flex flex-col lg:flex-row lg:items-center gap-4">
-                <h1 className="text-3xl lg:text-4xl font-serif italic">Admin Dashboard</h1>
-                <div className="flex flex-wrap gap-2">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6 mb-12">
+            <div className="space-y-2">
+              <span className="text-[10px] uppercase tracking-[0.4em] text-theme-accent font-bold">System Management</span>
+              <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+                <h1 className="text-4xl lg:text-5xl font-serif text-theme-text uppercase tracking-tight">Dashboard</h1>
+                <div className="flex flex-wrap gap-3">
                   {notificationPermission !== 'granted' ? (
                     <button 
                       onClick={requestNotificationPermission}
-                      className="flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 text-[10px] uppercase tracking-widest font-bold border border-amber-200 hover:bg-amber-100 transition-colors w-fit"
+                      className="flex items-center gap-2 px-4 py-2 bg-theme-accent/10 text-theme-accent text-[9px] uppercase tracking-widest font-bold border border-theme-accent/30 hover:bg-theme-accent/20 transition-all w-fit"
                     >
                       <Bell size={12} />
-                      Enable Browser Notifications
+                      Enable Notifications
                     </button>
                   ) : (
                     <button 
                       onClick={testNotification}
-                      className="flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 text-[10px] uppercase tracking-widest font-bold border border-green-200 hover:bg-green-100 transition-colors w-fit"
+                      className="flex items-center gap-2 px-4 py-2 bg-green-900/20 text-green-500 text-[9px] uppercase tracking-widest font-bold border border-green-500/20 hover:bg-green-900/30 transition-all w-fit"
                     >
                       <Bell size={12} />
-                      Test Notification
-                    </button>
-                  )}
-                  {deferredPrompt && (
-                    <button 
-                      onClick={handleInstallClick}
-                      className="flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 text-[10px] uppercase tracking-widest font-bold border border-blue-200 hover:bg-blue-100 transition-colors w-fit"
-                    >
-                      <Download size={12} />
-                      Install App
+                      Test Alert
                     </button>
                   )}
                   <button 
                     onClick={initDatabase}
-                    className="flex items-center gap-2 px-3 py-1 bg-zinc-100 text-zinc-700 text-[10px] uppercase tracking-widest font-bold border border-zinc-200 hover:bg-zinc-200 transition-colors w-fit"
+                    className="flex items-center gap-2 px-4 py-2 bg-theme-card text-theme-text/60 text-[9px] uppercase tracking-widest font-bold border border-theme-border hover:border-theme-accent transition-all w-fit"
                   >
-                    Restore Default Items
+                    Reset Defaults
                   </button>
                 </div>
               </div>
@@ -481,64 +472,66 @@ const Admin = () => {
             {activeTab === 'products' && (
               <button 
                 onClick={() => setIsAddingProduct(true)}
-                className="px-6 py-3 lg:py-2 bg-[#111111] text-white text-xs uppercase tracking-widest hover:bg-black transition-colors w-full lg:w-auto"
+                className="px-10 py-5 bg-theme-accent text-theme-bg text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all shadow-lg w-full lg:w-auto"
               >
-                Add Product
+                Add New Product
               </button>
             )}
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-10">
-            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
-              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Products</span>
-              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium">{products.length}</div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mb-12">
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Inventory Units</span>
+              <div className="text-3xl mt-1 font-serif text-theme-text">{products.length}</div>
             </div>
-            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
-              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Orders</span>
-              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium">{orders.length}</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Total Orders</span>
+              <div className="text-3xl mt-1 font-serif text-theme-text">{orders.length}</div>
             </div>
-            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
-              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold">Customers</span>
-              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium">890</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Active Customers</span>
+              <div className="text-3xl mt-1 font-serif text-theme-text">1,240</div>
             </div>
-            <div className="bg-white border border-[rgba(0,0,0,0.05)] p-4 lg:p-6 flex flex-col justify-between h-28 lg:h-32">
-              <span className="text-[10px] uppercase tracking-widest opacity-50 font-bold font-bold">Revenue</span>
-              <div className="text-xl lg:text-2xl mt-1 font-serif tracking-tight font-medium truncate">${orders.reduce((acc, curr) => acc + curr.total, 0).toFixed(2)}</div>
+            <div className="bg-theme-card border border-theme-border p-6 flex flex-col justify-between h-36">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-theme-accent font-bold">Gross Revenue</span>
+              <div className="text-3xl mt-1 font-serif text-theme-accent truncate">PKR {orders.reduce((acc, curr) => acc + curr.total, 0)}</div>
             </div>
           </div>
 
-          <div className="min-h-0 bg-white border border-zinc-200 flex flex-col overflow-hidden">
-            <div className="px-6 py-4 border-b border-zinc-100 flex justify-between items-center">
-              <h3 className="text-xs uppercase tracking-[0.2em] font-bold opacity-40">
-                {activeTab === 'products' ? 'Inventory' : 'Recent Orders'}
+          <div className="bg-theme-card border border-theme-border flex flex-col overflow-hidden">
+            <div className="px-8 py-6 border-b border-theme-border flex justify-between items-center bg-black/40">
+              <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-theme-accent">
+                {activeTab === 'products' ? 'Inventory Catalogue' : 'Order Ledger'}
               </h3>
             </div>
             <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse min-w-[700px] lg:min-w-0">
+              <table className="w-full text-left border-collapse min-w-[800px]">
                 {activeTab === 'products' ? (
                   <>
-                    <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100">
+                    <thead className="bg-black/60 text-[9px] uppercase tracking-widest text-theme-text/40 border-b border-theme-border">
                       <tr>
-                        <th className="px-4 lg:px-6 py-3 font-bold">Image</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold">Product</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold">Category</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-right">Price</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-center">Actions</th>
+                        <th className="px-8 py-4 font-bold">Asset</th>
+                        <th className="px-8 py-4 font-bold">Identity</th>
+                        <th className="px-8 py-4 font-bold">Category</th>
+                        <th className="px-8 py-4 font-bold text-right">Value (PKR)</th>
+                        <th className="px-8 py-4 font-bold text-center">Operations</th>
                       </tr>
                     </thead>
                     <tbody className="text-xs">
                       {products.map(product => (
-                        <tr key={product.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50">
-                          <td className="px-4 lg:px-6 py-4 text-center">
-                            <img src={product.image} alt={product.name} className="w-10 h-10 object-cover mx-auto" />
+                        <tr key={product.id} className="border-b border-theme-border transition-colors hover:bg-theme-accent/5">
+                          <td className="px-8 py-5">
+                            <div className="w-12 h-16 bg-theme-bg overflow-hidden border border-theme-border">
+                              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                            </div>
                           </td>
-                          <td className="px-4 lg:px-6 py-4 font-bold">{product.name}</td>
-                          <td className="px-4 lg:px-6 py-4 text-[10px] opacity-40 font-medium uppercase tracking-wider">{product.category}</td>
-                          <td className="px-4 lg:px-6 py-4 font-serif text-right font-medium">${product.price.toFixed(2)}</td>
-                          <td className="px-4 lg:px-6 py-4">
-                            <div className="flex justify-center gap-4">
-                              <button onClick={() => setEditingProduct(product)} className="text-[#C5A059] hover:underline text-[9px] uppercase tracking-widest font-bold">Edit</button>
-                              <button onClick={() => handleDeleteProduct(product.id)} className="text-rose-600 hover:underline text-[9px] uppercase tracking-widest font-bold">Delete</button>
+                          <td className="px-8 py-5 font-serif text-base text-theme-text">{product.name}</td>
+                          <td className="px-8 py-5 text-[10px] text-theme-accent font-bold uppercase tracking-widest">{product.category}</td>
+                          <td className="px-8 py-5 font-bold text-right text-theme-text/80">{product.price}</td>
+                          <td className="px-8 py-5">
+                            <div className="flex justify-center gap-6">
+                              <button onClick={() => setEditingProduct(product)} className="text-theme-accent hover:text-white transition-colors text-[9px] uppercase tracking-widest font-bold">Modify</button>
+                              <button onClick={() => handleDeleteProduct(product.id)} className="text-red-500 hover:text-red-400 transition-colors text-[9px] uppercase tracking-widest font-bold">Purge</button>
                             </div>
                           </td>
                         </tr>
@@ -547,45 +540,45 @@ const Admin = () => {
                   </>
                 ) : (
                   <>
-                    <thead className="bg-zinc-50 text-[10px] uppercase tracking-widest text-zinc-400 border-b border-zinc-100">
+                    <thead className="bg-black/60 text-[9px] uppercase tracking-widest text-theme-text/40 border-b border-theme-border">
                       <tr>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-left">ID</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-left">Customer</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-left hidden lg:table-cell">Address</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-left">Date</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-right">Total</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-center">Status</th>
-                        <th className="px-4 lg:px-6 py-3 font-bold text-center">Actions</th>
+                        <th className="px-8 py-4 font-bold">Order ID</th>
+                        <th className="px-8 py-4 font-bold">Beneficiary</th>
+                        <th className="px-8 py-4 font-bold hidden lg:table-cell">Shipping</th>
+                        <th className="px-8 py-4 font-bold">Timestamp</th>
+                        <th className="px-8 py-4 font-bold text-right">Total (PKR)</th>
+                        <th className="px-8 py-4 font-bold text-center">Status</th>
+                        <th className="px-8 py-4 font-bold text-center">Actions</th>
                       </tr>
                     </thead>
                     <tbody className="text-xs">
                       {orders.map(order => (
-                        <tr key={order.id} className="border-b border-zinc-50 transition-colors hover:bg-zinc-50">
-                          <td className="px-4 lg:px-6 py-4 font-bold">{order.id}</td>
-                          <td className="px-4 lg:px-6 py-4">
-                            <div className="truncate max-w-[100px] lg:max-w-none font-medium text-black">{order.customerName}</div>
-                            <div className="text-[9px] opacity-30 truncate lg:max-w-none uppercase tracking-tighter">{order.email}</div>
+                        <tr key={order.id} className="border-b border-theme-border transition-colors hover:bg-theme-accent/5">
+                          <td className="px-8 py-5 font-bold text-theme-accent">{order.id}</td>
+                          <td className="px-8 py-5">
+                            <div className="font-serif text-sm text-theme-text">{order.customerName}</div>
+                            <div className="text-[9px] text-theme-text/40 uppercase tracking-tighter">{order.email}</div>
                           </td>
-                          <td className="px-4 lg:px-6 py-4 text-[10px] opacity-30 hidden lg:table-cell">
-                            <div className="truncate">{order.address}</div>
-                            <div className="truncate">{order.city}, {order.postalCode}</div>
+                          <td className="px-8 py-5 text-[10px] text-theme-text/40 hidden lg:table-cell">
+                            <div className="truncate">{order.city}</div>
+                            <div className="truncate opacity-60">Express Delivery</div>
                           </td>
-                          <td className="px-4 lg:px-6 py-4 text-[10px] opacity-30 tracking-wider uppercase">{order.date}</td>
-                          <td className="px-4 lg:px-6 py-4 font-serif text-right font-medium">${order.total.toFixed(2)}</td>
-                          <td className="px-4 lg:px-6 py-4 text-center">
-                            <span className={`px-2 py-1 text-[8px] uppercase tracking-widest font-bold border ${
-                              order.status === 'Delivered' ? 'text-green-600 border-green-600/20 bg-green-50' :
-                              order.status === 'Shipped' ? 'text-blue-600 border-blue-600/20 bg-blue-50' :
-                              order.status === 'Pending' ? 'text-amber-600 border-amber-600/20 bg-amber-50' :
-                              'text-zinc-600 border-zinc-100 bg-zinc-50'
+                          <td className="px-8 py-5 text-[9px] text-theme-text/40 tracking-wider uppercase">{order.date}</td>
+                          <td className="px-8 py-5 font-bold text-right text-theme-text">{order.total}</td>
+                          <td className="px-8 py-5 text-center">
+                            <span className={`px-3 py-1.5 text-[8px] uppercase tracking-widest font-bold border ${
+                              order.status === 'Delivered' ? 'text-green-500 border-green-500/20 bg-green-500/10' :
+                              order.status === 'Shipped' ? 'text-blue-400 border-blue-400/20 bg-blue-400/10' :
+                              order.status === 'Pending' ? 'text-amber-500 border-amber-500/20 bg-amber-500/10' :
+                              'text-theme-text/40 border-theme-border bg-theme-bg'
                             }`}>
                               {order.status}
                             </span>
                           </td>
-                          <td className="px-4 lg:px-6 py-4 text-center">
-                            <div className="flex flex-col lg:flex-row justify-center gap-2 lg:gap-4">
-                              <button onClick={() => setViewingOrder(order)} className="text-blue-600 hover:underline text-[9px] uppercase tracking-widest font-bold">View</button>
-                              <button onClick={() => setEditingOrder(order)} className="text-[#C5A059] hover:underline text-[9px] uppercase tracking-widest font-bold">Update</button>
+                          <td className="px-8 py-5 text-center">
+                            <div className="flex flex-col lg:flex-row justify-center gap-3">
+                              <button onClick={() => setViewingOrder(order)} className="text-theme-text/60 hover:text-theme-text transition-colors text-[9px] uppercase tracking-widest font-bold">View</button>
+                              <button onClick={() => setEditingOrder(order)} className="text-theme-accent hover:text-white transition-colors text-[9px] uppercase tracking-widest font-bold">Update</button>
                             </div>
                           </td>
                         </tr>
@@ -598,53 +591,53 @@ const Admin = () => {
           </div>
         </div>
 
-        {/* Edit/Add Product Modal */}
+        {/* Modal styling updates */}
         {(isAddingProduct || editingProduct) && (
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4 z-50">
-            <div className="bg-white w-full max-w-md p-8 relative shadow-2xl border border-zinc-100">
+          <div className="absolute inset-0 bg-black/60 flex items-center justify-center p-4 z-50 overflow-y-auto">
+            <div className="bg-theme-card w-full max-w-lg p-10 relative shadow-2xl border border-theme-border mt-20 mb-20">
               <button 
                 onClick={() => { setIsAddingProduct(false); setEditingProduct(null); }}
-                className="absolute top-6 right-6 opacity-50 hover:opacity-100 transition-opacity"
+                className="absolute top-8 right-8 text-theme-text/40 hover:text-theme-text transition-colors"
               >
-                <X className="w-5 h-5" />
+                <X size={24} />
               </button>
-              <h2 className="text-2xl font-serif italic mb-6">
-                {editingProduct ? 'Edit Product' : 'Add Product'}
+              <h2 className="text-3xl font-serif mb-8 text-theme-accent uppercase tracking-widest">
+                {editingProduct ? 'Edit Asset' : 'Manifest New Asset'}
               </h2>
-              <form onSubmit={handleProductSubmit} className="space-y-4">
+              <form onSubmit={handleProductSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Name</label>
-                  <input name="name" defaultValue={editingProduct?.name || ''} required className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" />
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Product Designation</label>
+                  <input name="name" defaultValue={editingProduct?.name || ''} required className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Price</label>
-                    <input name="price" type="number" step="0.01" defaultValue={editingProduct?.price || ''} required className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" />
+                    <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Value (PKR)</label>
+                    <input name="price" type="number" defaultValue={editingProduct?.price || ''} required className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" />
                   </div>
                   <div>
-                    <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Category</label>
-                    <input name="category" defaultValue={editingProduct?.category || ''} required className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" />
+                    <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Division</label>
+                    <select name="category" defaultValue={editingProduct?.category || 'Slides'} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent">
+                      <option value="Slides">Slides</option>
+                      <option value="Clogs">Clogs</option>
+                      <option value="Traditional">Traditional</option>
+                    </select>
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Main Image URL</label>
-                  <input name="image" defaultValue={editingProduct?.image || ''} required className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" />
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Primary Visual URL</label>
+                  <input name="image" defaultValue={editingProduct?.image || ''} required className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" />
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Slideshow Images (comma separated URLs)</label>
-                  <input name="images-list" defaultValue={editingProduct?.images?.join(', ') || ''} className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" placeholder="url1, url2, url3" />
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Slideshow Assets (comma separated)</label>
+                  <input name="images-list" defaultValue={editingProduct?.images?.join(', ') || ''} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" placeholder="url1, url2..." />
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Video URL (optional)</label>
-                  <input name="video" defaultValue={editingProduct?.video || ''} className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]" placeholder="https://..." />
-                </div>
-                <div>
-                  <label className="block text-[10px] uppercase tracking-widest font-bold opacity-50 mb-1">Description</label>
-                  <textarea name="description" rows={3} defaultValue={editingProduct?.description || ''} required className="w-full border border-zinc-200 p-2 text-sm focus:outline-none focus:border-[#111111]"></textarea>
+                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Description</label>
+                  <textarea name="description" rows={3} defaultValue={editingProduct?.description || ''} required className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent resize-none"></textarea>
                 </div>
                 <div className="pt-4">
-                  <button type="submit" className="w-full bg-[#111111] text-white py-3 text-xs uppercase tracking-widest hover:bg-black transition-colors">
-                    {editingProduct ? 'Save Changes' : 'Create Product'}
+                  <button type="submit" className="w-full bg-theme-accent text-theme-bg py-5 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-white transition-all">
+                    {editingProduct ? 'Commit Changes' : 'Initialize Asset'}
                   </button>
                 </div>
               </form>
