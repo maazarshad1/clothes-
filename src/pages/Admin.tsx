@@ -60,15 +60,21 @@ const Admin = () => {
     return false;
   });
   const [passcode, setPasscode] = useState('');
-  const { products, addProduct, updateProduct, deleteProduct, orders, updateOrderStatus, addOrder, syncOrders, syncProducts } = useStore();
+  const { 
+    products, addProduct, updateProduct, deleteProduct, 
+    orders, updateOrderStatus, addOrder, syncOrders, syncProducts,
+    collections, addCollection, deleteCollection 
+  } = useStore();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<'products' | 'orders' | 'transactions'>('products');
+  const [activeTab, setActiveTab] = useState<'products' | 'orders' | 'transactions' | 'collections'>('products');
   const [orderFilter, setOrderFilter] = useState<'all' | 'Pending' | 'Delivered' | 'Processing' | 'Shipped' | 'Cancelled'>('all');
   
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
   const [viewingOrder, setViewingOrder] = useState<Order | null>(null);
+  const [newCollectionName, setNewCollectionName] = useState('');
+  const [isProcessingColors, setIsProcessingColors] = useState(false);
 
   const filteredOrders = orders.filter(o => {
     if (activeTab === 'transactions') {
@@ -327,10 +333,72 @@ const Admin = () => {
     }
   };
 
+  const processProductColors = async () => {
+    if (!products.length) return;
+    setIsProcessingColors(true);
+    const toastId = toast.loading('AI analyzing colors...');
+    
+    try {
+      const { GoogleGenAI, Type } = await import('@google/genai');
+      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      
+      const batchSize = 10;
+      for (let i = 0; i < products.length; i += batchSize) {
+        const batch = products.slice(i, i + batchSize);
+        const prompt = `Analyze these clothing products and return a JSON list of identified colors for each.
+        Products: ${batch.map(p => `ID: ${p.id}, Name: ${p.name}, Description: ${p.description}`).join(' | ')}
+        Return only JSON like: [{"id": "...", "colors": ["Black", "White"]}]`;
+
+        const response = await ai.models.generateContent({
+          model: 'gemini-3-flash-preview',
+          contents: prompt,
+          config: {
+            responseMimeType: 'application/json',
+            responseSchema: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  id: { type: Type.STRING },
+                  colors: { type: Type.ARRAY, items: { type: Type.STRING } }
+                },
+                required: ['id', 'colors']
+              }
+            }
+          }
+        });
+
+        const colorData = JSON.parse(response.text);
+        for (const data of colorData) {
+          const product = products.find(p => p.id === data.id);
+          if (product) {
+            await updateDoc(doc(db, 'products', product.id), { 
+              colors: data.colors,
+              // If product name doesn't include color, we keep it as is, but we'll show colors in UI
+            });
+          }
+        }
+        toast.loading(`Processed ${Math.min(i + batchSize, products.length)}/${products.length} products...`, { id: toastId });
+      }
+      
+      toast.success('AI Color Detection Complete!', { id: toastId });
+    } catch (error) {
+      console.error('AI Processing Error:', error);
+      toast.error('AI color detection failed', { id: toastId });
+    } finally {
+      setIsProcessingColors(false);
+    }
+  };
+
   const handleProductSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const productId = editingProduct ? editingProduct.id : Date.now().toString();
+    
+    const selectedCollections = Array.from(formData.getAll('collections') as string[]);
+    const colorInput = formData.get('colors') as string;
+    const colors = colorInput.split(',').map(s => s.trim()).filter(s => s !== '');
+
     const productData = {
       id: productId,
       name: formData.get('name') as string,
@@ -341,16 +409,17 @@ const Admin = () => {
       video: formData.get('video') as string || undefined,
       rating: parseFloat(formData.get('rating') as string) || 5,
       description: formData.get('description') as string,
+      colors: colors,
+      collections: selectedCollections,
     };
 
-    // Ensure the main image is in the images array if not already there
     if (productData.image && !productData.images.includes(productData.image)) {
       productData.images.unshift(productData.image);
     }
 
     try {
       if (editingProduct) {
-        await updateDoc(doc(db, 'products', editingProduct.id), productData);
+        await updateDoc(doc(db, 'products', editingProduct.id), productData as any);
         toast.success('Product updated');
       } else {
         const { setDoc, doc } = await import('firebase/firestore');
@@ -429,6 +498,12 @@ const Admin = () => {
             <Package size={16} /> Inventory
           </li>
           <li 
+            className={`flex items-center gap-3 px-4 py-4 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] ${activeTab === 'collections' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
+            onClick={() => { setActiveTab('collections'); setIsSidebarOpen(false); }}
+          >
+            <Filter size={16} /> Custom Collections
+          </li>
+          <li 
             className={`flex items-center gap-3 px-4 py-4 text-[10px] uppercase tracking-widest cursor-pointer transition border-l-[4px] ${activeTab === 'transactions' ? 'border-theme-accent bg-theme-accent/10 text-theme-accent font-bold' : 'border-transparent hover:text-theme-accent hover:bg-white/5'}`} 
             onClick={() => { setActiveTab('transactions'); setIsSidebarOpen(false); }}
           >
@@ -481,6 +556,13 @@ const Admin = () => {
               <div className="flex flex-col lg:flex-row lg:items-center gap-6">
                 <h1 className="text-4xl lg:text-5xl font-serif text-theme-text uppercase tracking-tight">Dashboard</h1>
                 <div className="flex flex-wrap gap-3">
+                  <button 
+                    onClick={processProductColors}
+                    disabled={isProcessingColors}
+                    className="flex items-center gap-2 px-4 py-2 bg-theme-accent text-theme-bg text-[9px] uppercase tracking-widest font-bold border border-theme-accent hover:bg-white transition-all w-fit disabled:opacity-50"
+                  >
+                    {isProcessingColors ? 'AI Processing...' : 'Auto-Detect Colors'}
+                  </button>
                   {notificationPermission !== 'granted' ? (
                     <button 
                       onClick={requestNotificationPermission}
@@ -498,12 +580,6 @@ const Admin = () => {
                       Test Alert
                     </button>
                   )}
-                  <button 
-                    onClick={initDatabase}
-                    className="flex items-center gap-2 px-4 py-2 bg-theme-card text-theme-text/60 text-[9px] uppercase tracking-widest font-bold border border-theme-border hover:border-theme-accent transition-all w-fit"
-                  >
-                    Reset Defaults
-                  </button>
                 </div>
               </div>
             </div>
@@ -555,6 +631,7 @@ const Admin = () => {
             <div className="px-8 py-6 border-b border-theme-border flex flex-col md:flex-row justify-between items-center bg-black/40 gap-4">
               <h3 className="text-[11px] uppercase tracking-[0.4em] font-bold text-theme-accent">
                 {activeTab === 'products' ? 'Inventory Catalogue' : 
+                 activeTab === 'collections' ? 'Custom Collections' :
                  activeTab === 'transactions' ? 'Collection Transactions' : 
                  `Order Ledger: ${orderFilter}`}
               </h3>
@@ -574,11 +651,10 @@ const Admin = () => {
                     <thead className="bg-black/60 text-[9px] uppercase tracking-widest text-theme-text/40 border-b border-theme-border">
                       <tr>
                         <th className="px-8 py-5 font-black">Visual Asset</th>
-                        <th className="px-8 py-5 font-black text-center">SKU</th>
                         <th className="px-8 py-5 font-black">Product Details</th>
-                        <th className="px-8 py-5 font-black">Division</th>
+                        <th className="px-8 py-5 font-black">Division / Collections</th>
                         <th className="px-8 py-5 font-black text-right">Valuation (PKR)</th>
-                        <th className="px-8 py-5 font-black text-center">Status</th>
+                        <th className="px-8 py-5 font-black text-center">Active Colors</th>
                         <th className="px-8 py-5 font-black text-center">Operations</th>
                       </tr>
                     </thead>
@@ -591,30 +667,42 @@ const Admin = () => {
                               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent" />
                             </div>
                           </td>
-                          <td className="px-8 py-6 text-center">
-                            <span className="font-mono text-[9px] px-2 py-1 bg-white/5 rounded border border-white/10 text-theme-text/60">
-                              {product.id.substring(0, 8)}
-                            </span>
-                          </td>
                           <td className="px-8 py-6">
                             <div className="font-serif text-lg text-theme-text group-hover:text-theme-accent transition-colors mb-1">{product.name}</div>
-                            <div className="text-[9px] text-theme-text/30 font-bold uppercase tracking-widest truncate max-w-[200px]">
-                              {product.description?.substring(0, 60)}...
+                            <div className="text-[9px] text-theme-text/30 font-bold uppercase tracking-widest max-w-[200px]">
+                              SKU: {product.id.substring(0, 8)}
                             </div>
                           </td>
                           <td className="px-8 py-6">
-                            <span className="text-[10px] text-theme-accent font-black uppercase tracking-[0.2em] border border-theme-accent/20 px-2 py-1 rounded-sm bg-theme-accent/5">
-                              {product.category}
-                            </span>
+                            <div className="flex flex-wrap gap-1">
+                              <span className="text-[9px] text-theme-accent font-black uppercase tracking-wider border border-theme-accent/20 px-2 py-0.5 rounded-sm bg-theme-accent/5">
+                                {product.category}
+                              </span>
+                              {product.collections?.map(cId => {
+                                const col = collections.find(c => c.id === cId || c.name === cId);
+                                return (
+                                  <span key={cId} className="text-[9px] text-white/40 font-bold uppercase tracking-wider border border-white/10 px-2 py-0.5 rounded-sm">
+                                    {col ? col.name : cId}
+                                  </span>
+                                );
+                              })}
+                            </div>
                           </td>
                           <td className="px-8 py-6 font-black text-right text-lg text-theme-text/90">
                             {product.price.toLocaleString()}
                           </td>
                           <td className="px-8 py-6 text-center">
-                            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-500/10 text-green-500 text-[8px] font-black uppercase tracking-widest border border-green-500/20">
-                              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                              Active
-                            </span>
+                            <div className="flex flex-wrap justify-center gap-1">
+                              {product.colors && product.colors.length > 0 ? (
+                                product.colors.map((color, idx) => (
+                                  <span key={idx} className="text-[8px] px-1.5 py-0.5 border border-white/10 bg-white/5 uppercase font-bold text-white/60">
+                                    {color}
+                                  </span>
+                                ))
+                              ) : (
+                                <span className="text-[8px] text-white/20 uppercase">None</span>
+                              )}
+                            </div>
                           </td>
                           <td className="px-8 py-6">
                             <div className="flex justify-center gap-3">
@@ -633,6 +721,64 @@ const Admin = () => {
                                 <Trash2 size={14} />
                               </button>
                             </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </>
+                ) : activeTab === 'collections' ? (
+                  <>
+                    <thead className="bg-black/60 text-[9px] uppercase tracking-widest text-theme-text/40 border-b border-theme-border">
+                      <tr>
+                        <th className="px-8 py-5 font-black">Collection ID</th>
+                        <th className="px-8 py-5 font-black">Display Name</th>
+                        <th className="px-8 py-5 font-black text-center">Attached Products</th>
+                        <th className="px-8 py-5 font-black text-center">Operations</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-xs">
+                      {/* Add New Collection Row */}
+                      <tr className="border-b border-theme-border bg-theme-accent/5">
+                        <td className="px-8 py-4 opacity-50 italic">Auto-generated</td>
+                        <td className="px-8 py-4">
+                          <input 
+                            type="text" 
+                            placeholder="New Collection Name..." 
+                            value={newCollectionName}
+                            onChange={(e) => setNewCollectionName(e.target.value)}
+                            className="bg-transparent border-b border-theme-accent/30 focus:border-theme-accent outline-none py-1 w-full uppercase tracking-widest font-bold"
+                          />
+                        </td>
+                        <td className="px-8 py-4 text-center">0</td>
+                        <td className="px-8 py-4 text-center">
+                          <button 
+                            onClick={() => {
+                              if (newCollectionName) {
+                                addCollection(newCollectionName);
+                                setNewCollectionName('');
+                                toast.success('Collection created');
+                              }
+                            }}
+                            className="p-2 bg-theme-accent text-theme-bg rounded-full hover:scale-110 transition-transform"
+                          >
+                            <Plus size={16} />
+                          </button>
+                        </td>
+                      </tr>
+                      {collections.map(col => (
+                        <tr key={col.id} className="border-b border-theme-border hover:bg-white/5 transition-colors">
+                          <td className="px-8 py-5 font-mono text-[10px] opacity-40">{col.id}</td>
+                          <td className="px-8 py-5 font-serif text-lg tracking-wider text-theme-text">{col.name}</td>
+                          <td className="px-8 py-5 text-center font-bold">
+                            {products.filter(p => p.collections?.includes(col.id) || p.collections?.includes(col.name)).length}
+                          </td>
+                          <td className="px-8 py-5 text-center">
+                            <button 
+                              onClick={() => deleteCollection(col.id)}
+                              className="text-red-500 hover:text-red-400 p-2"
+                            >
+                              <Trash2 size={16} />
+                            </button>
                           </td>
                         </tr>
                       ))}
@@ -758,13 +904,38 @@ const Admin = () => {
                     </select>
                   </div>
                 </div>
-                <div>
-                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Primary Visual URL</label>
-                  <input name="image" defaultValue={editingProduct?.image || ''} required className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" />
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Primary Visual URL</label>
+                    <input name="image" defaultValue={editingProduct?.image || ''} required className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" />
+                  </div>
+                  <div>
+                    <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Available Colors (comma separated)</label>
+                    <input name="colors" defaultValue={editingProduct?.colors?.join(', ') || ''} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" placeholder="e.g. Black, White, Navy" />
+                  </div>
                 </div>
-                <div>
-                  <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Slideshow Assets (comma separated)</label>
-                  <input name="images-list" defaultValue={editingProduct?.images?.join(', ') || ''} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" placeholder="url1, url2..." />
+                <div className="grid grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Slideshow Assets (comma separated)</label>
+                    <input name="images-list" defaultValue={editingProduct?.images?.join(', ') || ''} className="w-full border border-theme-border bg-theme-bg text-theme-text p-4 text-sm focus:outline-none focus:border-theme-accent" placeholder="url1, url2..." />
+                  </div>
+                  <div>
+                    <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Assign to Collections</label>
+                    <div className="max-h-32 overflow-y-auto border border-theme-border p-2 space-y-2 bg-theme-bg">
+                      {collections.map(col => (
+                        <label key={col.id} className="flex items-center gap-3 cursor-pointer group">
+                          <input 
+                            type="checkbox" 
+                            name="collections" 
+                            value={col.id}
+                            defaultChecked={editingProduct?.collections?.includes(col.id) || editingProduct?.collections?.includes(col.name)}
+                            className="accent-theme-accent"
+                          />
+                          <span className="text-[10px] uppercase tracking-widest text-theme-text/60 group-hover:text-theme-accent transition-colors">{col.name}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <label className="block text-[10px] uppercase tracking-[0.2em] font-bold text-theme-accent mb-2">Description</label>

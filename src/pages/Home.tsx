@@ -121,6 +121,14 @@ const Home = () => {
                       <Link to={`/product/${product.id}`}>
                         <h3 className="font-serif text-xs truncate mb-1 group-hover:text-theme-accent transition">{product.name}</h3>
                       </Link>
+                      <div className="flex flex-wrap gap-1 mb-1">
+                        {product.colors?.slice(0, 3).map((color, idx) => (
+                          <span key={idx} className="text-[7px] px-1 border border-theme-border text-theme-text/40 lowercase italic">
+                            {color}
+                          </span>
+                        ))}
+                        {product.colors && product.colors.length > 3 && <span className="text-[7px] text-theme-text/40">+</span>}
+                      </div>
                       <p className="text-theme-accent font-bold text-[11px]">PKR {product.price}</p>
                     </div>
                   </motion.div>

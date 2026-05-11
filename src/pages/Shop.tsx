@@ -71,6 +71,13 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             Buy
           </button>
         </div>
+        <div className="flex flex-wrap gap-1 mb-1">
+          {product.colors?.map((color, idx) => (
+            <span key={idx} className="text-[8px] px-1 border border-theme-border text-theme-text/40 lowercase italic">
+              {color}
+            </span>
+          ))}
+        </div>
         <div className="flex justify-between items-center">
           <p className="text-xs uppercase tracking-widest text-theme-text/40">{product.category}</p>
           <div className="text-right">
@@ -83,12 +90,14 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 };
 
 const Shop = () => {
-  const { products } = useStore();
+  const { products, collections } = useStore();
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const collectionParam = searchParams.get('collection');
   
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string>(categoryParam || 'All');
+  const [activeCollection, setActiveCollection] = useState<string>(collectionParam || 'All');
 
   const categories = useMemo(() => {
     const cats = new Set(products.map(p => p.category));
@@ -98,10 +107,11 @@ const Shop = () => {
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       const matchesCategory = activeCategory === 'All' || product.category === activeCategory;
+      const matchesCollection = activeCollection === 'All' || product.collections?.includes(activeCollection) || product.collections?.includes(collections.find(c => c.id === activeCollection)?.name || '');
       const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchesCategory && matchesSearch;
+      return matchesCategory && matchesCollection && matchesSearch;
     });
-  }, [activeCategory, searchQuery]);
+  }, [activeCategory, activeCollection, searchQuery, collections]);
 
   return (
     <div className="min-h-screen bg-theme-bg text-theme-text">
@@ -112,9 +122,44 @@ const Shop = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Collection Selector */}
+        <div className="mb-12 border-b border-theme-border pb-6 overflow-x-auto">
+          <p className="text-[10px] uppercase tracking-[0.4em] text-theme-accent font-bold mb-4">Curated Selections</p>
+          <div className="flex gap-6 whitespace-nowrap min-w-full pb-2">
+            <button
+              onClick={() => {
+                setActiveCollection('All');
+                searchParams.delete('collection');
+                setSearchParams(searchParams);
+              }}
+              className={`text-xl font-serif tracking-tight transition-all ${
+                activeCollection === 'All' ? 'text-theme-accent underline decoration-2 underline-offset-8' : 'text-theme-text/40 hover:text-theme-text'
+              }`}
+            >
+              All Items
+            </button>
+            {collections.map((col) => (
+              <button
+                key={col.id}
+                onClick={() => {
+                  setActiveCollection(col.id);
+                  searchParams.set('collection', col.id);
+                  setSearchParams(searchParams);
+                }}
+                className={`text-xl font-serif tracking-tight transition-all ${
+                  activeCollection === col.id ? 'text-theme-accent underline decoration-2 underline-offset-8' : 'text-theme-text/40 hover:text-theme-text'
+                }`}
+              >
+                {col.name}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Toolbar */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
           <div className="flex flex-wrap gap-4 items-center">
+            <span className="text-[10px] uppercase tracking-widest text-theme-text/40 font-bold mr-2">Divisions:</span>
             {categories.map((cat) => (
               <button
                 key={cat}

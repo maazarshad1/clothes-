@@ -40,6 +40,28 @@ async function main() {
       return p.product_type || 'New Arrivals';
     };
 
+    const determineColors = (p) => {
+      const colors = new Set();
+      
+      // Look in options (Standard Shopify way)
+      p.options?.forEach(opt => {
+        if (opt.name.toLowerCase().includes('color')) {
+          opt.values?.forEach(val => colors.add(val));
+        }
+      });
+
+      // Supplement from title if options are empty
+      if (colors.size === 0) {
+        const title = p.title.toLowerCase();
+        const commonColors = ['black', 'white', 'grey', 'gray', 'navy', 'blue', 'green', 'red', 'maroon', 'charcoal', 'mustard', 'yellow', 'sky blue', 'gray', 'grey', 'olive', 'sand', 'beige'];
+        commonColors.forEach(c => {
+          if (title.includes(c)) colors.add(c.charAt(0).toUpperCase() + c.slice(1));
+        });
+      }
+
+      return Array.from(colors);
+    };
+
     const formattedProducts = allProducts.map(p => ({
       id: p.handle,
       name: p.title,
@@ -49,7 +71,9 @@ async function main() {
       images: p.images?.map(img => img.src) || [],
       video: '', 
       rating: parseFloat((Math.random() * (5 - 4) + 4).toFixed(1)),
-      description: (p.body_html || '').replace(/<[^>]*>?/gm, ' ').substring(0, 500).trim() + '...'
+      description: (p.body_html || '').replace(/<[^>]*>?/gm, ' ').substring(0, 500).trim() + '...',
+      colors: determineColors(p),
+      collections: [determineCategory(p)] // Default to category as initial collection
     }));
 
     process.stdout.write(JSON.stringify(formattedProducts, null, 2));

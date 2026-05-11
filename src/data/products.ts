@@ -15,8 +15,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_49AM_5212926e-538f-4c70-8cdd-84e9cbc36a90.png?v=1776452627"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.6,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-8",
@@ -32,8 +36,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_52AM_0a789332-ed23-412e-aa47-576ddc09f444.png?v=1776452625"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.3,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-7",
@@ -49,8 +57,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_52AM_de5bf015-bc89-486f-acf9-d4bdc0211149.png?v=1776452622"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.6,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-6",
@@ -66,8 +78,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_45AM_c9f2a901-a6fe-437a-b022-98b8a41d1a94.png?v=1776452620"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.5,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-5",
@@ -83,8 +99,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_49AM_61a488b8-a7da-43f8-a028-ce4e4f28a7f7.png?v=1776452617"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.3,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-4",
@@ -100,8 +120,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_52AM_a3063e90-84b0-44f7-9555-078832e67007.png?v=1776452615"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.4,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-3",
@@ -117,8 +141,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_45AM_962e910a-a4ee-4b33-abf4-315b3ca61617.png?v=1776452612"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.2,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-2",
@@ -134,8 +162,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_49AM_8f647de7-2a7d-4494-af5c-f118bda563d1.png?v=1776452609"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.7,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt-1",
@@ -151,8 +183,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_52AM_8954202f-96a3-4bdc-8bba-1f50d47b7a9d.png?v=1776452607"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.3,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-dual-stripe-zip-polo-shirt",
@@ -168,8 +204,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_20_57AM_3a0c56e9-75c8-4fb0-9329-1068da55dac9.png?v=1776452604"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.6,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "waffle-knit-dual-stripe-zip-polo-shirt-3",
@@ -183,8 +223,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_52AM.png?v=1776452601"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 5,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "waffle-knit-dual-stripe-zip-polo-shirt-2",
@@ -198,8 +242,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_49AM.png?v=1776452598"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.1,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "waffle-knit-dual-stripe-zip-polo-shirt-1",
@@ -213,8 +261,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_21_45AM.png?v=1776452596"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.4,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "waffle-knit-dual-stripe-zip-polo-shirt",
@@ -228,8 +280,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_20_57AM.png?v=1776452595"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.1,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "dual-stripe-zip-polo-shirt",
@@ -243,8 +299,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_06_20_53AM.png?v=1776452590"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea..."
+    "rating": 4.9,
+    "description": "Upgrade your everyday style with the  Dual Stripe Zipper Polo Shirt  — where modern edge meets timeless design. Featuring bold vertical dual-tone stripes and a sleek front zipper, this polo is built for men who want to stand out effortlessly. \n Crafted from breathable, soft-touch fabric, it delivers all-day comfort while maintaining a structured, premium look. The tailored slim fit enhances your physique, making it perfect for both casual outings and smart-casual occasions. \n Whether you're hea...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-panel-zip-polo-5",
@@ -261,8 +321,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/538D6D1C-A87F-4648-B386-326FCADCC1FC_e141fdb9-a0c3-4e50-a990-d1f39ce6e5a3.jpg?v=1776452588"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet..."
+    "rating": 4.2,
+    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-panel-zip-polo-4",
@@ -279,8 +343,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/538D6D1C-A87F-4648-B386-326FCADCC1FC_5a19be3d-6ab6-4659-a15f-28d7bc21d806.jpg?v=1776452585"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet..."
+    "rating": 4.9,
+    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-panel-zip-polo-3",
@@ -298,7 +366,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4,
-    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet..."
+    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-panel-zip-polo-2",
@@ -315,8 +387,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/538D6D1C-A87F-4648-B386-326FCADCC1FC_d38fa878-72ee-468d-9125-22b2daa74dd1.jpg?v=1776452580"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet..."
+    "rating": 4.9,
+    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-panel-zip-polo-1",
@@ -334,7 +410,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4,
-    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet..."
+    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-panel-zip-polo",
@@ -351,8 +431,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/538D6D1C-A87F-4648-B386-326FCADCC1FC.jpg?v=1776452574"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet..."
+    "rating": 4.1,
+    "description": "Upgrade your everyday style with the  Titan Apex Panel Zip Polo , designed for the modern man who values clean aesthetics and standout detailing. Featuring a bold  contrast front panel  and a sleek  zipper neckline , this polo blends smart and casual effortlessly. \n Crafted from soft, breathable fabric, it ensures all-day comfort while maintaining a structured, premium look. The tailored fit enhances your silhouette, making it perfect for both casual outings and elevated streetwear fits. \n Whet...",
+    "colors": [],
+    "collections": [
+      "Dual Stripe Zip Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-textured-stripe-polos-5",
@@ -368,8 +452,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb11_2026_04_13_39AM_139d9955-915b-4d5e-a6de-6444b5fc2b7d.png?v=1776197713"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4.9,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-textured-stripe-polos-4",
@@ -385,8 +475,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb11_2026_04_02_49AM_8854a779-f4ea-4bdc-91e8-8d3d0cf604e4.png?v=1776197666"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-textured-stripe-polos-3",
@@ -402,8 +498,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb11_2026_04_13_39AM_059229a4-5fde-4874-8e47-de86ff0f4599.png?v=1776197517"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4.1,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-textured-stripe-polos-2",
@@ -419,8 +521,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageApr14_2026_11_26_42PM.png?v=1776197439"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4.9,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-textured-stripe-polos-1",
@@ -436,8 +544,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb11_2026_04_13_39AM.png?v=1776197396"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4.5,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "pack-of-5-men-s-full-sleeves-t-shirts-5",
@@ -450,7 +564,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.7,
-    "description": "Keep your style simple, smart, and comfortable with our  Pack of 4 Men’s Full Sleeves T-Shirts . Crafted from  100% premium cotton , these tees are designed for all-day wear — offering  breathable softness, durable stitching, and a clean, modern fit  that works for every occasion. \n Each pack includes  four versatile full-sleeve tees  in classic and trendy colors, giving you effortless outfit options for work, workouts, or weekend relaxation. With their  regular fit and ribbed cuffs , these tee..."
+    "description": "Keep your style simple, smart, and comfortable with our  Pack of 4 Men’s Full Sleeves T-Shirts . Crafted from  100% premium cotton , these tees are designed for all-day wear — offering  breathable softness, durable stitching, and a clean, modern fit  that works for every occasion. \n Each pack includes  four versatile full-sleeve tees  in classic and trendy colors, giving you effortless outfit options for work, workouts, or weekend relaxation. With their  regular fit and ribbed cuffs , these tee...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-men-s-full-sleeves-t-shirts-4",
@@ -462,8 +580,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.54_AM.jpg?v=1775443223"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Refresh your wardrobe with our  Pack of 5 Men’s Full Sleeves T-Shirts , the perfect mix of comfort, quality, and value. Made from  100% premium cotton , these tees offer  superior softness, breathability, and durability  — keeping you fresh and stylish every day of the week. \n Each pack includes  five versatile full-sleeve tees  in modern, easy-to-style colors. Whether you’re dressing up for a casual outing, layering under a jacket, or relaxing at home, these tees deliver a clean, confident loo..."
+    "rating": 4.9,
+    "description": "Refresh your wardrobe with our  Pack of 5 Men’s Full Sleeves T-Shirts , the perfect mix of comfort, quality, and value. Made from  100% premium cotton , these tees offer  superior softness, breathability, and durability  — keeping you fresh and stylish every day of the week. \n Each pack includes  five versatile full-sleeve tees  in modern, easy-to-style colors. Whether you’re dressing up for a casual outing, layering under a jacket, or relaxing at home, these tees deliver a clean, confident loo...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-men-s-full-sleeves-t-shirts-3",
@@ -475,8 +597,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.54_AM_1.jpg?v=1775443220"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Refresh your wardrobe with our  Pack of 5 Men’s Full Sleeves T-Shirts , the perfect mix of comfort, quality, and value. Made from  100% premium cotton , these tees offer  superior softness, breathability, and durability  — keeping you fresh and stylish every day of the week. \n Each pack includes  five versatile full-sleeve tees  in modern, easy-to-style colors. Whether you’re dressing up for a casual outing, layering under a jacket, or relaxing at home, these tees deliver a clean, confident loo..."
+    "rating": 4.7,
+    "description": "Refresh your wardrobe with our  Pack of 5 Men’s Full Sleeves T-Shirts , the perfect mix of comfort, quality, and value. Made from  100% premium cotton , these tees offer  superior softness, breathability, and durability  — keeping you fresh and stylish every day of the week. \n Each pack includes  five versatile full-sleeve tees  in modern, easy-to-style colors. Whether you’re dressing up for a casual outing, layering under a jacket, or relaxing at home, these tees deliver a clean, confident loo...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-men-s-full-sleeves-t-shirts-2",
@@ -489,7 +615,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.7,
-    "description": "Keep your style simple, smart, and comfortable with our  Pack of 4 Men’s Full Sleeves T-Shirts . Crafted from  100% premium cotton , these tees are designed for all-day wear — offering  breathable softness, durable stitching, and a clean, modern fit  that works for every occasion. \n Each pack includes  four versatile full-sleeve tees  in classic and trendy colors, giving you effortless outfit options for work, workouts, or weekend relaxation. With their  regular fit and ribbed cuffs , these tee..."
+    "description": "Keep your style simple, smart, and comfortable with our  Pack of 4 Men’s Full Sleeves T-Shirts . Crafted from  100% premium cotton , these tees are designed for all-day wear — offering  breathable softness, durable stitching, and a clean, modern fit  that works for every occasion. \n Each pack includes  four versatile full-sleeve tees  in classic and trendy colors, giving you effortless outfit options for work, workouts, or weekend relaxation. With their  regular fit and ribbed cuffs , these tee...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-men-s-full-sleeves-t-shirts-1",
@@ -501,8 +631,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.52_AM_1.jpg?v=1775443214"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Keep your style simple, smart, and comfortable with our  Pack of 4 Men’s Full Sleeves T-Shirts . Crafted from  100% premium cotton , these tees are designed for all-day wear — offering  breathable softness, durable stitching, and a clean, modern fit  that works for every occasion. \n Each pack includes  four versatile full-sleeve tees  in classic and trendy colors, giving you effortless outfit options for work, workouts, or weekend relaxation. With their  regular fit and ribbed cuffs , these tee..."
+    "rating": 4.2,
+    "description": "Keep your style simple, smart, and comfortable with our  Pack of 4 Men’s Full Sleeves T-Shirts . Crafted from  100% premium cotton , these tees are designed for all-day wear — offering  breathable softness, durable stitching, and a clean, modern fit  that works for every occasion. \n Each pack includes  four versatile full-sleeve tees  in classic and trendy colors, giving you effortless outfit options for work, workouts, or weekend relaxation. With their  regular fit and ribbed cuffs , these tee...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-men-s-full-sleeves-t-shirts",
@@ -514,8 +648,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.53_AM_1.jpg?v=1775443212"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Refresh your wardrobe with our  Pack of 5 Men’s Full Sleeves T-Shirts , the perfect mix of comfort, quality, and value. Made from  100% premium cotton , these tees offer  superior softness, breathability, and durability  — keeping you fresh and stylish every day of the week. \n Each pack includes  five versatile full-sleeve tees  in modern, easy-to-style colors. Whether you’re dressing up for a casual outing, layering under a jacket, or relaxing at home, these tees deliver a clean, confident loo..."
+    "rating": 4.1,
+    "description": "Refresh your wardrobe with our  Pack of 5 Men’s Full Sleeves T-Shirts , the perfect mix of comfort, quality, and value. Made from  100% premium cotton , these tees offer  superior softness, breathability, and durability  — keeping you fresh and stylish every day of the week. \n Each pack includes  five versatile full-sleeve tees  in modern, easy-to-style colors. Whether you’re dressing up for a casual outing, layering under a jacket, or relaxing at home, these tees deliver a clean, confident loo...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-men-s-full-sleeves-t-shirts-3",
@@ -527,8 +665,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.52_AM.jpg?v=1775443209"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an..."
+    "rating": 4.5,
+    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-men-s-full-sleeves-t-shirts-2",
@@ -540,8 +682,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.50_AM_1.jpg?v=1775443207"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an..."
+    "rating": 4.3,
+    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-men-s-full-sleeves-t-shirts-1",
@@ -553,8 +699,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.51_AM_1.jpg?v=1775443204"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an..."
+    "rating": 4.2,
+    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-men-s-full-sleeves-t-shirts",
@@ -566,8 +716,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.50_AM_2.jpg?v=1775443202"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an..."
+    "rating": 4.8,
+    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-8",
@@ -580,7 +734,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.5,
-    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an..."
+    "description": "Upgrade your essentials with our  Pack of 3 Men’s Full Sleeves T-Shirts , crafted from  premium 100% cotton  for unbeatable comfort, breathability, and durability. Designed for everyday wear, these tees offer a perfect balance between  style and simplicity , making them ideal for layering or wearing on their own. \n Each pack includes  three versatile full-sleeve tees  in stylish colors — giving you multiple outfit options for work, workouts, or weekend plans. With a  regular fit , soft feel, an...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-7",
@@ -592,8 +750,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.48_AM_2.jpg?v=1775443197"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.6,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-6",
@@ -605,8 +767,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.47_AM.jpg?v=1775443195"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.8,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-5",
@@ -618,8 +784,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.48_AM.jpg?v=1775443192"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.3,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-4",
@@ -631,8 +801,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.48_AM_1.jpg?v=1775443190"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.2,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-3",
@@ -645,7 +819,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.3,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-2",
@@ -657,8 +835,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.49_AM.jpg?v=1775443185"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.7,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts-1",
@@ -670,8 +852,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.50_AM.jpg?v=1775443183"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.9,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-men-s-full-sleeves-t-shirts",
@@ -683,8 +869,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsApp_Image_2025-10-10_at_9.26.47_AM_1.jpg?v=1775443180"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi..."
+    "rating": 4.8,
+    "description": "Double the comfort, double the style! Our  Pack of 2 Men’s Full Sleeves T-Shirts  is made from  premium cotton fabric  that feels soft, breathable, and perfectly comfortable all day long. Designed for men who love a clean and casual look, these tees are ideal for layering or wearing solo — no matter the season. \n Each pack includes  two versatile full-sleeve tees  that fit just right — not too tight, not too loose — giving you the perfect blend of  comfort and confidence . Whether you’re dressi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-7",
@@ -701,7 +891,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.9,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-6",
@@ -717,8 +911,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_19AM_63835ea1-c316-4697-9a6c-8762ad14770b.png?v=1774704607"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4.3,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-5",
@@ -734,8 +932,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_41AM_71d3c36b-b442-4e29-9a40-4e3ab2545baa.png?v=1774704605"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4.6,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-4",
@@ -751,8 +953,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_21AM_5100e093-9d97-4b1e-a9d9-1b7cf00cd3da.png?v=1774704603"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-3",
@@ -768,8 +974,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_40AM_ae3f75e7-3b9c-4b65-b8f9-4e519fbe1a35.png?v=1774704602"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4.1,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-2",
@@ -785,8 +995,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_21AM_58cbc64c-3e1c-4754-8d3b-61f0bfa5612c.png?v=1774704600"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4.2,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees-1",
@@ -802,8 +1016,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_21AM_4a4443a7-911e-4cfc-a2e2-961c890a9972.png?v=1774704598"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4.3,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-drop-needle-basic-tees",
@@ -820,7 +1038,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.4,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "green-drop-needle-basic-tee-copy",
@@ -836,8 +1058,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb26_2026_12_37_44AM_c81c6fdd-1e41-46a4-8ca9-352e3a5b28da.png?v=1774704595"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak..."
+    "rating": 4.6,
+    "description": "Upgrade your essentials with our  Pack of 2 Drop Needle Basic Tees , designed for men who want everyday comfort with a refined touch. Featuring a premium  drop needle knit texture , these tees showcase subtle vertical detailing that adds depth while keeping the overall look clean and minimal. \n Crafted from  soft, breathable, and lightweight fabric , both t-shirts provide lasting comfort throughout the day. The structured yet relaxed fit enhances your silhouette without feeling restrictive, mak...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-13",
@@ -853,8 +1079,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_19AM_64ddcb26-2a01-4411-b294-961d308468f7.png?v=1772247440"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 4.3,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-12",
@@ -870,8 +1100,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_26AM_6f7ff4e5-73d4-437c-927f-270dc7cdb85b.png?v=1772247438"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 5,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-11",
@@ -888,7 +1122,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.1,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-10",
@@ -904,8 +1142,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_13AM_87e45f10-29c7-4b57-9ba0-928dfdc94dcf.png?v=1772247435"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 4.7,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-9",
@@ -921,8 +1163,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_13AM_a469bbc0-0523-4d18-aa7d-73e2b22a755f.png?v=1772247434"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 4.9,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-8",
@@ -938,8 +1184,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_26AM_7c8c7a7e-4c51-42fe-b69f-b9613d0b5e4d.png?v=1772247432"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 4.8,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-7",
@@ -955,8 +1205,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_26AM_577f23f3-72af-4434-934c-db7668c34d6b.png?v=1772247430"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 4.2,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-two-tone-johnny-collar-polos-6",
@@ -972,8 +1226,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_11AM_eb51c7d1-6148-49e5-b087-ec503ca36f12.png?v=1772247429"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol..."
+    "rating": 4.6,
+    "description": "Double the refinement with our  Pack of 2 Two Tone Johnny Collar Polos (Full Sleeves)  — designed for men who value modern elegance and everyday versatility. Featuring a sleek  buttonless Johnny collar , these polos deliver a clean, sophisticated neckline that sets them apart from traditional styles. \n The subtle  two-tone contrast design  adds depth and a premium aesthetic, making each piece effortlessly stylish without being loud. Crafted from  soft, breathable, and durable fabric , these pol...",
+    "colors": [],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "sky-blue-two-tone-johnny-collar-polo",
@@ -987,8 +1245,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_11AM.png?v=1772247427"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this..."
+    "rating": 4.3,
+    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this...",
+    "colors": [
+      "Blue",
+      "Sky blue"
+    ],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "green-two-tone-johnny-collar-polo-1",
@@ -1002,8 +1267,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_19AM.png?v=1772247425"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this..."
+    "rating": 4.6,
+    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this...",
+    "colors": [
+      "Green"
+    ],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "navy-blue-two-tone-johnny-collar-polo-1",
@@ -1017,8 +1288,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_57AM.png?v=1772247424"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this..."
+    "rating": 4.8,
+    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this...",
+    "colors": [
+      "Navy",
+      "Blue"
+    ],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "black-two-tone-johnny-collar-polo-1",
@@ -1032,8 +1310,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_13AM.png?v=1772247422"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this..."
+    "rating": 4.4,
+    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "maroon-two-tone-johnny-collar-polo-1",
@@ -1047,8 +1331,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb28_2026_07_06_26AM.png?v=1772247421"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this..."
+    "rating": 4.9,
+    "description": "Elevate your wardrobe with the refined simplicity of the  Two Tone Johnny Collar Polo – Half Sleeves . Designed for the modern man, this piece blends timeless elegance with a contemporary edge. The  buttonless Johnny collar  creates a clean, open neckline that adds effortless sophistication without looking formal. \n The subtle  two-tone contrast  enhances depth and visual appeal, making it stand out while keeping the overall look minimal and premium. Crafted from  soft, breathable fabric , this...",
+    "colors": [
+      "Maroon"
+    ],
+    "collections": [
+      "Two Tone Polos"
+    ]
   },
   {
     "id": "pack-of-2-waffle-knit-textured-stripe-polos",
@@ -1066,8 +1356,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb11_2026_04_03_39AM_79309bc3-ca6c-4289-8577-5eb58a1c4eb6.png?v=1772240689"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4.2,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "waffle-knit-textured-stripe-polo-oversized-fit-1",
@@ -1083,7 +1379,13 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 5,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "waffle-knit-textured-stripe-polo-oversized-fit",
@@ -1098,8 +1400,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb11_2026_04_02_49AM.png?v=1772155731"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c..."
+    "rating": 4.4,
+    "description": "Make a bold yet refined statement with the  Waffle Knit Textured Stripe Polo – Oversized Fit . Designed for modern comfort and standout style, this polo features a premium  waffle knitted textured fabric  that adds depth, breathability, and a structured finish to your everyday look. \n The  bold horizontal stripe panel design  creates strong visual contrast while keeping the aesthetic clean and sophisticated. Crafted in a  relaxed oversized silhouette , it delivers a confident drape with extra c...",
+    "colors": [
+      "Red"
+    ],
+    "collections": [
+      "Textured Stripe Polos"
+    ]
   },
   {
     "id": "white-drop-needle-zipper-polo",
@@ -1112,8 +1420,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb22_2026_07_01_22AM.png?v=1771725874"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance..."
+    "rating": 4.9,
+    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance...",
+    "colors": [
+      "White"
+    ],
+    "collections": [
+      "Polos"
+    ]
   },
   {
     "id": "steel-gray-drop-needle-zipper-polo",
@@ -1126,8 +1440,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb22_2026_06_59_48AM.png?v=1771725872"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance..."
+    "rating": 4.4,
+    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance...",
+    "colors": [
+      "Gray"
+    ],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "green-drop-needle-zipper-polo",
@@ -1140,8 +1460,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb22_2026_06_58_06AM.png?v=1771725870"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance..."
+    "rating": 4.1,
+    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance...",
+    "colors": [
+      "Green"
+    ],
+    "collections": [
+      "Polos"
+    ]
   },
   {
     "id": "navy-blue-drop-needle-zipper-polo",
@@ -1154,8 +1480,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb22_2026_06_58_03AM.png?v=1771725868"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance..."
+    "rating": 4.4,
+    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance...",
+    "colors": [
+      "Navy",
+      "Blue"
+    ],
+    "collections": [
+      "Polos"
+    ]
   },
   {
     "id": "black-drop-needle-zipper-polo",
@@ -1168,8 +1501,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb22_2026_06_58_01AM.png?v=1771725866"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance..."
+    "rating": 4.5,
+    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "Polos"
+    ]
   },
   {
     "id": "maroon-drop-needle-zipper-polo",
@@ -1182,8 +1521,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPTImageFeb22_2026_06_57_59AM.png?v=1771725864"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance..."
+    "rating": 4.3,
+    "description": "Upgrade your smart-casual essentials with the  Drop Needle Zipper Polo , designed for men who appreciate subtle texture and refined detailing. Crafted with a premium  drop needle knit pattern , this polo features fine vertical texture lines that enhance breathability while adding depth and sophistication to the overall look. \n The sleek  zipper neckline  gives it a modern edge, offering a cleaner and sharper alternative to traditional button polos. Wear it fully zipped for a polished appearance...",
+    "colors": [
+      "Maroon"
+    ],
+    "collections": [
+      "Polos"
+    ]
   },
   {
     "id": "pack-of-2-maroon-green-waffle-knitted-sweatshirts",
@@ -1198,8 +1543,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.7,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "Green",
+      "Maroon"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-maroon-beige-waffle-knitted-sweatshirts",
@@ -1214,8 +1566,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.9,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "Maroon",
+      "Beige"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-blue-white-waffle-knitted-sweatshirts-1",
@@ -1230,8 +1589,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.9,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "White",
+      "Blue"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-white-maroon-waffle-knitted-sweatshirts",
@@ -1246,8 +1612,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.6,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "White",
+      "Maroon"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-green-beige-waffle-knitted-sweatshirts",
@@ -1262,8 +1635,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.3,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "Green",
+      "Beige"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-blue-white-waffle-knitted-sweatshirts",
@@ -1279,7 +1659,14 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.9,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "White",
+      "Blue"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-charcoal-white-waffle-knitted-sweatshirts",
@@ -1294,8 +1681,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.9,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "White",
+      "Charcoal"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-blue-green-waffle-knitted-sweatshirts",
@@ -1310,8 +1704,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.3,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "Blue",
+      "Green"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-black-white-waffle-knitted-sweatshirts",
@@ -1326,8 +1727,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4.5,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-black-charcoal-waffle-knitted-sweatshirts",
@@ -1342,8 +1750,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-2323_1cc9db9e-493d-417e-b84e-d13e7800b6fc.jpg?v=1763688760"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a..."
+    "rating": 4,
+    "description": "Double up on comfort and style with our  Pack of 2 Men’s Waffle-Knitted Sweatshirts , designed to bring a refined, textured look to your everyday outfits. Crafted from  premium waffle-knit fabric , these sweatshirts offer  superior softness, breathability, and warmth  — perfect for layering or wearing on their own. \n Each piece in this pack features a  signature waffle texture  that adds depth and sophistication while keeping you cozy through changing seasons. With  ribbed cuffs and hem  for a...",
+    "colors": [
+      "Black",
+      "Charcoal"
+    ],
+    "collections": [
+      "Sweatshirts"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks-6",
@@ -1359,8 +1774,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_39_AM.png?v=1762999719"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "rating": 4.2,
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks-5",
@@ -1376,8 +1795,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_34_AM.png?v=1763000087"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "rating": 4.6,
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks-4",
@@ -1393,8 +1816,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_34_AM.png?v=1763000087"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "rating": 4.1,
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks-3",
@@ -1410,8 +1837,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_39_AM.png?v=1762999719"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "rating": 4.1,
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks-2",
@@ -1427,8 +1858,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_36_AM.png?v=1762999865"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "rating": 4.7,
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks-1",
@@ -1445,7 +1880,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.3,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "pack-of-2-wafflezip-mocknecks",
@@ -1461,8 +1900,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_36_AM.png?v=1762999865"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a..."
+    "rating": 4.5,
+    "description": "Double your winter essentials with our  Pack of 2 WaffleZip Mocknecks , designed for men who value  comfort, texture, and versatility . Made from  premium waffle-knit fabric , these half-zip sweatshirts deliver  superior warmth and breathability  while keeping your look effortlessly sharp. \n The  mockneck collar with a sleek zipper  lets you adjust your style — zip up for a clean, sophisticated fit or zip down for a relaxed streetwear vibe. Each sweatshirt features  ribbed cuffs and hem  for a...",
+    "colors": [],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "maroon-wafflezip-mockneck",
@@ -1476,8 +1919,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_30_AM.png?v=1763000512"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f..."
+    "rating": 4.9,
+    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f...",
+    "colors": [
+      "Maroon"
+    ],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "black-wafflezip-mockneck",
@@ -1491,8 +1940,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_34_AM.png?v=1763000087"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f..."
+    "rating": 4.1,
+    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "gray-wafflezip-mockneck",
@@ -1506,8 +1961,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_37_AM.png?v=1763000575"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f..."
+    "rating": 4.9,
+    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f...",
+    "colors": [
+      "Gray"
+    ],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "white-wafflezip-mockneck",
@@ -1521,8 +1982,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_39_AM.png?v=1762999719"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f..."
+    "rating": 4.3,
+    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f...",
+    "colors": [
+      "White"
+    ],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "navy-blue-wafflezip-mockneck",
@@ -1536,8 +2003,15 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_36_AM.png?v=1762999865"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f..."
+    "rating": 4.8,
+    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f...",
+    "colors": [
+      "Navy",
+      "Blue"
+    ],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "charcoal-wafflezip-mockneck",
@@ -1551,8 +2025,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ChatGPT_Image_Nov_11_2025_02_22_40_AM.png?v=1762999721"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f..."
+    "rating": 4.1,
+    "description": "Step up your winter essentials with the  WaffleZip Mockneck , a perfect blend of  modern street style and cozy texture . Crafted from  premium waffle-knit fabric , this half-zip sweatshirt offers  superior warmth, breathability, and structure  — keeping you comfortable while looking effortlessly stylish. \n The  mockneck collar with a smooth zipper  gives you flexible styling — zip it up for a sharp, polished look or down for a laid-back vibe. Designed with  ribbed cuffs and hem  for a refined f...",
+    "colors": [
+      "Charcoal"
+    ],
+    "collections": [
+      "WaffleZip Mocknecks"
+    ]
   },
   {
     "id": "jaguar-tracksuit",
@@ -1564,8 +2044,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2021-10-08at7.57.23PM.jpg?v=1762737667"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 4.1,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [
+      "Maroon"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pubg-tracksuit",
@@ -1577,8 +2063,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2021-10-08at7.57.21PM_1.jpg?v=1762737666"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 4.1,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "batman-track-suit",
@@ -1590,8 +2080,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-03-06at15.59.43_780a2e9a.jpg?v=1762737665"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this SHORTS, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.     \n  Estimated Delivery Time   Karachi:..."
+    "rating": 4.1,
+    "description": "We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this SHORTS, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.     \n  Estimated Delivery Time   Karachi:...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-jaguar-3pc-tracksuit",
@@ -1603,8 +2099,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2021-10-08at7.57.20PM.jpg?v=1762737664"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 4.5,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "jaguar-3pc-tracksuit",
@@ -1616,8 +2116,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2021-10-08at7.57.19PM.jpg?v=1762737663"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "This pack contains  \n \n  1 x Hoodie  \n  1 x T-shirt  \n  1 x Trouser  \n \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as ha..."
+    "rating": 4.3,
+    "description": "This pack contains  \n \n  1 x Hoodie  \n  1 x T-shirt  \n  1 x Trouser  \n \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as ha...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-2",
@@ -1629,8 +2133,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/3_9b2ce8ee-cb0b-4ca8-bed5-e54ed31e9b53.jpg?v=1762737662"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.  2,000.00Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machin..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.  2,000.00Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machin...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-3",
@@ -1642,8 +2150,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/2_198d1501-5c33-40d1-9166-acfef0984a59.jpg?v=1762737662"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-2",
@@ -1655,8 +2167,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/12_53152036-882b-4aed-8b07-586280b92ae4.png?v=1762737660"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-stripe-trouser",
@@ -1668,8 +2184,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/STRIPE-JOGGER-PANTS-1_1.jpg?v=1762737659"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 2 stripes trouser.     Shop for this pack of 2 stipes trouser available exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.    Estimated Delivery Time   Karachi: 1-4 Days.   Rest of Pakistan: 4-7 Days.   Please Note: Colors may slightly vary de..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 2 stripes trouser.     Shop for this pack of 2 stipes trouser available exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.    Estimated Delivery Time   Karachi: 1-4 Days.   Rest of Pakistan: 4-7 Days.   Please Note: Colors may slightly vary de...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-2-stripe-trouser",
@@ -1681,8 +2201,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/0b39bd4e-00e4-4068-bb5f-88324404786c.jpg?v=1762737659"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 trouser.     Shop for this pack of 2 trouser available exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.    Estimated Delivery Time   Karachi: 1-4 Days.   Rest of Pakistan: 4-7 Days.   Please Note: Colors may slightly vary depending on your..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 2 trouser.     Shop for this pack of 2 trouser available exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.    Estimated Delivery Time   Karachi: 1-4 Days.   Rest of Pakistan: 4-7 Days.   Please Note: Colors may slightly vary depending on your...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-round-neck-half-sleeves-t-shirts-2",
@@ -1694,8 +2218,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/IMG-20230327-WA0000.jpg?v=1762737658"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 8 printed sandos tanks.  \n Fabric: Sport Polister  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fl..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 8 printed sandos tanks.  \n Fabric: Sport Polister  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fl...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-1",
@@ -1711,8 +2241,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/0dc76e48-4d97-400a-b43f-461c73c059e9.jpg?v=1762737657"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-1",
@@ -1729,8 +2263,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/c5089620-52c8-44b5-b149-a2d6f271334e.jpg?v=1762737655"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt",
@@ -1747,8 +2285,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/ecd985aa-1533-4cba-831d-bbcb179412ac.jpg?v=1762737655"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirts-2",
@@ -1760,8 +2302,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/e619d8b4-7cef-49fa-ba87-04fa5ab6e60d.jpg?v=1762737654"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirts-3",
@@ -1773,8 +2319,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/fc6c7e4b-4fa2-405f-aa1a-439d9204f1f8.jpg?v=1762737652"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirts-2",
@@ -1786,8 +2336,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/d3641924-97ea-4602-b211-767636080b3c.jpg?v=1762737651"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirts-1",
@@ -1799,8 +2353,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/d3e31efe-9c89-4105-90e1-8d42f5d10e32.jpg?v=1762737650"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirts",
@@ -1812,8 +2370,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/c79dc049-618f-4495-856b-9689f39199db.jpg?v=1762737649"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirt-2",
@@ -1825,8 +2387,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/af3a1e04-dbda-4fd5-8800-28b1ea2e65b9.jpg?v=1762737649"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirts-1",
@@ -1838,8 +2404,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/9509342d-783b-4c52-9a47-380958637eae.jpg?v=1762737647"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirts",
@@ -1851,8 +2421,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/844635a3-17ec-422c-82c7-5549c13e38ba.jpg?v=1762737646"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirt-1",
@@ -1864,8 +2438,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/123.png?v=1762737646"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 4 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4,
+    "description": "Product Description:    This pack contain 4 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-printed-t-shirt-4",
@@ -1877,8 +2455,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/cea44a6e-b695-44d6-b2ec-125266fd3e3f.jpg?v=1762737645"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-printed-t-shirt-3",
@@ -1890,8 +2472,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/60919339-7f02-407f-ae45-2e8662789efc.jpg?v=1762737644"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-printed-t-shirts",
@@ -1903,8 +2489,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/01498868-b1e8-4156-933e-85b52df132ea.jpg?v=1762737642"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-printed-t-shirts",
@@ -1916,8 +2506,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/7716fdc6-a51d-4ce4-ab53-e8c2da7cebdc.jpg?v=1762737641"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-printed-t-shirt-3",
@@ -1930,7 +2524,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.8,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-printed-t-shirt-2",
@@ -1942,8 +2540,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/82dc8cbd-dd15-41c4-8d3f-dec25a124958.jpg?v=1762737640"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-printed-t-shirt-1",
@@ -1955,8 +2557,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/77f09b77-b96a-48d7-a7cd-1a60ca2e9887.jpg?v=1762737639"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt",
@@ -1968,8 +2574,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/24e03bd0-6256-41a9-9ea7-be0df203d522.jpg?v=1762737636"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-printed-t-shirt-2",
@@ -1981,8 +2591,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/20b7043b-ad6c-45b3-ab4e-9fef4376cd85.jpg?v=1762737635"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 4 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 4 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt-6",
@@ -1994,8 +2608,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/8e56ef16-816a-4846-9438-4bea9bf26661.jpg?v=1762737633"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt-5",
@@ -2007,8 +2625,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/8aeea83b-dffe-4d40-a151-f160fed1e767.jpg?v=1762737632"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt-4",
@@ -2020,8 +2642,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/08cb597e-8d4d-4df2-ade4-a84173421f0e.jpg?v=1762737630"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt-3",
@@ -2033,8 +2659,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/7ccc706c-bada-4cb7-8888-6b0f9dc0e9ae.jpg?v=1762737629"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-printed-t-shirt-1",
@@ -2046,8 +2676,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/5b187e0e-0ecf-4168-a7ec-06f9b91c362f.jpg?v=1762737628"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-t-shirt",
@@ -2059,8 +2693,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/4cfd8075-afb6-498d-92f6-8290c60bdb0f.jpg?v=1762737627"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt-2",
@@ -2072,8 +2710,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/4bab47d2-7b48-4074-894e-b91c1025d351.jpg?v=1762737625"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-printed-t-shirt",
@@ -2085,8 +2727,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/4b536471-ed5c-4cea-91d2-2ca0a71fb299.jpg?v=1762737625"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt-1",
@@ -2098,8 +2744,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/4b3a27c8-d0b1-4e34-8954-a7c85d3c1daa.jpg?v=1762737624"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-printed-t-shirt",
@@ -2111,8 +2761,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/3f73cef2-f830-4822-bb18-d19a6b590337.jpg?v=1762737623"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain 2 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-printed-t-shirt",
@@ -2124,8 +2778,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/0fe9cee7-688d-4fe8-964c-64d9701a749c_16ba23b9-bbe7-40c9-9fa0-836a5e3130a8.jpg?v=1762737622"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirt-2",
@@ -2137,8 +2795,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/0fe9cee7-688d-4fe8-964c-64d9701a749c.jpg?v=1762737621"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 3 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts-6",
@@ -2150,8 +2812,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_f2782ef9-226c-4b1d-98fe-3fb29ae8f8d8.png?v=1762737621"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts-5",
@@ -2163,8 +2829,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-03-06at18.23.48_d8c59da6.jpg?v=1762737619"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    Style your wardrobe with this classic Cap. This well-fitted, comfortable Cap is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this cap is the universal answer to \"What should I wear?\"   Shop this Cap, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not blea..."
+    "rating": 4.4,
+    "description": "Product Description:    Style your wardrobe with this classic Cap. This well-fitted, comfortable Cap is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this cap is the universal answer to \"What should I wear?\"   Shop this Cap, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not blea...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts-4",
@@ -2176,8 +2848,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/RED_dae69ad1-018d-4444-911d-d6b7056f848e.png?v=1762737619"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts-3",
@@ -2189,8 +2865,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/MAROON_4da264c1-4888-4db6-9678-12eb3a7e0e71.png?v=1762737618"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts-2",
@@ -2202,8 +2882,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/HEATHER-GREY_7752623c-d9a4-451e-b2de-7118b3aea1f9.png?v=1762737617"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts-1",
@@ -2215,8 +2899,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/GREY_2e029ad7-a213-42da-b4db-1b75c5ca1eee.png?v=1762737616"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-plain-half-sleeves-t-shirts",
@@ -2228,8 +2916,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/BLACK_af96b1d1-437f-4d60-b0bc-7c9c2788cc52.png?v=1762737615"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-7",
@@ -2241,8 +2933,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/BLUE_8ff0f5c7-f195-41dd-8f58-7e5699e0f197.png?v=1762737614"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop this half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use m...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-plain-half-sleeves-t-shirts",
@@ -2256,8 +2952,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/GREY_4dc0d7b6-e04f-4649-bf11-2330b64e79c0.png?v=1762737613"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-6",
@@ -2271,8 +2971,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/RED_3d48db3b-7f9f-41d5-b296-417ea50b0baa.png?v=1762737612"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-5",
@@ -2286,8 +2990,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/MAROON_18d56afa-4a65-4451-a875-832926f0bf1d.png?v=1762737611"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-4",
@@ -2302,7 +3010,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.5,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-3",
@@ -2316,8 +3028,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WHITE_f824efc4-25fb-410f-b96f-9fba6cf71df8.png?v=1762737609"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-2",
@@ -2331,8 +3047,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WHITE_ceedd978-5294-4e9b-9d4b-815cdb04f984.png?v=1762737608"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts-1",
@@ -2347,7 +3067,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.8,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirts",
@@ -2361,8 +3085,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_9ae7b299-b03b-4256-88ac-abd262082d8e.png?v=1762737606"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-2-plain-half-sleeves-t-shirt",
@@ -2376,8 +3104,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_a5ccc56b-7f2b-4f72-82cc-0a805d83a611.png?v=1762737605"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirt-1",
@@ -2391,8 +3123,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_72adb906-839b-4721-b424-03159424ebad.png?v=1762737604"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-plain-half-sleeves-t-shirt",
@@ -2406,8 +3142,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_ab178b59-b66e-4ab0-aa6e-49cf043d6d1e.png?v=1762737603"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-11",
@@ -2421,8 +3161,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/MAROON_074466cf-7c27-485a-a2ec-00a74fe785dd.png?v=1762737602"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 2 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 2 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-10",
@@ -2437,8 +3181,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WHITE_b2c03d9e-9ea7-4612-b4ef-b391f916fc13.png?v=1762737601"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-9",
@@ -2453,8 +3201,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WHITE_da350a2e-5224-4397-9120-d77d3d1bf40d.png?v=1762737600"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-3-plain-half-sleeves-t-shirt",
@@ -2469,8 +3221,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WHITE_6b87d026-921e-48c8-9b35-4a681216df42.png?v=1762737599"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-8",
@@ -2485,8 +3241,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WHITE_511ee089-3777-421f-85c2-ce5e05be4c56.png?v=1762737598"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-7",
@@ -2501,8 +3261,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/MAROON_901eaecd-d7a8-47be-b4c1-57e556f40142.png?v=1762737597"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-6",
@@ -2517,8 +3281,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/HEATHER-GREY_fd4ae013-6835-4c10-8b5b-b096be3f8152.png?v=1762737596"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-5",
@@ -2533,8 +3301,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_1cff780c-9621-4573-b8bc-1905758ec3fb.png?v=1762737595"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-4",
@@ -2549,8 +3321,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/YELLOW_214f80c6-5b71-4b1f-b2bd-3b408fe34cda.png?v=1762737593"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-3",
@@ -2565,8 +3341,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/HEATHER-GREY.png?v=1762737592"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-2",
@@ -2581,8 +3361,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/RED_6a1c24cb-902d-45f4-8a64-dfc1a1259614.png?v=1762737590"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt-1",
@@ -2597,8 +3381,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/RED_627ab744-568c-4415-9306-6cae8078a427.png?v=1762737589"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-plain-half-sleeves-t-shirt",
@@ -2613,8 +3401,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/RED_f1d316ea-9fc0-4049-8619-725d0093f01d.png?v=1762737588"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 3 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 3 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-9",
@@ -2630,8 +3422,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/2983b6fb-d168-496e-8b25-ca12733d7835_44aa7035-334c-422f-b186-3b2af8b6907b.jpg?v=1762737586"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-8",
@@ -2647,8 +3443,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/2983b6fb-d168-496e-8b25-ca12733d7835_69307a91-558a-4f6c-a92c-2c965c9d07fa.jpg?v=1762737585"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-7",
@@ -2665,7 +3465,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.7,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-6",
@@ -2685,8 +3489,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/bdbf1ca4-56b6-4c99-8fd9-2982677fffeb_f517d2a3-9091-4b2a-91c2-fa4f442d57b3.jpg?v=1762737584"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-5",
@@ -2702,8 +3510,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/2983b6fb-d168-496e-8b25-ca12733d7835_cd6b4eeb-0e95-4ecf-9f14-c7f53746349e.jpg?v=1762737583"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-4",
@@ -2719,8 +3531,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/2983b6fb-d168-496e-8b25-ca12733d7835_99a23e04-24f9-4e03-8e86-62851e0fc85f.jpg?v=1762737582"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-3",
@@ -2736,8 +3552,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/5823b1d4-2c9a-415a-aa1b-6f9e9d2ed474_ec672818-f0c9-4b11-a8d8-a5a01907a5d6.jpg?v=1762737582"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-2",
@@ -2753,8 +3573,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/5823b1d4-2c9a-415a-aa1b-6f9e9d2ed474_b8f753d6-5465-4bf2-b984-b44845ffed27.jpg?v=1762737580"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt-1",
@@ -2770,8 +3594,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/5823b1d4-2c9a-415a-aa1b-6f9e9d2ed474_fe668cd7-4b00-490f-b6dc-10ccc7539422.jpg?v=1762737580"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-4-plain-half-sleeves-t-shirt",
@@ -2788,7 +3616,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.1,
-    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c..."
+    "description": "Product Description:    This pack contain 4 Basic T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 4 half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in c...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-half-sleeves-t-shirts-3",
@@ -2800,8 +3632,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/dcb35db6-06dd-42ad-9bcc-cff40af70b79.jpg?v=1762737578"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 2 stripes trouser.     Shop for this pack of 2 stipes trouser available exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.    Estimated Delivery Time   Karachi: 1-4 Days.   Rest of Pakistan: 4-7 Days.   Please Note: Colors may slightly vary de..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 2 stripes trouser.     Shop for this pack of 2 stipes trouser available exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement variations.    Estimated Delivery Time   Karachi: 1-4 Days.   Rest of Pakistan: 4-7 Days.   Please Note: Colors may slightly vary de...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-half-sleeves-t-shirts-2",
@@ -2814,8 +3650,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_c88fa43e-d6f6-4f2b-bda7-a05882415f50.jpg?v=1762737577"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and yellow.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sl..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and yellow.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sl...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-half-sleeves-t-shirts-1",
@@ -2832,8 +3672,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/5823b1d4-2c9a-415a-aa1b-6f9e9d2ed474_15b0bba6-9813-4f11-9048-5c5a58919bb9.jpg?v=1762737577"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and white.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sle..."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and white.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sle...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-round-neck-half-sleeves-t-shirts-1",
@@ -2850,8 +3694,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/2983b6fb-d168-496e-8b25-ca12733d7835_fc1f0a81-ddba-4747-ab90-d406a6fe3205.jpg?v=1762737576"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Red, Navy Blue and Yellow.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleev..."
+    "rating": 4,
+    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Red, Navy Blue and Yellow.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleev...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-half-sleeves-t-shirts",
@@ -2868,8 +3716,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/bdbf1ca4-56b6-4c99-8fd9-2982677fffeb_f6390630-ce60-458e-9554-f6fb9e89a5f5.jpg?v=1762737575"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and white.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sle..."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and white.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sle...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-round-neck-half-sleeves-t-shirts",
@@ -2886,8 +3738,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/5823b1d4-2c9a-415a-aa1b-6f9e9d2ed474.jpg?v=1762737574"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and white.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sle..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and white.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sle...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-half-sleeves-t-sjirts",
@@ -2905,8 +3761,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/bdbf1ca4-56b6-4c99-8fd9-2982677fffeb.jpg?v=1762737573"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and Grey.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half slee..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 5 Basic T-Shirts which are Black, Charcoal, Maroon, Navy Blue and Grey.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half slee...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-8-printed-gym-sando-tanks",
@@ -2919,8 +3779,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize.jpg?v=1762737572"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-4-printed-gym-sando-tanks-002",
@@ -2933,8 +3799,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_ede87738-18a4-4c25-92db-f26db6db50e3.jpg?v=1762737571"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-4-printed-gym-sando-tanks-003",
@@ -2947,8 +3819,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_9c44f8c4-cfea-4ec3-92e6-147dec7a0d67.jpg?v=1762737570"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla..."
+    "rating": 4,
+    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-4-printed-gym-sando-tanks-004",
@@ -2961,8 +3839,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_273654db-4644-4bdf-ac75-3e160eae2864.jpg?v=1762737570"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-4-printed-gym-sando-tanks-005",
@@ -2975,8 +3859,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_552b30fc-f680-479a-a8d7-e2374ed74665.jpg?v=1762737569"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla..."
+    "rating": 4,
+    "description": "Product Description:    This pack contain 4 printed sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos.. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a fla...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-4-printed-gym-sando-tanks-001",
@@ -2989,8 +3879,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_1465099a-d623-4b78-b8fa-74892f7e9d23.jpg?v=1762737568"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dr..."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dr...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-3-printed-gym-sleeveless-hoodie-sando-tanks-002",
@@ -3003,8 +3899,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_eb7aad33-a4c5-4920-ac52-f5ab7901e966.jpg?v=1762737567"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dr..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks.  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dr...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-3-printed-gym-sleeveless-hoodie-sando-tanks-003",
@@ -3017,8 +3919,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_5b2dfd17-0d7c-428b-bf96-4ed79b6158f4.jpg?v=1762737567"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks..  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. D..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks..  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. D...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-3-printed-gym-sleeveless-hoodie-sando-tanks-004",
@@ -3031,8 +3939,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_64f3555b-a80e-4d41-bc29-4d6eb39d40e4.jpg?v=1762737566"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks..  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. D..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 3 printed sleeveless sandos tanks..  \n Fabric: Cotton jersy  Style your wardrobe with this classic sandos. This well-fitted, comfortable Tanks is stitched to perfection and can be worn by both men and women. Wear while gyming jogging - this sando is the universal answer to \"What should I wear?\"      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. D...",
+    "colors": [
+      "Sand"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-copy-of-pack-of-5-round-neck-half-sleeves-t-shirts",
@@ -3045,8 +3959,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_24ecb668-87d0-474e-b24b-018b350a9423.jpg?v=1762737565"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 5 Basic Full sleeves T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleeve t-shirts, available exclusively at  TH..."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 5 Basic Full sleeves T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleeve t-shirts, available exclusively at  TH...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-round-neck-full-sleeves-t-shirts",
@@ -3059,8 +3977,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_859bf866-8871-413a-a6b3-bd41462951fe.jpg?v=1762737564"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Product Description:    This pack contain 5 Basic Full sleeves T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleeve t-shirts, available exclusively at  TH..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 5 Basic Full sleeves T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleeve t-shirts, available exclusively at  TH...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-round-neck-full-sleeves-t-shirts-1",
@@ -3073,8 +3995,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_75a9f1aa-a395-413e-a498-ca4e34860206.jpg?v=1762737564"
     ],
     "video": "",
-    "rating": 4,
-    "description": "Product Description:    This pack contain 5 Basic Full sleeves T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleeve t-shirts, available exclusively at  TH..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 5 Basic Full sleeves T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack of solid Black, Charcoal, Maroon, Navy Blue and White half sleeve t-shirts, available exclusively at  TH...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-3",
@@ -3087,8 +4013,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_338c22aa-433d-44db-bd0b-72a15b6bd819.jpg?v=1762737563"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-4",
@@ -3101,8 +4031,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_7be39af1-43d0-442e-9e8c-848e6ececa1f.jpg?v=1762737562"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.4,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-5",
@@ -3115,8 +4049,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_c6ee14ea-b166-4489-85a8-f73ae07b62de.jpg?v=1762737561"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-6",
@@ -3130,7 +4068,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.7,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-7",
@@ -3142,8 +4084,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-04-17at11.44.52PM.jpg?v=1762737560"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-8",
@@ -3155,8 +4101,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-04-17at11.44.53PM.jpg?v=1762737559"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.2,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirts",
@@ -3169,8 +4119,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/tshirtsize_adc339e4-a8d3-4711-a7c8-2989a0231f59.jpg?v=1762737558"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-4",
@@ -3182,8 +4136,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-09at6.58.07PM.jpg?v=1762737558"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-9",
@@ -3195,8 +4153,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-09at6.58.27PM.jpg?v=1762737556"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-5",
@@ -3208,8 +4170,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-09at7.33.18PM_1.jpg?v=1762737556"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-10",
@@ -3221,8 +4187,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-09at7.33.18PM.jpg?v=1762737555"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-11",
@@ -3234,8 +4204,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/234a6d43-1f58-4054-bce4-bce5c76c4400.jpg?v=1762737554"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirts-1",
@@ -3247,8 +4221,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.22AM_1.jpg?v=1762737553"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies",
@@ -3260,8 +4238,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.25AM_1.jpg?v=1762737552"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 5,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-1",
@@ -3273,8 +4255,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.25AM.jpg?v=1762737552"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-2",
@@ -3286,8 +4272,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.22AM.jpg?v=1762737549"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-2-printed-hoodies",
@@ -3299,8 +4289,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.24AM_1.jpg?v=1762737548"
     ],
     "video": "",
-    "rating": 4.7,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-3",
@@ -3312,8 +4306,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.23AM_1.jpg?v=1762737547"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.9,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-2-printed-hoodies-1",
@@ -3325,8 +4323,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.24AM.jpg?v=1762737545"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "pack-of-2-printed-hoodies-2",
@@ -3338,8 +4340,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at3.21.23AM.jpg?v=1762737544"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-superman-tracksuit",
@@ -3351,8 +4357,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at2.50.10AM.jpg?v=1762737543"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 4,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-wings-tracksuit",
@@ -3364,8 +4374,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at2.50.06AM.jpg?v=1762737542"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 5,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-wings-tracksuit-1",
@@ -3378,7 +4392,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.3,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-wings-tracksuit-2",
@@ -3390,8 +4408,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at2.50.12AM_1.jpg?v=1762737540"
     ],
     "video": "",
-    "rating": 5,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 4.8,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-monster-tracksuit",
@@ -3403,8 +4425,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2022-09-29at2.50.07AM.jpg?v=1762737539"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va..."
+    "rating": 4.2,
+    "description": "This pack contains Hoodie &amp; Trouser  \n   \n We make fashionable graphic Tracksuits. Our graphic tracksuits are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this Tracksuit, available exclusively at THE VINTAGE CLOTHING.      Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as hanging may cause measurement va...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-4",
@@ -3416,8 +4444,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/PACKOF2HOODIES_5ee6cc09-41ab-4c65-b238-2a028b9dc0bd.png?v=1762737539"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-5",
@@ -3429,8 +4461,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/PACKOF2HOODIES_1_67942638-3434-4170-b93b-89e7aadf2f07.png?v=1762737538"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-round-neck-full-sleeves-t-shirts-2",
@@ -3442,8 +4478,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-63c5676c6b8f7dcf7ec743fd.png?v=1762737537"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Product Description:    This pack contain 5 Basic Full sleeves Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mi..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 5 Basic Full sleeves Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-full-sleeves-printed-t-shirts",
@@ -3455,8 +4495,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-63c568176b8f7dcf7ec74407.png?v=1762737537"
     ],
     "video": "",
-    "rating": 5,
-    "description": "Product Description:    This pack contain 5 Basic Full sleeves Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mi..."
+    "rating": 4.5,
+    "description": "Product Description:    This pack contain 5 Basic Full sleeves Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-round-neck-full-sleeves-printed-t-shirts-1",
@@ -3468,8 +4512,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-63c568716b8f7dcf7ec7440d.png?v=1762737536"
     ],
     "video": "",
-    "rating": 4.9,
-    "description": "Product Description:    This pack contain 5 Basic Full sleeves Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mi..."
+    "rating": 4.7,
+    "description": "Product Description:    This pack contain 5 Basic Full sleeves Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"  Shop for this pack exclusively at  THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mi...",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-12",
@@ -3481,8 +4529,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-645201919ee31a2963d40afa.png?v=1762737534"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.3,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-6",
@@ -3494,8 +4546,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-6458f8e8d5253a4d7fa26cfd.png?v=1762737533"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.8,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-5-printed-t-shirt-7",
@@ -3507,8 +4563,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-6458f89dd5253a4d7fa26cfa.png?v=1762737533"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "pack-of-5-printed-t-shirt-13",
@@ -3520,8 +4580,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/0eae392f-311e-4ad5-8097-be2003f148de.jpg?v=1762737530"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash...."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 5 Printed T-Shirts.   Style your wardrobe with this classic half sleeve solid t-shirt. This well-fitted, comfortable T-shirt is stitched to perfection and can be worn by both men and women. Wear it to a casual workday, party, or for a night in with your friends - this tee is the universal answer to \"What should I wear?\"   Shop for this pack of 5 printed half sleeve t-shirts, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash....",
+    "colors": [],
+    "collections": [
+      "T-Shirts"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-6",
@@ -3533,8 +4597,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-652362aef59b000976f8c6cd_3x-fotor-202310098450.png?v=1762737532"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.6,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-7",
@@ -3546,8 +4614,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-652367d4f59b000976f8c6db_3x-fotor-202310098833.png?v=1762737532"
     ],
     "video": "",
-    "rating": 4.8,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-8",
@@ -3559,8 +4631,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/main-canvas-652369e0f59b000976f8c6e1_3x-fotor-2023100982251.png?v=1762737530"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "rating": 4.1,
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pack-of-2-printed-hoodies-9",
@@ -3573,7 +4649,11 @@ export const products: Product[] = [
     ],
     "video": "",
     "rating": 4.9,
-    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as..."
+    "description": "Product Description:    This pack contain 2 Printed Hoodies.  \n   \n We make fashionable graphic hoodies. Our graphic hoodies are perfect for bringing your personality to the outdoors and make great gifts for him or her. \n    Shop for this pack of 2 printed hoodies, available exclusively at THE VINTAGE CLOTHING.       Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble dry. Dry on a flat surface as...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-white-fame-tracksuit",
@@ -3585,8 +4665,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.28_1bdf1fae.jpg?v=1762737526"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "This tracksuit features a body-fit t-shirt and leggings adorned with eye-catching prints. Perfect for urban adventures or casual outings, this set effortlessly blends comfort and style for the fashion-forward woman.  \n Features: \n \n  T-shirt     x 1     Leggings x 1   \n \n   Fabric: Soft Jersey Cotton (Activewear)   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble d..."
+    "rating": 4.1,
+    "description": "This tracksuit features a body-fit t-shirt and leggings adorned with eye-catching prints. Perfect for urban adventures or casual outings, this set effortlessly blends comfort and style for the fashion-forward woman.  \n Features: \n \n  T-shirt     x 1     Leggings x 1   \n \n   Fabric: Soft Jersey Cotton (Activewear)   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble d...",
+    "colors": [
+      "Black"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-white-checks-tracksuit",
@@ -3598,8 +4684,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.13_57f661e5.jpg?v=1762737525"
     ],
     "video": "",
-    "rating": 4.1,
-    "description": "This tracksuit features a body-fit t-shirt and leggings adorned with eye-catching prints. Perfect for urban adventures or casual outings, this set effortlessly blends comfort and style for the fashion-forward woman.  \n Features: \n \n  T-shirt     x 1     Leggings x 1   \n \n   Fabric: Soft Jersey Cotton (Activewear)   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble d..."
+    "rating": 4.6,
+    "description": "This tracksuit features a body-fit t-shirt and leggings adorned with eye-catching prints. Perfect for urban adventures or casual outings, this set effortlessly blends comfort and style for the fashion-forward woman.  \n Features: \n \n  T-shirt     x 1     Leggings x 1   \n \n   Fabric: Soft Jersey Cotton (Activewear)   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble d...",
+    "colors": [
+      "White"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-bold-green-nightsuit-1",
@@ -3612,8 +4704,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.12_82dbd8af.jpg?v=1762737524"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "This tracksuit features a body-fit t-shirt and leggings adorned with eye-catching prints. Perfect for urban adventures or casual outings, this set effortlessly blends comfort and style for the fashion-forward woman.  \n Features: \n \n  T-shirt     x 1     Leggings x 1   \n \n   Fabric: Soft Jersey Cotton (Activewear)   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble d..."
+    "rating": 4.3,
+    "description": "This tracksuit features a body-fit t-shirt and leggings adorned with eye-catching prints. Perfect for urban adventures or casual outings, this set effortlessly blends comfort and style for the fashion-forward woman.  \n Features: \n \n  T-shirt     x 1     Leggings x 1   \n \n   Fabric: Soft Jersey Cotton (Activewear)   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild detergent, dry in shade, do not iron directly or scrub on print, do not bleach, do not tumble d...",
+    "colors": [
+      "White"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-pink-hearts-nightsuit-1",
@@ -3625,8 +4723,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.18_a0e469ac.jpg?v=1762737524"
     ],
     "video": "",
-    "rating": 4.3,
-    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de..."
+    "rating": 4.2,
+    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-bold-green-nightsuit",
@@ -3638,8 +4740,12 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.15_4e0aba95.jpg?v=1762737523"
     ],
     "video": "",
-    "rating": 4.5,
-    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de..."
+    "rating": 4.2,
+    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de...",
+    "colors": [],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-grey-nights-nightsuit",
@@ -3651,8 +4757,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.12_8dc70f4e.jpg?v=1762737522"
     ],
     "video": "",
-    "rating": 4.6,
-    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de..."
+    "rating": 4.3,
+    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de...",
+    "colors": [
+      "Green"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-white-nights-nightsuit",
@@ -3664,8 +4776,14 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.44.15_d208e3cb.jpg?v=1762737521"
     ],
     "video": "",
-    "rating": 4.4,
-    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de..."
+    "rating": 4.5,
+    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de...",
+    "colors": [
+      "Grey"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   },
   {
     "id": "copy-of-red-smile-nightsuit",
@@ -3678,7 +4796,13 @@ export const products: Product[] = [
       "https://cdn.shopify.com/s/files/1/0613/1499/0165/files/WhatsAppImage2024-01-04at13.47.44_61daafba.jpg?v=1762737520"
     ],
     "video": "",
-    "rating": 4.2,
-    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de..."
+    "rating": 4.6,
+    "description": "Drift into a world of comfort and style with our Chic Dreams Lounge Set. This ensemble includes a luxuriously soft printed t-shirt and matching pajamas, ensuring a cozy night's sleep or a relaxing day at home. Embrace the allure of our unique prints, designed to make your lounging experience both fashionable and comfortable.  \n Features: \n \n  T-shirt  x 1     Pajama x 1   \n \n   Fabric: Soft Jersey Cotton   \n      \n      \n      \n      \n  Wash Care : Machine wash. Wash in cold water, use mild de...",
+    "colors": [
+      "White"
+    ],
+    "collections": [
+      "New Arrivals"
+    ]
   }
 ];

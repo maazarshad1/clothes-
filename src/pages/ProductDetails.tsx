@@ -11,6 +11,7 @@ const ProductDetails = () => {
   const { addToCart, products } = useStore();
   const product = products.find((p) => p.id === id);
   const [selectedSize, setSelectedSize] = useState<string>('');
+  const [selectedColor, setSelectedColor] = useState<string>(product?.colors?.[0] || '');
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
@@ -51,7 +52,7 @@ const ProductDetails = () => {
       toast.error('Please select a size');
       return;
     }
-    addToCart(product, selectedSize);
+    addToCart(product, selectedSize, selectedColor);
     toast.success('Proceeding to checkout');
     navigate('/checkout');
   };
@@ -187,6 +188,23 @@ const ProductDetails = () => {
           </div>
 
           <div className="space-y-6">
+            {product.colors && product.colors.length > 0 && (
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-widest mb-3 text-theme-text/60">Select Color: <span className="text-theme-text">{selectedColor}</span></h3>
+                <div className="flex flex-wrap gap-2">
+                  {product.colors.map((color) => (
+                    <button 
+                      key={color} 
+                      onClick={() => setSelectedColor(color)}
+                      className={`h-10 px-4 border text-[10px] uppercase font-bold tracking-widest transition flex items-center justify-center ${selectedColor === color ? 'border-theme-accent bg-theme-accent text-theme-bg' : 'border-theme-border text-theme-text hover:border-theme-accent'}`}
+                    >
+                      {color}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-widest mb-3 text-theme-text/60">Select Size</h3>
               <div className="flex flex-wrap gap-3">
@@ -208,7 +226,7 @@ const ProductDetails = () => {
                   toast.error('Please select a size');
                   return;
                 }
-                addToCart(product, selectedSize);
+                addToCart(product, selectedSize, selectedColor);
                 toast.success('Added to cart');
               }}
               className="w-full bg-theme-accent text-theme-bg py-5 flex items-center justify-center gap-3 text-sm font-bold tracking-widest uppercase hover:bg-white transition mt-8"

@@ -11,6 +11,14 @@ export interface Product {
   video?: string;
   rating: number;
   description: string;
+  colors?: string[];
+  collections?: string[];
+}
+
+export interface Collection {
+  id: string;
+  name: string;
+  description?: string;
 }
 
 export interface Order {
@@ -31,12 +39,13 @@ export interface Order {
 interface CartItem extends Product {
   quantity: number;
   size?: string;
+  color?: string;
   cartItemId: string;
 }
 
 interface StoreContextType {
   cart: CartItem[];
-  addToCart: (product: Product, size?: string) => void;
+  addToCart: (product: Product, size?: string, color?: string) => void;
   removeFromCart: (cartItemId: string) => void;
   updateQuantity: (cartItemId: string, quantity: number) => void;
   wishlist: Product[];
@@ -53,6 +62,9 @@ interface StoreContextType {
   addOrder: (order: Order) => void;
   syncOrders: (syncedOrders: Order[]) => void;
   clearCart: () => void;
+  collections: Collection[];
+  addCollection: (name: string) => void;
+  deleteCollection: (id: string) => void;
 }
 
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
@@ -78,6 +90,14 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   
   const [products, setProducts] = useState<Product[]>(initialProducts);
   const [orders, setOrders] = useState<Order[]>([]);
+  const [collections, setCollections] = useState<Collection[]>(() => {
+    const saved = localStorage.getItem('store_collections');
+    return saved ? JSON.parse(saved) : [
+      { id: 'col-1', name: 'Winter Collection' },
+      { id: 'col-2', name: 'New Arrivals' },
+      { id: 'col-3', name: 'Featured' }
+    ];
+  });
 
   React.useEffect(() => {
     localStorage.setItem('store_cart', JSON.stringify(cart));
@@ -95,16 +115,20 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('store_orders', JSON.stringify(orders));
   }, [orders]);
 
-  const addToCart = (product: Product, size?: string) => {
+  React.useEffect(() => {
+    localStorage.setItem('store_collections', JSON.stringify(collections));
+  }, [collections]);
+
+  const addToCart = (product: Product, size?: string, color?: string) => {
     setCart((prev) => {
-      const cartItemId = size ? `${product.id}-${size}` : product.id;
+      const cartItemId = `${product.id}-${size || 'na'}-${color || 'na'}`;
       const existing = prev.find((item) => item.cartItemId === cartItemId);
       if (existing) {
         return prev.map((item) =>
           item.cartItemId === cartItemId ? { ...item, quantity: item.quantity + 1 } : item
         );
       }
-      return [...prev, { ...product, quantity: 1, size, cartItemId }];
+      return [...prev, { ...product, quantity: 1, size, color, cartItemId }];
     });
   };
 
@@ -154,6 +178,15 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
   const syncOrders = (syncedOrders: Order[]) => setOrders(syncedOrders);
   const clearCart = () => setCart([]);
 
+  const addCollection = (name: string) => {
+    const id = `col-${Date.now()}`;
+    setCollections(prev => [...prev, { id, name }]);
+  };
+
+  const deleteCollection = (id: string) => {
+    setCollections(prev => prev.filter(c => c.id !== id));
+  };
+
   return (
     <StoreContext.Provider
       value={{
@@ -175,6 +208,9 @@ export const StoreProvider = ({ children }: { children: ReactNode }) => {
         addOrder,
         syncOrders,
         clearCart,
+        collections,
+        addCollection,
+        deleteCollection,
       }}
     >
       {children}

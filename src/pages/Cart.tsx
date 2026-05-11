@@ -72,7 +72,10 @@ const Cart = () => {
                     <div>
                       <h3 className="font-serif text-lg text-theme-text">{item.name}</h3>
                       <p className="text-xs uppercase tracking-widest text-theme-accent mb-1">{item.category}</p>
-                      {item.size && <p className="text-sm text-theme-text/60 mb-1">Size: {item.size}</p>}
+                      <div className="flex gap-4 text-xs text-theme-text/60 mb-1">
+                        {item.size && <span>Size: {item.size}</span>}
+                        {item.color && <span>Color: {item.color}</span>}
+                      </div>
                       <p className="font-bold text-theme-text/80">PKR {item.price}</p>
                     </div>
                   </div>
