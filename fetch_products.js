@@ -22,15 +22,33 @@ async function main() {
       allProducts = allProducts.concat(products);
     }
 
+    const determineCategory = (p) => {
+      const title = p.title.toLowerCase();
+      const tags = (p.tags || []).map(t => t.toLowerCase());
+      
+      if (title.includes('two tone') || title.includes('johnny collar')) return 'Two Tone Polos';
+      if (title.includes('textured stripe')) return 'Textured Stripe Polos';
+      if (title.includes('wafflezip') || title.includes('mockneck')) return 'WaffleZip Mocknecks';
+      if (title.includes('dual stripe') || title.includes('zip polo')) return 'Dual Stripe Zip Polos';
+      if (title.includes('panel zip')) return 'Panel Zip Polos';
+      if (title.includes('sweatshirt')) return 'Sweatshirts';
+      if (title.includes('bomber jacket')) return 'Bomber Jackets';
+      if (title.includes('t-shirt') || title.includes('tee')) return 'T-Shirts';
+      if (title.includes('polo')) return 'Polos';
+      if (title.includes('winter')) return 'Winter Arrivals';
+      
+      return p.product_type || 'New Arrivals';
+    };
+
     const formattedProducts = allProducts.map(p => ({
       id: p.handle,
       name: p.title,
       price: parseFloat(p.variants?.[0]?.price || 0),
-      category: p.product_type || 'Uncategorized',
+      category: determineCategory(p),
       image: p.images?.[0]?.src || '',
       images: p.images?.map(img => img.src) || [],
       video: '', 
-      rating: (Math.random() * (5 - 4) + 4).toFixed(1),
+      rating: parseFloat((Math.random() * (5 - 4) + 4).toFixed(1)),
       description: (p.body_html || '').replace(/<[^>]*>?/gm, ' ').substring(0, 500).trim() + '...'
     }));
 

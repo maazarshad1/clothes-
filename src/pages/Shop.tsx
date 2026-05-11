@@ -107,8 +107,8 @@ const Shop = () => {
     <div className="min-h-screen bg-theme-bg text-theme-text">
       {/* Header */}
       <div className="bg-black/40 text-theme-text py-20 text-center border-b border-theme-border">
-        <h1 className="font-serif text-6xl mb-4">The Collection</h1>
-        <p className="text-theme-accent text-sm tracking-[0.3em] uppercase">Premium Footwear by Urban</p>
+        <h1 className="font-serif text-6xl mb-4 uppercase tracking-tighter">The Collection</h1>
+        <p className="text-theme-accent text-sm tracking-[0.3em] uppercase">Premium Apparel by DOPE PK</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

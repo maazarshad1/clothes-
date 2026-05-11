@@ -34,107 +34,113 @@ const TestimonialCard = ({ name, comment, rating }: { name: string; comment: str
 );
 
 const Home = () => {
-  const { addToCart, products: allCollection } = useStore();
+  const { products: allCollection } = useStore();
   const navigate = useNavigate();
+
+  // Group products by category for sections
+  const sections = [
+    { title: 'Zip Polos', category: 'Dual Stripe Zip Polos' },
+    { title: 'Textured Polos', category: 'Textured Stripe Polos' },
+    { title: 'Johnny Collar Polos', category: 'Two Tone Polos' },
+    { title: 'Sweatshirts', category: 'Sweatshirts' },
+    { title: 'T-Shirts', category: 'T-Shirts' },
+    { title: 'Jackets', category: 'Bomber Jackets' },
+  ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Made very small and compact */}
-      <section className="relative h-[35vh] flex items-center overflow-hidden border-b border-theme-border/30">
+      {/* Hero Section */}
+      <section className="relative h-[40vh] flex items-center overflow-hidden border-b border-theme-border/30">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop" 
+            src="https://cdn.shopify.com/s/files/1/0613/1499/0165/files/Hero_Banner_Desktop.png?v=1776452628" 
             alt="Hero" 
-            className="w-full h-full object-cover brightness-[0.3]"
+            className="w-full h-full object-cover brightness-[0.7]"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop";
+            }}
           />
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-xl"
+            className="max-w-2xl mx-auto"
           >
-            <h4 className="text-theme-accent tracking-[0.3em] font-semibold uppercase mb-1 text-[10px]">The New Standard</h4>
-            <h1 className="font-serif text-3xl md:text-5xl mb-3 leading-tight uppercase">Elite Urban <br/> Design</h1>
-            <p className="text-sm text-theme-text/70 mb-5 font-serif max-w-sm">
-              Premium engineering meets unparalleled comfort.
-            </p>
-            <Link to="/shop" className="bg-theme-accent text-theme-bg px-6 py-2 text-[10px] uppercase tracking-widest font-bold hover:bg-white transition-colors duration-300">
-              Explore Collection
+            <h4 className="text-theme-accent tracking-[0.4em] font-semibold uppercase mb-2 text-xs drop-shadow-md">Premium Apparel</h4>
+            <h1 className="font-serif text-4xl md:text-6xl mb-6 leading-tight uppercase text-white drop-shadow-lg">DOPE PK <br/> COLLECTION</h1>
+            <Link to="/shop" className="bg-theme-accent text-theme-bg px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-white transition-colors duration-300 shadow-xl">
+              Shop Now
             </Link>
           </motion.div>
         </div>
       </section>
 
-      {/* Main Product Grid - All products displayed in a compact way */}
-      <section className="py-12 bg-transparent">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8 border-b border-theme-border/20 pb-4">
-            <div>
-              <h2 className="font-serif text-2xl uppercase tracking-tighter">Full Catalogue</h2>
-              <p className="text-theme-accent uppercase tracking-widest text-[9px] font-bold">Premium Selection</p>
-            </div>
-            <div className="text-theme-text/40 text-[10px] uppercase tracking-widest font-bold">
-              {allCollection.length} Items Listed
-            </div>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {allCollection.map((product, index) => (
-              <motion.div 
-                key={product.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                whileHover={{ y: -5 }}
-                className="bg-black/40 backdrop-blur-sm border border-theme-border/30 group relative flex flex-col"
-              >
-                {index === 0 && (
-                  <div className="absolute top-2 left-2 z-20 bg-theme-accent text-theme-bg px-2 py-0.5 text-[8px] uppercase font-bold tracking-widest shadow-lg">
-                    Featured
-                  </div>
-                )}
-                
-                <div className="aspect-[4/5] overflow-hidden relative">
-                  <Link to={`/product/${product.id}`} className="block w-full h-full">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-                  </Link>
-                </div>
+      {/* Category Sections */}
+      {sections.map((section, sIdx) => {
+        const sectionProducts = allCollection.filter(p => p.category === section.category).slice(0, 6);
+        if (sectionProducts.length === 0) return null;
 
-                <div className="p-3 text-center transition-colors flex-1 flex flex-col justify-between hover:bg-white/5">
-                  <div className="mb-2">
-                    <div className="flex items-start justify-center gap-2 mb-1">
+        return (
+          <section key={section.category} className="py-16 border-b border-theme-border/10">
+            <div className="container mx-auto px-4">
+              <div className="flex justify-between items-end mb-10">
+                <div>
+                  <h2 className="font-serif text-3xl uppercase tracking-tighter mb-1">{section.title}</h2>
+                  <div className="h-1 w-20 bg-theme-accent"></div>
+                </div>
+                <Link to={`/shop?category=${section.category}`} className="text-theme-accent uppercase tracking-widest text-[10px] font-bold flex items-center gap-2 hover:text-white transition">
+                  View All <ArrowRight size={14} />
+                </Link>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                {sectionProducts.map((product, index) => (
+                  <motion.div 
+                    key={product.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="group"
+                  >
+                    <div className="relative aspect-[3/4] overflow-hidden bg-theme-card mb-3">
                       <Link to={`/product/${product.id}`}>
-                        <h3 className="font-serif text-[11px] sm:text-xs truncate hover:text-theme-accent transition-colors">{product.name}</h3>
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                       </Link>
                       <button 
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigate(`/product/${product.id}`);
-                        }}
-                        className="text-[8px] bg-theme-accent text-theme-bg px-1 rounded font-bold uppercase shrink-0 mt-0.5"
+                        onClick={() => navigate(`/product/${product.id}`)}
+                        className="absolute bottom-0 left-0 right-0 py-3 bg-theme-accent text-theme-bg text-[10px] font-bold uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform"
                       >
-                        Buy
+                        Buy Now
                       </button>
                     </div>
-                    <p className="text-theme-accent font-bold tracking-widest text-[10px] mb-3">PKR {product.price}</p>
-                    
-                    <button 
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navigate(`/product/${product.id}`);
-                      }}
-                      className="w-full bg-theme-accent text-theme-bg py-2 text-[9px] font-bold uppercase tracking-widest hover:bg-white transition-colors"
-                    >
-                      Buy Now
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+                    <div>
+                      <Link to={`/product/${product.id}`}>
+                        <h3 className="font-serif text-xs truncate mb-1 group-hover:text-theme-accent transition">{product.name}</h3>
+                      </Link>
+                      <p className="text-theme-accent font-bold text-[11px]">PKR {product.price}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })}
+
+      {/* Full Catalogue Preview if needed */}
+      <section className="py-20 bg-theme-card/30">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-serif text-4xl mb-6 uppercase">Explore Everything</h2>
+          <p className="text-theme-text/60 max-w-2xl mx-auto mb-10 font-serif">
+            Browse through our entire selection of premium apparel, from iconic polos to winter essentials.
+          </p>
+          <Link to="/shop" className="inline-flex items-center gap-3 bg-white text-theme-bg px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-theme-accent transition">
+            Shop Entire Collection <ShoppingBag size={18} />
+          </Link>
         </div>
       </section>
 
